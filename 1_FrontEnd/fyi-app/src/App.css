@@ -1,0 +1,69 @@
+/* Font */
+@import url("http://fonts.cdnfonts.com/css/gotham");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  /* essa aqui centraliza tudo certinho pdp*/
+  max-width: 1140px;
+  margin: auto;
+  overflow: auto;
+  min-height: 300px;
+}
+
+.text {
+  /* quando for colocar um texto ou algo que fique na coluna de texto é essa a tag B)*/
+  max-width: 1140px;
+  padding: 0 85px;
+  margin: auto;
+  overflow: auto;
+}
+
+html {
+  background-color: #5a5a5a;
+}
+
+.background{
+ background-image: url(./components/IMG/Background.png);
+ background-size: cover;
+ background-position: center;
+ height: 964px;
+}
+
+
+.information{
+  margin-top: 5em;
+  height: auto;
+  width: 100%;
+}
+
+h2{
+  font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 2em;
+  font-weight: lighter;
+  width: 100%;
+}
+
+.information p{
+  color: #fff;
+  font-family: 'Gotham', sans-serif;
+  font-size: 2.52em;
+  font-weight: 600;
+}
+
+.saiba-btt{
+  margin-top: 5em;
+}
