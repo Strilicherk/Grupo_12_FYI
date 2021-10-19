@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JXAfC4hrm98SH/2gk/zOjNfqk14CIwd/SAUxjchelppYVwvXW3hdZVExc0dMnk4sWzPa39smU1QqDVrhh/Ds1A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mathe\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
