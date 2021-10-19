@@ -13,9 +13,6 @@ namespace FYI.Domain.Entidades
     {
         public Faq(string pergunta, string resposta)
         {
-            Pergunta = pergunta;
-            Resposta = resposta;
-
             AddNotifications(
             new Contract<Notification>()
                 .Requires()
@@ -23,6 +20,11 @@ namespace FYI.Domain.Entidades
                 .IsNotNullOrEmpty(resposta, "Resposta", "Resposta não pode ser vazio.")
             );
 
+            if (IsValid)
+            {
+                Pergunta = pergunta;
+                Resposta = resposta;
+            }
         }
 
         public string Pergunta { get; private set; }

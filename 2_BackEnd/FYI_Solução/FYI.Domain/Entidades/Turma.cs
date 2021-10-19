@@ -13,14 +13,6 @@ namespace FYI.Domain.Entidades
     {
         public Turma(string nomeTurma, string publicoAlvo, string descricao, string preRequisito, int quantidadeAluno)
         {
-            NomeTurma = nomeTurma;
-            // DataInicio = dataInicio;
-            // DataFim = dataFim;
-            PublicoAlvo = publicoAlvo;
-            Descricao = descricao;
-            PreRequisito = preRequisito;
-            QuantidadeAluno = quantidadeAluno;
-
             AddNotifications(
             new Contract<Notification>()
                 .Requires()
@@ -31,9 +23,18 @@ namespace FYI.Domain.Entidades
                 .IsNotNull(quantidadeAluno, "Quantidade de alunos", "Quantidade de alunos não pode ser null")
             //.IsNotNullOrEmpty(dataInicio, "Data de início", "A data de início não pode ser null ou vazio")
             //.IsNotNullOrEmpty(dataFim, "Data de termino", "A data de termino não pode ser null ou vazio")
-
-
             );
+
+            if (IsValid)
+            {
+                NomeTurma = nomeTurma;
+                // DataInicio = dataInicio;
+                // DataFim = dataFim;
+                PublicoAlvo = publicoAlvo;
+                Descricao = descricao;
+                PreRequisito = preRequisito;
+                QuantidadeAluno = quantidadeAluno;
+            }
         }
 
         public string NomeTurma { get; private set; }

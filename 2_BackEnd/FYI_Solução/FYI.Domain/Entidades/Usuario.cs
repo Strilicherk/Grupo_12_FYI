@@ -21,9 +21,12 @@ namespace FYI.Domain.Entidades
                 .IsGreaterOrEqualsThan(senha, 8, "Senha", "A senha deve ter pelo menos 8 caracteres")
             );
 
-            Email = email;
-            Senha = senha;
-            TipoUsuario = tipoUsuario;
+            if (IsValid)
+            {
+                Email = email;
+                Senha = senha;
+                TipoUsuario = tipoUsuario;
+            }
         }
 
         public string Email { get; private set; }

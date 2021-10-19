@@ -13,11 +13,6 @@ namespace FYI.Domain.Entidades
     {
         public Professor(string nomeProfessor, string sobrenome, string email) //int professor
         {
-            NomeProfessor = nomeProfessor;
-            Sobrenome = sobrenome;
-            //Telefone = telefone;
-            Email = email;
-
             AddNotifications(
             new Contract<Notification>()
                 .Requires()
@@ -25,8 +20,16 @@ namespace FYI.Domain.Entidades
                 .IsNotNullOrEmpty(sobrenome, "Sobrenome", "Sobrenome não pode ser vazio.")
                 //.IsNotNullOrEmpty(telefone, "Telefone", "Telefone não pode ser vazio")
                 .IsEmail(email, "Email", "Email não pode ser vazio.")
-
             );
+
+            if (IsValid)
+            {
+                NomeProfessor = nomeProfessor;
+                Sobrenome = sobrenome;
+                //Telefone = telefone;
+                Email = email;
+            }
+
         }
 
 

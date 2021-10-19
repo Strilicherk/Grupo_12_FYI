@@ -19,7 +19,10 @@ namespace FYI.Domain.Entidades
                 .IsNotNullOrEmpty(nomeCurso, "NomeCurso", "Nome do curso não pode ser vazio.")
             );
 
-            NomeCurso = nomeCurso;
+            if (IsValid)
+            {
+                NomeCurso = nomeCurso;
+            }
         }
 
         public string NomeCurso { get; private set; }
