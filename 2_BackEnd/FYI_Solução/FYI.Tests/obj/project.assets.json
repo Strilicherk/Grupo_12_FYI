@@ -1657,6 +1657,33 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "FYI.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FYI.Shared": "1.0.0",
+          "Flunt": "2.0.5"
+        },
+        "compile": {
+          "bin/placeholder/FYI.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FYI.Domain.dll": {}
+        }
+      },
+      "FYI.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Flunt": "2.0.5"
+        },
+        "compile": {
+          "bin/placeholder/FYI.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FYI.Shared.dll": {}
+        }
       }
     }
   },
@@ -5633,10 +5660,21 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "FYI.Domain/1.0.0": {
+      "type": "project",
+      "path": "../FYI.Domain/FYI.Domain.csproj",
+      "msbuildProject": "../FYI.Domain/FYI.Domain.csproj"
+    },
+    "FYI.Shared/1.0.0": {
+      "type": "project",
+      "path": "../FYI.Shared/FYI.Shared.csproj",
+      "msbuildProject": "../FYI.Shared/FYI.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "FYI.Domain >= 1.0.0",
       "Flunt >= 2.0.5",
       "Microsoft.NET.Test.Sdk >= 16.7.1",
       "coverlet.collector >= 1.3.0",
@@ -5670,7 +5708,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
+              "projectPath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
