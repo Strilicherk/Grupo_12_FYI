@@ -4,11 +4,17 @@ import "../../assets/styles/home.css";
 import Header from "../../components/header";
 import Button from "../../components/buttom";
 
-
+//Imagens
 import down from "../../assets/img/down.svg";
 import clock from "../../assets/img/clock.svg";
 import alunosicon from "../../assets/img/student.svg";
 import empresaicon from "../../assets/img/empresa.svg"
+
+//imagens logo das empresas
+import castle from "../../assets/img/empresas/castle.png"
+import microsoft from "../../assets/img/empresas/microsoft.png"
+import pearson from "../../assets/img/empresas/pearson.png"
+import prometric from "../../assets/img/empresas/prometric.png"
 
 import { Router } from "react-router";
 import { Component } from "react/cjs/react.production.min";
@@ -90,8 +96,19 @@ class Home extends Component {
 
               <div className="container">
                 <div className="empresas-carrosel">
-                    
+                    <img src={castle} alt="logo da castle "/>
+                    <img src={microsoft} alt="logo da microsoft "/>
+                    <img src={pearson} alt="logo da pearson "/>
+                    <img src={prometric} alt="logo da Prometric "/>
                 </div>
+              </div>
+
+              <div className="sobre">
+                  <div className="sobre-fyi text">
+                    <h3>Sobre a <br /> For Your Learning Information</h3>
+                   
+                    <p>A FYI nasceu em 2009 com a missão de formar excelentes profissionais para as principais soluções de negócios e tecnologia do mercado. Apoio a Microsoft e seu canal de parceiros em Business Applications e Power Platform.</p>
+                  </div>
               </div>
 
 
