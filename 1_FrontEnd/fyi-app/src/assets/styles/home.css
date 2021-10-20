@@ -31,7 +31,7 @@ a {
 }
 
 html {
-  background-color: #5a5a5a;
+  background-color: #ffffff;
 }
 
 .background{
@@ -117,11 +117,17 @@ h2{
 
 }
 
+.aling-solid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20em;
+}
+
 .solid{
   background-color: #0090d3;
   height: 121px;
   width: 100%;
-  margin: 10em 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -142,4 +148,13 @@ h2{
   font-weight: 400;
   font-family:'Open Sans', 'Helvetica Neue', sans-serif;
   color: #fff;
+}
+
+
+.empresas-carrosel{
+  background-color: cornflowerblue;
+  width: 100%;
+  height: 45px;
+    
+  
 }
