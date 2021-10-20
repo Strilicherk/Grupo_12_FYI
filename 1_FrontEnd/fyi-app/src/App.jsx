@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./components/header";
 import Button from "./components/buttom";
 
-import background from "./components/IMG/Background.png";
+import down from "./components/IMG/down.svg"
 
 function App() {
   return (
@@ -31,7 +31,10 @@ function App() {
             <div className="saiba-btt">
               <Button>Saiba Mais</Button>
             </div>
-            
+          </div>
+
+          <div className="desce">
+            <a href="#"><img src={down} /></a> 
           </div>
 
         </main>
