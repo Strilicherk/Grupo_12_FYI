@@ -116,3 +116,30 @@ h2{
 	}
 
 }
+
+.solid{
+  background-color: #0090d3;
+  height: 121px;
+  width: 100%;
+  margin: 10em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5em;
+}
+
+.treinamento, .alunos,.empresas{
+  display: flex;
+  width: 13em;
+  justify-content: space-between;
+}
+
+.down-txt h4{
+  color: #fff;
+}
+
+.down-txt p{
+  font-weight: 400;
+  font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #fff;
+}
