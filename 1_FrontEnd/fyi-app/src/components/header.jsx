@@ -1,10 +1,12 @@
-import React from 'react';
+import React from 'react'
+import { Link } from "react-router-dom";
+
 //estilos
-import './styles/header.css';
+import '../assets/styles/header.css';
 import '../mobile-navbar';
 
 // imagens
-import logo1 from './IMG/logo2.svg';
+import logo1 from '../assets/img/logo2.svg';
 
 
 
