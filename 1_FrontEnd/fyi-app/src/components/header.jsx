@@ -10,6 +10,7 @@ import logo1 from '../assets/img/logo2.svg';
 
 
 
+
 const Header = () => {
     return ( 
 
@@ -17,7 +18,7 @@ const Header = () => {
             <nav>   
                 <a href="#"><img src={logo1} alt="Logo minimalista for your information Learning Solution - FYI"/></a>
 
-                <div className="mobile-menu">
+                <div className="mobile-menu" >
                     <div className="1"></div>
                     <div className="2"></div>
                     <div className="3"></div>
