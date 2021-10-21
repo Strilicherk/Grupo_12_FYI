@@ -29,9 +29,9 @@ class Login extends Component{
                                    placeholder="Senha"
                                 />
 
-                                <button type="submit">
-                                    Entrar
-                                </button>
+                            <button type="submit">
+                                Entrar
+                            </button>
                         </form>
                     </section>
                 </main>
