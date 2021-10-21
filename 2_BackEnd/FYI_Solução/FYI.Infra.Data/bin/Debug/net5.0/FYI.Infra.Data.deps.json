@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "FYI.Infra.Data/1.0.0": {
+        "runtime": {
+          "FYI.Infra.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FYI.Infra.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

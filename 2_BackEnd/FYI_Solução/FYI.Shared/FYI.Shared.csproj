@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Handlers\" />
+    <Folder Include="Handlers\Contracts\" />
     <Folder Include="Utils\" />
     <Folder Include="Queries\" />
   </ItemGroup>

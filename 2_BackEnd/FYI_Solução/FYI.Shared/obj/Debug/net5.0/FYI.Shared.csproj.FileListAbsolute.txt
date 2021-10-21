@@ -9,3 +9,4 @@ C:\Users\mathe\OneDrive\Área de Trabalho\Grupo_12_FYI\2_BackEnd\FYI_Solução\F
 C:\Users\mathe\OneDrive\Área de Trabalho\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.dll
 C:\Users\mathe\OneDrive\Área de Trabalho\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\ref\FYI.Shared.dll
 C:\Users\mathe\OneDrive\Área de Trabalho\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.pdb
+C:\Users\mathe\OneDrive\Área de Trabalho\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.csprojAssemblyReference.cache

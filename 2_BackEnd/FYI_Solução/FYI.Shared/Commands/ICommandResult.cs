@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FYI.Infra.Data.Repositories.Usuario
+namespace FYI.Shared.Commands
 {
-    public class UsuarioRepository 
+    public interface ICommandResult
     {
+
     }
 }
