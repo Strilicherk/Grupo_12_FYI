@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 
+import '../../assets/css/login.css'
+
 class Login extends Component{
     constructor(props){
         super(props);
