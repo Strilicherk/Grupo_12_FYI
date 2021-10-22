@@ -4,6 +4,7 @@ using FYI.Domain.Entidades;
 using FYI.Domain.Repositorios;
 using FYI.Shared.Commands;
 using FYI.Shared.Handlers.Contracts;
+using FYI.Shared.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace FYI.Domain.Handlers.Usuarios
     public class CriarContaHandle : Notifiable<Notification>, IHandler<CriarContaCommand>
     {
         private readonly IUsuarioRepositorio _usuarioRepositorio;
+
         public CriarContaHandle(IUsuarioRepositorio usuarioRepositorio)
         {
             _usuarioRepositorio = usuarioRepositorio;
@@ -36,6 +38,9 @@ namespace FYI.Domain.Handlers.Usuarios
             var usuarioExiste = _usuarioRepositorio.BuscarPorEmail(command.Email);
             if (usuarioExiste != null)
                 return new GenericCommandResult(false, "Email já cadastrado", "Informe outro email");
+
+            // Criptografa a senha
+            command.Senha = Senha.Criptografar(command.Senha);
 
             // Salva no banco -> repositorio.Adicionar(usuario)
             Usuario u1 = new Usuario

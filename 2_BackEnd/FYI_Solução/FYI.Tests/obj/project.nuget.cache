@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Ezzkg9J+WiQmJaFAtxDrjh/uoUPgeyQmzxDCTv+jvPVR6c7PocKu5Nt77TcujNfmMgGmAnhu0E3s/2UwZ3+/Kg==",
+  "dgSpecHash": "1jzqFBsZjdgBzg/x0YOYtP1c9EKypJoqXnIOHCTMbIOdQosFqKqxbDMQiJ/XpD8zz9wFJvgVcWBls+JdSSXB7g==",
   "success": true,
   "projectFilePath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\FYI.Tests.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mathe\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

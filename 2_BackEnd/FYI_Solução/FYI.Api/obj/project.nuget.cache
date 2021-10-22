@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "To0zm7i2h3oLTYRS6rR3iglDBKi31Lv16fBq0i/qPc+PDf+lbZHJkJQ8kc9zuQRO2jc36/PtOb54yRhDfipKOg==",
+  "dgSpecHash": "SuG6Bk9RzduSYbTUB1iLI8H3To3JB53PBOcm4HdQoA1gUy66zEpawIsiNc0Y589S+ZSwpXFdWHY2ygTaJ3AzQg==",
   "success": true,
   "projectFilePath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Api\\FYI.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mathe\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.11\\microsoft.aspnetcore.authentication.jwtbearer.5.0.11.nupkg.sha512",

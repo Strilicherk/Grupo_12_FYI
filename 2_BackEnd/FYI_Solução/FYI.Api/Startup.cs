@@ -1,4 +1,8 @@
+using FYI.Domain.Handlers.Autenticacao;
+using FYI.Domain.Handlers.Usuarios;
+using FYI.Domain.Repositorios;
 using FYI.Infra.Data.Contexts;
+using FYI.Infra.Data.Repositories.Usuario;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -66,6 +70,13 @@ namespace FYI.Api
                                             .AllowAnyHeader());
 
                 });
+
+            // Injeções de dependencia
+            #region Usuarios
+            services.AddTransient<IUsuarioRepositorio, UsuarioRepository>();
+            services.AddTransient<CriarContaHandle, CriarContaHandle>();
+            services.AddTransient<LogarHandle, LogarHandle>();
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

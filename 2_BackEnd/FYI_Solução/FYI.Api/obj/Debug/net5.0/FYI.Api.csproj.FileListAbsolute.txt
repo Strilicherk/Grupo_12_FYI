@@ -66,3 +66,4 @@ C:\Users\mathe\OneDrive\Área de Trabalho\Grupo_12_FYI\2_BackEnd\FYI_Solução\F
 C:\Users\mathe\OneDrive\Área de Trabalho\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\obj\Debug\net5.0\ref\FYI.Api.dll
 C:\Users\mathe\OneDrive\Área de Trabalho\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\obj\Debug\net5.0\FYI.Api.pdb
 C:\Users\mathe\OneDrive\Área de Trabalho\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\obj\Debug\net5.0\FYI.Api.genruntimeconfig.cache
+C:\Users\mathe\OneDrive\Área de Trabalho\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\bin\Debug\net5.0\BCrypt.Net-Core.dll

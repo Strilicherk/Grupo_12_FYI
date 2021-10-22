@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "MVgWtEM/ivZT+wVTZi7hAU+3F4epIQyCACWIKGliYVU1y8gWKQucCfMG0GdDlZytI5TaWLkhw3DHB0pfwXpkjA==",
+  "dgSpecHash": "2ur4D3qXXnOfV7tGwBgZZYRBPusmgzfJpPEHBAin8WVhZaIiO7sjMPXQdOJjcRBB6XoCfXZ4OT5sfhVHTHEZWw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mathe\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
