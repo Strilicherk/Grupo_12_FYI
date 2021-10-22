@@ -37,6 +37,7 @@ namespace FYI.Domain.Handlers.Usuarios
             if (usuarioExiste != null)
                 return new GenericCommandResult(false, "Email já cadastrado", "Informe outro email");
 
+            // Salva no banco -> repositorio.Adicionar(usuario)
             Usuario u1 = new Usuario
                 (
                     command.Email,

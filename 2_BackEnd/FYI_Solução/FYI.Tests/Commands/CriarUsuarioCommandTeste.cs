@@ -14,8 +14,8 @@ namespace FYI.Tests.Commands
         public void DeveRetornarSucessoSeDadosForemValidos()
         {
             var command = new CriarContaCommand();
-            command.Email = "paulobrandao@hotmail.com";
-            command.Senha = "12345678";
+            command.Email = "strilicherk@hotmail.com";
+            command.Senha = "strilicherk";
             command.TipoUsuario = FYI.Shared.Enums.EnTipoUsuario.Admin;
             
             command.Validar();

@@ -13,3 +13,6 @@ C:\Users\mathe\OneDrive\Área de Trabalho\Grupo_12_FYI\2_BackEnd\FYI_Solução\F
 C:\Users\mathe\OneDrive\Área de Trabalho\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\FYI.Domain.dll
 C:\Users\mathe\OneDrive\Área de Trabalho\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\ref\FYI.Domain.dll
 C:\Users\mathe\OneDrive\Área de Trabalho\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\FYI.Domain.pdb
+C:\Users\mathe\OneDrive\Área de Trabalho\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\bin\Debug\net5.0\FYI.Domain.runtimeconfig.json
+C:\Users\mathe\OneDrive\Área de Trabalho\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\bin\Debug\net5.0\FYI.Domain.runtimeconfig.dev.json
+C:\Users\mathe\OneDrive\Área de Trabalho\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\FYI.Domain.genruntimeconfig.cache
