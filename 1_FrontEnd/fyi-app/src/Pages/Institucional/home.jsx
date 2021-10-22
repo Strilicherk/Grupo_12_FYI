@@ -1,7 +1,10 @@
 import "../../assets/styles/home.css";
 
+//componetes
 import Header from "../../components/header";
 import Button from "../../components/buttom";
+import Footer from '../../components/footer';
+
 
 //Imagens
 import down from "../../assets/img/down.svg";
@@ -22,6 +25,8 @@ import branca from "../../assets/img/fyi-branca.svg";
 //Icones
 import pin from "../../assets/img/pin.svg";
 import wifi from "../../assets/img/trasnmition.svg";
+import infra from "../../assets/img/estrutura.svg";
+import flex from "../../assets/img/flex.svg";
 
 import { Router } from "react-router";
 import { Component } from "react/cjs/react.production.min";
@@ -146,27 +151,32 @@ class Home extends Component {
                 <p>Conheça nossos cursos</p>
 
                 <div className="informacoes-clica">
-                  <div className="icon-information">
+
+                  
                     <img src={pin} />
-                    <p>Localização Privílegiadas</p>
-                  </div>
-                  <div className="icon-information">
+                    <p>Localização Privílegiadas</p>                 
                     <img src={wifi} />
                     <p>Transmissão de Aula pela Internet</p>
-                  </div>
-                  <div className="icon-information">
-                    <img src={pin} />
-                    <p>Localização Privílegiadas</p>
-                  </div>
-                  <div className="icon-information">
-                    <img src={pin} />
-                    <p>Localização Privílegiadas</p>
-                  </div>
+                    <img src={infra} />
+                    <p>Infraestrutura Completa</p>
+                    <img src={flex} />
+                    <p>Flexibilidade e Serviços Adiciona</p>
+                  
+                  
+
                 </div>
 
-                <div className="botao-cl"></div>
+                <div className="botao-cl">
+                  <Button>Inscreva-se</Button>
+                </div>               
               </div>
+
+
+
             </div>
+
+            <Footer/>
+
           </main>
         </div>
       </div>
