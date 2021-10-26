@@ -46,44 +46,44 @@ class Login extends Component{
 
     render(){
         return(
-            <div >
+            <div>
                 <main className = "bgimg">
                     <section>
                        <div className ="tudo">
-                           <div className= "Logo"/>
+                           <div className= "logo"/>
 
-                        <form onSubmit={this.efetuaLogin} className="form">
-                            <p>Email:</p>
-                            <input type="text" 
-                                   name="email" 
-                                   value={this.state.email} 
-                                   onChange={this.atualizaStateCampo}                                   
-                            className="inserirDados"/>
-                            
-                            <p>Senha:</p>
-                            <input type="password" 
-                                   name="senha" 
-                                   value={this.state.senha} 
-                                   onChange={this.atualizaStateCampo}
-                            className="inserirDados"/>
+                            <form onSubmit={this.efetuaLogin} className="form">
+                                <p>Email:</p>
+                                <input type="text" 
+                                    name="email" 
+                                    value={this.state.email} 
+                                    onChange={this.atualizaStateCampo}                                   
+                                className="inserirDados"/>
+                                
+                                <p>Senha:</p>
+                                <input type="password" 
+                                    name="senha" 
+                                    value={this.state.senha} 
+                                    onChange={this.atualizaStateCampo}
+                                className="inserirDados"/>
 
-                            <p>{this.state.erroMenssagem}</p>
+                                <p>{this.state.erroMenssagem}</p>
 
-                            {
-                                this.state.isLoading === true &&
-                                <button type="submit" disabled className="botaoEntrar">Carregando...</button>
-                            }
-                            {
-                                this.state.isLoading === false &&
-                                <button type="submit" disabled={this.state.email === '' || this.state.senha === '' ? 'none' : ''} className="botaoEntrar">
+                                {
+                                    this.state.isLoading === true &&
+                                    <button type="submit" disabled className="botaoEntrar">Carregando...</button>
+                                }
+                                {
+                                    this.state.isLoading === false &&
+                                    <button type="submit" disabled={this.state.email === '' || this.state.senha === '' ? 'none' : ''} className="botaoEntrar">
+                                        Entrar
+                                    </button>
+                                }
+
+                                {/* <button type="submit">
                                     Entrar
-                                </button>
-                            }
-
-                            {/* <button type="submit">
-                                Entrar
-                            </button> */}
-                        </form>
+                                </button> */}
+                            </form>
                         </div>
                     </section>
                 </main>

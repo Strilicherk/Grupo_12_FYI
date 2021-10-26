@@ -1,32 +1,34 @@
 .bgimg{
-    display: flex;
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
     justify-content: center;
     background-image: url(../img/fundo-login.png);
     background-repeat: no-repeat;
-
-}
-
-.Logo{
-    display: flex;
-    background-image: url(../img/Logo.png);
-    width: 18.8em;
-    height: 5em;
-    margin-top: 6em;
 }
 
 .tudo{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;    
+}
+
+.logo{
+    width: 19em;
+    height: 5em;
+    display: flex;
+    justify-items: center;
+    background-image: url(../img/Logo.png);
+    background-repeat: no-repeat;
+    margin-top: 6em;
 }
 
 .form{
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    margin-top: 5em;
-    margin-bottom: 20.22em;
+    padding-top: 5em;
+    padding-bottom: 7.8em;
     color: #fff;
     font-size: 16px;
 }
