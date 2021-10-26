@@ -46,35 +46,36 @@ class Login extends Component{
 
     render(){
         return(
-            <div>
-                <main>
+            <div >
+                <main className = "bgimg">
                     <section>
-                        <p>Bem-vindo(a)! Faça o login para acessar a página.</p>
-                        <form onSubmit={this.efetuaLogin}>
+                       <div className ="tudo">
+                           <div className= "Logo"/>
 
+                        <form onSubmit={this.efetuaLogin} className="form">
+                            <p>Email:</p>
                             <input type="text" 
                                    name="email" 
                                    value={this.state.email} 
-                                   onChange={this.atualizaStateCampo}
-                                   placeholder="Email"
-                            />
-
+                                   onChange={this.atualizaStateCampo}                                   
+                            className="inserirDados"/>
+                            
+                            <p>Senha:</p>
                             <input type="password" 
                                    name="senha" 
                                    value={this.state.senha} 
                                    onChange={this.atualizaStateCampo}
-                                   placeholder="Senha"
-                            />
+                            className="inserirDados"/>
 
                             <p>{this.state.erroMenssagem}</p>
 
                             {
                                 this.state.isLoading === true &&
-                                <button type="submit" disabled>Carregando...</button>
+                                <button type="submit" disabled className="botaoEntrar">Carregando...</button>
                             }
                             {
                                 this.state.isLoading === false &&
-                                <button type="submit" disabled={this.state.email === '' || this.state.senha === '' ? 'none' : ''}>
+                                <button type="submit" disabled={this.state.email === '' || this.state.senha === '' ? 'none' : ''} className="botaoEntrar">
                                     Entrar
                                 </button>
                             }
@@ -83,6 +84,7 @@ class Login extends Component{
                                 Entrar
                             </button> */}
                         </form>
+                        </div>
                     </section>
                 </main>
             </div>
