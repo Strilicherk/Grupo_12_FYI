@@ -8233,11 +8233,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\tcc\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\FYI.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\FYI.Tests.csproj",
       "projectName": "FYI.Tests",
-      "projectPath": "C:\\Users\\54690823855\\Desktop\\tcc\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\FYI.Tests.csproj",
+      "projectPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\FYI.Tests.csproj",
       "packagesPath": "C:\\Users\\54690823855\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\54690823855\\Desktop\\tcc\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\obj\\",
+      "outputPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\54690823855\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8254,8 +8254,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\54690823855\\Desktop\\tcc\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
-              "projectPath": "C:\\Users\\54690823855\\Desktop\\tcc\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj"
+            "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
+              "projectPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj"
             }
           }
         }

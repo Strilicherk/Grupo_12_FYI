@@ -5860,11 +5860,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\tcc\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
       "projectName": "FYI.Shared",
-      "projectPath": "C:\\Users\\54690823855\\Desktop\\tcc\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+      "projectPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
       "packagesPath": "C:\\Users\\54690823855\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\54690823855\\Desktop\\tcc\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
+      "outputPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\54690823855\\AppData\\Roaming\\NuGet\\NuGet.Config",

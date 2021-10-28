@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Cfuy7XEzVA92sv07wzYCt9HrPqQuMDrSjzYKC0G2dK66AQFFaYxnuAm404KqB6z9rwkVuy/YAamHg/4YhDcFMQ==",
+  "dgSpecHash": "0NbyQTR8qNrcOqviKvpGiy2/LggfKRGzdcoa6zrtSVssIcG1Q9/YElatNsd/UUoUuEfCz0E/3D4j7/qIusaNpA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\54690823855\\Desktop\\tcc\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\FYI.Tests.csproj",
+  "projectFilePath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\FYI.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\54690823855\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\54690823855\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
