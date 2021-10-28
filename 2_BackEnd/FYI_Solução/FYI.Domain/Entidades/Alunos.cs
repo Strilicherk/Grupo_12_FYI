@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Entidades
 {
-    public class Aluno : Base
+    public class Alunos : Base
     {
-        public Aluno(string nomeAluno, string sobrenome, string cpf, DateTime dataNascimento)
+        public Alunos(string nomeAluno, string sobrenome, string cpf, DateTime dataNascimento)
         {
             AddNotifications(
             new Contract<Notification>()
@@ -35,5 +35,9 @@ namespace FYI.Domain.Entidades
         public string Sobrenome { get; private set; }
         public string CPF { get; private set; }
         public DateTime DataNascimento { get; private set; }
+        public Guid IdUsuario { get; private set; }
+        public Usuarios Usuario { get; private set; }
+        public Guid IdTurma { get; private set; }
+        public Cursos Turma { get; private set; }
     }
 }

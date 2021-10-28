@@ -7,37 +7,37 @@ namespace FYI.Tests.Repositorios
 {
     public class FakeUsuarioRepositorio : IUsuarioRepositorio
     {
-        public void Adicionar(Usuario usuario)
+        public void Adicionar(Usuarios usuario)
         {
             
         }
 
-        public void Alterar(Usuario usuario)
+        public void Alterar(Usuarios usuario)
         {
             
         }
 
-        public void AlterarSenha(Usuario usuario)
+        public void AlterarSenha(Usuarios usuario)
         {
             
         }
 
-        public Usuario BuscarPorEmail(string email)
+        public Usuarios BuscarPorEmail(string email)
         {
             return null;
         }
 
-        public Usuario BuscarPorId(Guid id)
+        public Usuarios BuscarPorId(Guid id)
         {
-            return new Usuario("teste@teste.com", "teste123", FYI.Shared.Enums.EnTipoUsuario.Admin);
+            return new Usuarios("teste@teste.com", "teste123", FYI.Shared.Enums.EnTipoUsuario.Admin);
         }
 
-        public ICollection<Usuario> Listar()
+        public ICollection<Usuarios> Listar()
         {
-            return new List<Usuario>()
+            return new List<Usuarios>()
             {
-                new Usuario("teste@teste.com", "teste123", FYI.Shared.Enums.EnTipoUsuario.Admin),
-                new Usuario("strilicherk@hotmail.com", "strilicherk", FYI.Shared.Enums.EnTipoUsuario.Admin)
+                new Usuarios("teste@teste.com", "teste123", FYI.Shared.Enums.EnTipoUsuario.Admin),
+                new Usuarios("strilicherk@hotmail.com", "strilicherk", FYI.Shared.Enums.EnTipoUsuario.Admin)
             };
         }
     }

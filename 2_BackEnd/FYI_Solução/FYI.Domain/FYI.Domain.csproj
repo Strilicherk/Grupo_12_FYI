@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Commands\Aluno\" />
+    <Folder Include="Commands\Turma\" />
     <Folder Include="Queries\" />
   </ItemGroup>
 

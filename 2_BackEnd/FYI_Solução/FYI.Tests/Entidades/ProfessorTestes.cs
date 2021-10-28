@@ -13,7 +13,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeProfessorForValido()
         {
-            Professor professor = new Professor(
+            Professors professor = new Professor(
                 "Paulo",
                 "Brandão",
                 "paulobrandao@hotmail.com"
@@ -25,7 +25,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeProfessorForInvalidoSemNome()
         {
-            Professor professor = new Professor(
+            Professors professor = new Professor(
                 "",
                 "Brandão",
                 "paulobrandao@hotmail.com"
@@ -37,7 +37,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeProfessorForInvalidoSemSobrenome()
         {
-            Professor professor = new Professor(
+            Professors professor = new Professor(
                 "Paulo",
                 "",
                 "paulobrandao@hotmail.com"
@@ -49,7 +49,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeProfessorForInvalidoSemEmail()
         {
-            Professor professor = new Professor(
+            Professors professor = new Professor(
                 "Paulo",
                 "Brandão",
                 ""

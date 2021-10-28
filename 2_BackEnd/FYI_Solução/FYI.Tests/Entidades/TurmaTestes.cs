@@ -13,7 +13,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeTurmaForValido()
         {
-            Turma turma = new Turma(
+            Turmas turma = new Turmas(
                 "Turma de DEV",
                 "Iniciantes sem experiência que queiram ingressar no mercado de trabalho de programação",
                 "Curso básico de programação com ênfase em C#",
@@ -28,7 +28,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeTurmaForInvalidaSemNome()
         {
-            Turma turma = new Turma(
+            Turmas turma = new Turmas(
                 "",
                 "Iniciantes sem experiência que queiram ingressar no mercado de trabalho de programação",
                 "Curso básico de programação com ênfase em C#",
@@ -43,7 +43,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeTurmaForInvalidaSemPublicoAlvo()
         {
-            Turma turma = new Turma(
+            Turmas turma = new Turmas(
                 "Turma de DEV",
                 "",
                 "Curso básico de programação com ênfase em C#",
@@ -58,7 +58,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeTurmaForInvalidaSemDescricao()
         {
-            Turma turma = new Turma(
+            Turmas turma = new Turmas(
                 "Turma de DEV",
                 "Iniciantes sem experiência que queiram ingressar no mercado de trabalho de programação",
                 "",
@@ -73,7 +73,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeTurmaForInvalidaSemPreRequisito()
         {
-            Turma turma = new Turma(
+            Turmas turma = new Turmas(
                 "Turma de DEV",
                 "Iniciantes sem experiência que queiram ingressar no mercado de trabalho de programação",
                 "Curso básico de programação com ênfase em C#",

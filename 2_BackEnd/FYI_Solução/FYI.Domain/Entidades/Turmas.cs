@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Entidades
 {
-    public class Turma : Base
+    public class Turmas : Base
     {
-        public Turma(string nomeTurma, string publicoAlvo, string descricao, string preRequisito, int quantidadeAluno)
+        public Turmas(string nomeTurma, string publicoAlvo, string descricao, string preRequisito, int quantidadeAluno)
         {
             AddNotifications(
             new Contract<Notification>()
@@ -44,7 +44,9 @@ namespace FYI.Domain.Entidades
         public string Descricao { get; private set; }
         public string PreRequisito { get; private set; }
         public int QuantidadeAluno { get; private set; }
-        public Guid Curso { get; private set; }
-        public Curso Curso 
+        public Guid IdCurso { get; private set; }
+        public Cursos Curso { get; private set; }
+        public Guid IdProfessor { get; private set; }
+        public Professors Professor { get; private set; }
     }
 }

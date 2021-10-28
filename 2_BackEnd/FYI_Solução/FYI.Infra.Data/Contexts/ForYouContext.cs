@@ -17,7 +17,7 @@ namespace FYI.Infra.Data.Contexts
         }
 
         // Criando as tabelas
-        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Usuarios> Usuarios { get; set; }
         
         // Modelando as tabelas
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -27,22 +27,22 @@ namespace FYI.Infra.Data.Contexts
 
             #region mapeamento tabela de Usuarios
             // Determinar chaves
-            modelBuilder.Entity<Usuario>().Property(x => x.Id);
+            modelBuilder.Entity<Usuarios>().Property(x => x.Id);
 
             // Email
-            modelBuilder.Entity<Usuario>().Property(x => x.Email).HasMaxLength(60);
-            modelBuilder.Entity<Usuario>().Property(x => x.Email).HasColumnType("varchar(60)");
-            modelBuilder.Entity<Usuario>().Property(x => x.Email).IsRequired();
-            modelBuilder.Entity<Usuario>().HasIndex(x => x.Email).IsUnique();
+            modelBuilder.Entity<Usuarios>().Property(x => x.Email).HasMaxLength(60);
+            modelBuilder.Entity<Usuarios>().Property(x => x.Email).HasColumnType("varchar(60)");
+            modelBuilder.Entity<Usuarios>().Property(x => x.Email).IsRequired();
+            modelBuilder.Entity<Usuarios>().HasIndex(x => x.Email).IsUnique();
 
 
             // Senha
-            modelBuilder.Entity<Usuario>().Property(x => x.Email).HasMaxLength(200);
-            modelBuilder.Entity<Usuario>().Property(x => x.Email).HasColumnType("varchar(200)");
-            modelBuilder.Entity<Usuario>().Property(x => x.Email).IsRequired();
+            modelBuilder.Entity<Usuarios>().Property(x => x.Email).HasMaxLength(200);
+            modelBuilder.Entity<Usuarios>().Property(x => x.Email).HasColumnType("varchar(200)");
+            modelBuilder.Entity<Usuarios>().Property(x => x.Email).IsRequired();
 
             // Tipo Usuário
-            modelBuilder.Entity<Usuario>().Property(x => x.TipoUsuario).IsRequired();
+            modelBuilder.Entity<Usuarios>().Property(x => x.TipoUsuario).IsRequired();
 
             #endregion
             base.OnModelCreating(modelBuilder);

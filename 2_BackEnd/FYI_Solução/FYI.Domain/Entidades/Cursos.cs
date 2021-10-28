@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Entidades
 {
-    public class Curso : Base
+    public class Cursos : Base
     {
-        public Curso(string nomeCurso)
+        public Cursos(string nomeCurso)
         {
             AddNotifications(
             new Contract<Notification>()

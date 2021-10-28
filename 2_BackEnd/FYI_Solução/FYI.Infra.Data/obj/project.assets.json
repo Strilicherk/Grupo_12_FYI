@@ -5898,19 +5898,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gigio\\.nuget\\packages\\": {}
+    "C:\\Users\\54690823855\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gigio\\Desktop\\tcc chris 2\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj",
+      "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\tcc\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj",
       "projectName": "FYI.Infra.Data",
-      "projectPath": "C:\\Users\\Gigio\\Desktop\\tcc chris 2\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj",
-      "packagesPath": "C:\\Users\\Gigio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gigio\\Desktop\\tcc chris 2\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\obj\\",
+      "projectPath": "C:\\Users\\54690823855\\Desktop\\tcc\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj",
+      "packagesPath": "C:\\Users\\54690823855\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\54690823855\\Desktop\\tcc\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Gigio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\54690823855\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5924,8 +5924,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Gigio\\Desktop\\tcc chris 2\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
-              "projectPath": "C:\\Users\\Gigio\\Desktop\\tcc chris 2\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj"
+            "C:\\Users\\54690823855\\Desktop\\tcc\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
+              "projectPath": "C:\\Users\\54690823855\\Desktop\\tcc\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj"
             }
           }
         }
@@ -5980,7 +5980,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.208\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -13,7 +13,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeAlunoForValido()
         {
-            Aluno aluno = new Aluno(
+            Alunos aluno = new Alunos(
                 "Matheus",
                 "Strilicherk",
                 "12345678910",
@@ -26,7 +26,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeAlunoForInvalidoSemNome()
         {
-            Aluno aluno = new Aluno(
+            Alunos aluno = new Alunos(
                 "",
                 "Strilicherk",
                 "12345678910",
@@ -39,7 +39,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeAlunoForInvalidoSemSobrenome()
         {
-            Aluno aluno = new Aluno(
+            Alunos aluno = new Alunos(
                 "Matheus",
                 "",
                 "12345678910",
@@ -52,7 +52,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeAlunoForInvalidoSemCPF()
         {
-            Aluno aluno = new Aluno(
+            Alunos aluno = new Alunos(
                 "Matheus",
                 "Strilicherk",
                 "123456789",
