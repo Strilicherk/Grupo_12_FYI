@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {}
+    "C:\\Users\\Gigio\\Desktop\\tcc chris 2\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
+    "C:\\Users\\Gigio\\Desktop\\tcc chris 2\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Gigio\\Desktop\\tcc chris 2\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
         "projectName": "FYI.Shared",
-        "projectPath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
-        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
+        "projectPath": "C:\\Users\\Gigio\\Desktop\\tcc chris 2\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+        "packagesPath": "C:\\Users\\Gigio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gigio\\Desktop\\tcc chris 2\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gigio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

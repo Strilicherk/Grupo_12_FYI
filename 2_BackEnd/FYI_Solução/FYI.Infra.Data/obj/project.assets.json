@@ -5898,19 +5898,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mathe\\.nuget\\packages\\": {}
+    "C:\\Users\\Gigio\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Gigio\\Desktop\\tcc chris 2\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj",
       "projectName": "FYI.Infra.Data",
-      "projectPath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj",
-      "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\obj\\",
+      "projectPath": "C:\\Users\\Gigio\\Desktop\\tcc chris 2\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj",
+      "packagesPath": "C:\\Users\\Gigio\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gigio\\Desktop\\tcc chris 2\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gigio\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5924,8 +5924,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
-              "projectPath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj"
+            "C:\\Users\\Gigio\\Desktop\\tcc chris 2\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
+              "projectPath": "C:\\Users\\Gigio\\Desktop\\tcc chris 2\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj"
             }
           }
         }
