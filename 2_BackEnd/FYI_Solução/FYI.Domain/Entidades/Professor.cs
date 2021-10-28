@@ -27,7 +27,6 @@ namespace FYI.Domain.Entidades
                 NomeProfessor = nomeProfessor;
                 Sobrenome = sobrenome;
                 //Telefone = telefone;
-                Email = email;
             }
 
         }
@@ -37,6 +36,5 @@ namespace FYI.Domain.Entidades
         public string NomeProfessor { get; private set; }
         public string Sobrenome { get; private set; }
         //public int Telefone { get; set; }
-        public string Email { get; private set; }
     }
 }

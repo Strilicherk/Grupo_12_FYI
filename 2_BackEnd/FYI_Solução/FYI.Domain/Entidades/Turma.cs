@@ -44,5 +44,7 @@ namespace FYI.Domain.Entidades
         public string Descricao { get; private set; }
         public string PreRequisito { get; private set; }
         public int QuantidadeAluno { get; private set; }
+        public Guid Curso { get; private set; }
+        public Curso Curso 
     }
 }
