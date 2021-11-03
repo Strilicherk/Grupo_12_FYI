@@ -303,4 +303,3 @@ C:\Users\54690823855\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Tests\obj\
 C:\Users\54690823855\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Tests\obj\Debug\net5.0\ref\FYI.Tests.dll
 C:\Users\54690823855\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Tests\obj\Debug\net5.0\FYI.Tests.pdb
 C:\Users\54690823855\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Tests\obj\Debug\net5.0\FYI.Tests.genruntimeconfig.cache
-C:\Users\54690823855\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Tests\obj\Debug\net5.0\FYI.Tests.csproj.CopyComplete

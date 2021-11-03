@@ -23,7 +23,7 @@ namespace FYI.Infra.Data.Contexts
         public DbSet<Turmas> Turmas { get; set; }
         public DbSet<Faq> Faq { get; set; }
         public DbSet<Cursos> Cursos { get; set; }
-        
+
         // Modelando as tabelas
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -50,21 +50,131 @@ namespace FYI.Infra.Data.Contexts
 
             #endregion
 
+            #region mapeamento tabela de Cursos
+            // ID PK
+            modelBuilder.Entity<Cursos>().Property(x => x.Id);
+
+            // Pergunta
+            modelBuilder.Entity<Cursos>().Property(x => x.NomeCurso).HasMaxLength(60);
+            modelBuilder.Entity<Cursos>().Property(x => x.NomeCurso).HasColumnType("varchar(60)");
+            modelBuilder.Entity<Cursos>().Property(x => x.NomeCurso).IsRequired();
+
+            #endregion
+
+            #region mapeamento tabela de Faq
+                        // ID PK
+                        modelBuilder.Entity<Faq>().Property(x => x.Id);
+
+                        // Pergunta
+                        modelBuilder.Entity<Faq>().Property(x => x.Pergunta).HasMaxLength(60);
+                        modelBuilder.Entity<Faq>().Property(x => x.Pergunta).HasColumnType("varchar(60)");
+                        modelBuilder.Entity<Faq>().Property(x => x.Pergunta).IsRequired();
+
+                        // Resposta
+                        modelBuilder.Entity<Faq>().Property(x => x.Resposta).HasMaxLength(60);
+                        modelBuilder.Entity<Faq>().Property(x => x.Resposta).HasColumnType("varchar(60)");
+                        modelBuilder.Entity<Faq>().Property(x => x.Resposta).IsRequired();
+
+                        #endregion
+
+            #region mapeamento tabela de Professores
+                        // ID PK
+                        modelBuilder.Entity<Professores>().Property(x => x.Id);
+
+                        //// Id FK Usuario
+                        //modelBuilder.Entity<Professores>()
+                        //            .HasOne<Usuarios>(x => x.Usuario)
+                        //            .WithMany(x => x.Professor)
+                        //            .HasForeignKey(x => x.IdUsuario);
+
+                        // Nome
+                        modelBuilder.Entity<Professores>().Property(x => x.NomeProfessor).HasMaxLength(60);
+                        modelBuilder.Entity<Professores>().Property(x => x.NomeProfessor).HasColumnType("varchar(60)");
+                        modelBuilder.Entity<Professores>().Property(x => x.NomeProfessor).IsRequired();
+
+
+                        // Sobrenome
+                        modelBuilder.Entity<Professores>().Property(x => x.Sobrenome).HasMaxLength(60);
+                        modelBuilder.Entity<Professores>().Property(x => x.Sobrenome).HasColumnType("varchar(60)");
+                        modelBuilder.Entity<Professores>().Property(x => x.Sobrenome).IsRequired();
+
+                        // Telefone
+                        modelBuilder.Entity<Professores>().Property(x => x.Telefone).HasColumnType("INT");
+                        modelBuilder.Entity<Professores>().Property(x => x.Telefone).IsRequired();
+
+                        #endregion
+
+            #region mapeamento tabela de Turmas
+                        // ID PK
+                        modelBuilder.Entity<Turmas>().Property(x => x.Id);
+
+                        // Id FK Professor
+                        //modelBuilder.Entity<Turmas>()
+                        //            .HasOne<Professores>(x => x.Professor)
+                        //            .WithMany(x => x.Turmas)
+                        //            .HasForeignKey(x => x.IdProfessor);
+
+                        //// Id FK Curso
+                        //modelBuilder.Entity<Turmas>()
+                        //            .HasOne<Cursos>(x => x.Curso)
+                        //            .WithMany(x => x.Turmas)
+                        //            .HasForeignKey(x => x.IdCurso);
+
+                        // Nome
+                        modelBuilder.Entity<Turmas>().Property(x => x.NomeTurma).HasMaxLength(60);
+                        modelBuilder.Entity<Turmas>().Property(x => x.NomeTurma).HasColumnType("varchar(60)");
+                        modelBuilder.Entity<Turmas>().Property(x => x.NomeTurma).IsRequired();
+
+                        // DataInicio
+                        modelBuilder.Entity<Turmas>().Property(x => x.DataInicio).HasColumnType("DATE");
+                        modelBuilder.Entity<Turmas>().Property(x => x.DataInicio).IsRequired();
+
+                        // DataFim
+                        modelBuilder.Entity<Turmas>().Property(x => x.DataFim).HasColumnType("DATE");
+                        modelBuilder.Entity<Turmas>().Property(x => x.DataFim).IsRequired();
+
+                        // Publico Alvo
+                        modelBuilder.Entity<Turmas>().Property(x => x.PublicoAlvo).HasMaxLength(200);
+                        modelBuilder.Entity<Turmas>().Property(x => x.PublicoAlvo).HasColumnType("varchar(200)");
+                        modelBuilder.Entity<Turmas>().Property(x => x.PublicoAlvo).IsRequired();
+
+                        // Descrição
+                        modelBuilder.Entity<Turmas>().Property(x => x.Descricao).HasMaxLength(200);
+                        modelBuilder.Entity<Turmas>().Property(x => x.Descricao).HasColumnType("varchar(200)");
+                        modelBuilder.Entity<Turmas>().Property(x => x.Descricao).IsRequired();
+
+                        // PréPreRequisito
+                        modelBuilder.Entity<Turmas>().Property(x => x.PreRequisito).HasMaxLength(200);
+                       modelBuilder.Entity<Turmas>().Property(x => x.PreRequisito).HasColumnType("varchar(200)");
+                       modelBuilder.Entity<Turmas>().Property(x => x.PreRequisito).IsRequired();
+
+                        // QtdAlunos
+                        modelBuilder.Entity<Turmas>().Property(x => x.QuantidadeAluno).HasMaxLength(3);
+                        modelBuilder.Entity<Turmas>().Property(x => x.QuantidadeAluno).HasColumnType("INT");
+                        modelBuilder.Entity<Turmas>().Property(x => x.QuantidadeAluno);
+
+                        // QtdMax
+                        modelBuilder.Entity<Turmas>().Property(x => x.QtdMax).HasMaxLength(3);
+                        modelBuilder.Entity<Turmas>().Property(x => x.QtdMax).HasColumnType("INT");
+                        modelBuilder.Entity<Turmas>().Property(x => x.QtdMax).IsRequired();
+
+                        #endregion
+
             #region mapeamento tabela de Alunos
             // ID PK
             modelBuilder.Entity<Alunos>().Property(x => x.Id);
 
             // Id FK Turma
-            modelBuilder.Entity<Alunos>()
-                        .HasOne<Turmas>(x => x.Turma)
-                        .WithMany(x => x.Alunos)
-                        .HasForeignKey(x => x.IdTurma);
+            //modelBuilder.Entity<Alunos>()
+            //            .HasOne<Turmas>(x => x.Turma)
+            //            .WithMany(x => x.Alunos)
+            //            .HasForeignKey(x => x.IdTurma);
 
             // Id FK Usuario
-            modelBuilder.Entity<Alunos>()
-                        .HasOne<Usuarios>(x => x.Usuario)
-                        .WithMany(x => x.Alunos)
-                        .HasForeignKey(x => x.IdUsuario);
+            //modelBuilder.Entity<Alunos>()
+            //            .HasOne<Usuarios>(x => x.Usuario)
+            //            .WithMany(x => x.Alunos)
+            //            .HasForeignKey(x => x.IdUsuario);
 
             // Nome
             modelBuilder.Entity<Alunos>().Property(x => x.Nome).HasMaxLength(60);
@@ -92,115 +202,13 @@ namespace FYI.Infra.Data.Contexts
 
             #endregion
 
-            #region mapeamento tabela de Professores
-            // ID PK
-            modelBuilder.Entity<Professores>().Property(x => x.Id);
+            
 
-            // Id FK Usuario
-            modelBuilder.Entity<Professores>()
-                        .HasOne<Usuarios>(x => x.Usuario)
-                        .WithMany(x => x.Professor)
-                        .HasForeignKey(x => x.IdUsuario);
+            
 
-            // Nome
-            modelBuilder.Entity<Professores>().Property(x => x.NomeProfessor).HasMaxLength(60);
-            modelBuilder.Entity<Professores>().Property(x => x.NomeProfessor).HasColumnType("varchar(60)");
-            modelBuilder.Entity<Professores>().Property(x => x.NomeProfessor).IsRequired();
+            
 
 
-            // Sobrenome
-            modelBuilder.Entity<Professores>().Property(x => x.Sobrenome).HasMaxLength(60);
-            modelBuilder.Entity<Professores>().Property(x => x.Sobrenome).HasColumnType("varchar(60)");
-            modelBuilder.Entity<Professores>().Property(x => x.Sobrenome).IsRequired();
-
-            // Telefone
-            modelBuilder.Entity<Professores>().Property(x => x.Telefone).HasColumnType("INT");
-            modelBuilder.Entity<Professores>().Property(x => x.Telefone).IsRequired();
-
-            #endregion
-
-            #region mapeamento tabela de Turmas
-            // ID PK
-            modelBuilder.Entity<Turmas>().Property(x => x.Id);
-
-            // Id FK Professor
-            modelBuilder.Entity<Turmas>()
-                        .HasOne<Professores>(x => x.Professor)
-                        .WithMany(x => x.Turmas)
-                        .HasForeignKey(x => x.IdProfessor);
-
-            // Id FK Curso
-            modelBuilder.Entity<Turmas>()
-                        .HasOne<Cursos>(x => x.Curso)
-                        .WithMany(x => x.Turmas)
-                        .HasForeignKey(x => x.IdCurso);
-
-            // Nome
-            modelBuilder.Entity<Turmas>().Property(x => x.NomeTurma).HasMaxLength(60);
-            modelBuilder.Entity<Turmas>().Property(x => x.NomeTurma).HasColumnType("varchar(60)");
-            modelBuilder.Entity<Turmas>().Property(x => x.NomeTurma).IsRequired();
-
-            // DataInicio
-            modelBuilder.Entity<Turmas>().Property(x => x.DataInicio).HasColumnType("DATE");
-            modelBuilder.Entity<Turmas>().Property(x => x.DataInicio).IsRequired();
-
-            // DataFim
-            modelBuilder.Entity<Turmas>().Property(x => x.DataFim).HasColumnType("DATE");
-            modelBuilder.Entity<Turmas>().Property(x => x.DataFim).IsRequired();
-
-            // Publico Alvo
-            modelBuilder.Entity<Turmas>().Property(x => x.PublicoAlvo).HasMaxLength(200);
-            modelBuilder.Entity<Turmas>().Property(x => x.PublicoAlvo).HasColumnType("varchar(200)");
-            modelBuilder.Entity<Turmas>().Property(x => x.PublicoAlvo).IsRequired();
-
-            // Descrição
-            modelBuilder.Entity<Turmas>().Property(x => x.Descricao).HasMaxLength(200);
-            modelBuilder.Entity<Turmas>().Property(x => x.Descricao).HasColumnType("varchar(200)");
-            modelBuilder.Entity<Turmas>().Property(x => x.Descricao).IsRequired();
-
-            // PréPreRequisito
-            modelBuilder.Entity<Turmas>().Property(x => x.PreRequisito).HasMaxLength(180);
-            modelBuilder.Entity<Turmas>().Property(x => x.PreRequisito).HasColumnType("varchar(180)");
-            modelBuilder.Entity<Turmas>().Property(x => x.PreRequisito).IsRequired();
-
-            // QtdAlunos
-            modelBuilder.Entity<Turmas>().Property(x => x.PreRequisito).HasMaxLength(3);
-            modelBuilder.Entity<Turmas>().Property(x => x.PreRequisito).HasColumnType("INT");
-            modelBuilder.Entity<Turmas>().Property(x => x.PreRequisito);
-
-            // QtdMax
-            modelBuilder.Entity<Turmas>().Property(x => x.PreRequisito).HasMaxLength(3);
-            modelBuilder.Entity<Turmas>().Property(x => x.PreRequisito).HasColumnType("INT");
-            modelBuilder.Entity<Turmas>().Property(x => x.PreRequisito).IsRequired();
-
-            #endregion
-
-            #region mapeamento tabela de Faq
-            // ID PK
-            modelBuilder.Entity<Faq>().Property(x => x.Id);
-
-            // Pergunta
-            modelBuilder.Entity<Faq>().Property(x => x.Pergunta).HasMaxLength(60);
-            modelBuilder.Entity<Faq>().Property(x => x.Pergunta).HasColumnType("varchar(60)");
-            modelBuilder.Entity<Faq>().Property(x => x.Pergunta).IsRequired();
-
-            // Resposta
-            modelBuilder.Entity<Faq>().Property(x => x.Resposta).HasMaxLength(60);
-            modelBuilder.Entity<Faq>().Property(x => x.Resposta).HasColumnType("varchar(60)");
-            modelBuilder.Entity<Faq>().Property(x => x.Resposta).IsRequired();
-
-            #endregion
-
-            #region mapeamento tabela de Cursos
-            // ID PK
-            modelBuilder.Entity<Cursos>().Property(x => x.Id);
-
-            // Pergunta
-            modelBuilder.Entity<Cursos>().Property(x => x.NomeCurso).HasMaxLength(60);
-            modelBuilder.Entity<Cursos>().Property(x => x.NomeCurso).HasColumnType("varchar(60)");
-            modelBuilder.Entity<Cursos>().Property(x => x.NomeCurso).IsRequired();
-
-            #endregion
             base.OnModelCreating(modelBuilder);
         }
     }

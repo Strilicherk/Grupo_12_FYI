@@ -4,14 +4,16 @@ using FYI.Infra.Data.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FYI.Infra.Data.Migrations
 {
     [DbContext(typeof(ForYouContext))]
-    partial class ForYouContextModelSnapshot : ModelSnapshot
+    [Migration("20211103200522_banco inicial - Criando tabelas")]
+    partial class bancoinicialCriandotabelas
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

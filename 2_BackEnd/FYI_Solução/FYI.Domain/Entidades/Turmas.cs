@@ -31,6 +31,7 @@ namespace FYI.Domain.Entidades
                 Descricao = descricao;
                 PreRequisito = preRequisito;
                 QuantidadeAluno = quantidadeAluno;
+                QtdMax = qtdMax;
             }
         }
 
