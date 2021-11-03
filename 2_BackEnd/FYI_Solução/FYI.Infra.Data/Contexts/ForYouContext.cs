@@ -19,7 +19,7 @@ namespace FYI.Infra.Data.Contexts
         // Criando as tabelas
         public DbSet<Usuarios> Usuarios { get; set; }
         public DbSet<Alunos> Alunos { get; set; }
-        public DbSet<Professor> Professores { get; set; }
+        public DbSet<Professores> Professores { get; set; }
         public DbSet<Turmas> Turmas { get; set; }
         public DbSet<Faq> Faq { get; set; }
         public DbSet<Cursos> Cursos { get; set; }
@@ -87,35 +87,35 @@ namespace FYI.Infra.Data.Contexts
             modelBuilder.Entity<Alunos>().Property(x => x.DataNascimento).IsRequired();
 
             // Telefone
-            modelBuilder.Entity<Alunos>().Property(x => x.Telefone).HasColumnType("INT");
+            modelBuilder.Entity<Alunos>().Property(x => x.Telefone).HasColumnType("VARCHAR(15)");
             modelBuilder.Entity<Alunos>().Property(x => x.Telefone).IsRequired();
 
             #endregion
 
             #region mapeamento tabela de Professores
             // ID PK
-            modelBuilder.Entity<Professor>().Property(x => x.Id);
+            modelBuilder.Entity<Professores>().Property(x => x.Id);
 
             // Id FK Usuario
-            modelBuilder.Entity<Professor>()
+            modelBuilder.Entity<Professores>()
                         .HasOne<Usuarios>(x => x.Usuario)
                         .WithMany(x => x.Professor)
                         .HasForeignKey(x => x.IdUsuario);
 
             // Nome
-            modelBuilder.Entity<Professor>().Property(x => x.NomeProfessor).HasMaxLength(60);
-            modelBuilder.Entity<Professor>().Property(x => x.NomeProfessor).HasColumnType("varchar(60)");
-            modelBuilder.Entity<Professor>().Property(x => x.NomeProfessor).IsRequired();
+            modelBuilder.Entity<Professores>().Property(x => x.NomeProfessor).HasMaxLength(60);
+            modelBuilder.Entity<Professores>().Property(x => x.NomeProfessor).HasColumnType("varchar(60)");
+            modelBuilder.Entity<Professores>().Property(x => x.NomeProfessor).IsRequired();
 
 
             // Sobrenome
-            modelBuilder.Entity<Professor>().Property(x => x.Sobrenome).HasMaxLength(60);
-            modelBuilder.Entity<Professor>().Property(x => x.Sobrenome).HasColumnType("varchar(60)");
-            modelBuilder.Entity<Professor>().Property(x => x.Sobrenome).IsRequired();
+            modelBuilder.Entity<Professores>().Property(x => x.Sobrenome).HasMaxLength(60);
+            modelBuilder.Entity<Professores>().Property(x => x.Sobrenome).HasColumnType("varchar(60)");
+            modelBuilder.Entity<Professores>().Property(x => x.Sobrenome).IsRequired();
 
             // Telefone
-            modelBuilder.Entity<Professor>().Property(x => x.Telefone).HasColumnType("INT");
-            modelBuilder.Entity<Professor>().Property(x => x.Telefone).IsRequired();
+            modelBuilder.Entity<Professores>().Property(x => x.Telefone).HasColumnType("INT");
+            modelBuilder.Entity<Professores>().Property(x => x.Telefone).IsRequired();
 
             #endregion
 
@@ -125,7 +125,7 @@ namespace FYI.Infra.Data.Contexts
 
             // Id FK Professor
             modelBuilder.Entity<Turmas>()
-                        .HasOne<Professor>(x => x.Professor)
+                        .HasOne<Professores>(x => x.Professor)
                         .WithMany(x => x.Turmas)
                         .HasForeignKey(x => x.IdProfessor);
 
@@ -133,7 +133,7 @@ namespace FYI.Infra.Data.Contexts
             modelBuilder.Entity<Turmas>()
                         .HasOne<Cursos>(x => x.Curso)
                         .WithMany(x => x.Turmas)
-                        .HasForeignKey(x => x.IdProfessor);
+                        .HasForeignKey(x => x.IdCurso);
 
             // Nome
             modelBuilder.Entity<Turmas>().Property(x => x.NomeTurma).HasMaxLength(60);
@@ -159,8 +159,8 @@ namespace FYI.Infra.Data.Contexts
             modelBuilder.Entity<Turmas>().Property(x => x.Descricao).IsRequired();
 
             // PréPreRequisito
-            modelBuilder.Entity<Turmas>().Property(x => x.PreRequisito).HasMaxLength(200);
-            modelBuilder.Entity<Turmas>().Property(x => x.PreRequisito).HasColumnType("varchar(200)");
+            modelBuilder.Entity<Turmas>().Property(x => x.PreRequisito).HasMaxLength(180);
+            modelBuilder.Entity<Turmas>().Property(x => x.PreRequisito).HasColumnType("varchar(180)");
             modelBuilder.Entity<Turmas>().Property(x => x.PreRequisito).IsRequired();
 
             // QtdAlunos

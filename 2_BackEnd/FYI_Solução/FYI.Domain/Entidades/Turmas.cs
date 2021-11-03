@@ -11,7 +11,7 @@ namespace FYI.Domain.Entidades
 {
     public class Turmas : Base
     {
-        public Turmas(string nomeTurma, string publicoAlvo, string descricao, string preRequisito, int quantidadeAluno)
+        public Turmas(string nomeTurma, string publicoAlvo, string descricao, string preRequisito, int quantidadeAluno, int qtdMax)
         {
             AddNotifications(
             new Contract<Notification>()
@@ -21,7 +21,7 @@ namespace FYI.Domain.Entidades
                 .IsNotNullOrEmpty(descricao, "Descrição", "Descrição não pode ser vazio.")
                 .IsNotNullOrEmpty(preRequisito, "Pré-requisito", "Pré-requisito não pode ser vazio.")
                 .IsNotNull(quantidadeAluno, "Quantidade de alunos", "Quantidade de alunos não pode ser null")
-
+                .IsNotNull(qtdMax, "Qantidade Maxima", "Quantidade maxima não pode ser null")
             );
 
             if (IsValid)
@@ -52,6 +52,6 @@ namespace FYI.Domain.Entidades
         public Cursos Curso { get; private set; }
 
         public Guid IdProfessor { get; private set; }
-        public Professor Professor { get; private set; }
+        public Professores Professor { get; private set; }
     }
 }

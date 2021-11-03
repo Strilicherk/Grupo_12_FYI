@@ -13,7 +13,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeProfessorForValido()
         {
-            Professor professor = new Professor(
+            Professores professor = new Professores(
                 "Paulo",
                 "Brandão"
 
@@ -25,7 +25,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeProfessorForInvalidoSemNome()
         {
-            Professor professor = new Professor(
+            Professores professor = new Professores(
                 "",
                 "Brandão"
 
@@ -37,7 +37,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeProfessorForInvalidoSemSobrenome()
         {
-            Professor professor = new Professor(
+            Professores professor = new Professores(
                 "Paulo",
                 ""
             );

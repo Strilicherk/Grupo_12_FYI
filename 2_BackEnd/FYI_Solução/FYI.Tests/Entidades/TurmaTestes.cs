@@ -18,7 +18,8 @@ namespace FYI.Tests.Entidades
                 "Iniciantes sem experiência que queiram ingressar no mercado de trabalho de programação",
                 "Curso básico de programação com ênfase em C#",
                 "Nenhum",
-                0
+                0,
+                10
             );
 
             Assert.True(turma.IsValid, "Turma válida");
@@ -33,7 +34,8 @@ namespace FYI.Tests.Entidades
                 "Iniciantes sem experiência que queiram ingressar no mercado de trabalho de programação",
                 "Curso básico de programação com ênfase em C#",
                 "Nenhum",
-                0
+                0,
+                10
             );
 
             Assert.True(!turma.IsValid, "Turma inválida, nome incorreto.");
@@ -48,7 +50,8 @@ namespace FYI.Tests.Entidades
                 "",
                 "Curso básico de programação com ênfase em C#",
                 "Nenhum",
-                0
+                0,
+                10
             );
 
             Assert.True(!turma.IsValid, "Turma inválida, público alvo incorreto.");
@@ -63,7 +66,8 @@ namespace FYI.Tests.Entidades
                 "Iniciantes sem experiência que queiram ingressar no mercado de trabalho de programação",
                 "",
                 "Nenhum",
-                0
+                0,
+                10
             );
 
             Assert.True(!turma.IsValid, "Turma inválida, descrição incorreto.");
@@ -78,7 +82,8 @@ namespace FYI.Tests.Entidades
                 "Iniciantes sem experiência que queiram ingressar no mercado de trabalho de programação",
                 "Curso básico de programação com ênfase em C#",
                 "",
-                0
+                0,
+                10
             );
 
             Assert.True(!turma.IsValid, "Turma inválida, pré-requisito incorreto.");

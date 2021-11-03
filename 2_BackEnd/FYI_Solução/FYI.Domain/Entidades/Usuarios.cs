@@ -37,7 +37,7 @@ namespace FYI.Domain.Entidades
         public IReadOnlyCollection<Alunos> Alunos { get; private set; }
         private List<Alunos> _alunos { get; set; }
 
-        public IReadOnlyCollection<Professor> Professor { get; private set; }
-        private List<Professor> _professor { get; set; }
+        public IReadOnlyCollection<Professores> Professor { get; private set; }
+        private List<Professores> _professor { get; set; }
     }
 }

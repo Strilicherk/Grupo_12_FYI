@@ -11,14 +11,14 @@ namespace FYI.Domain.Entidades
 {
     public class Alunos : Base
     {
-        public Alunos(string nome, string sobrenome, string cpf, DateTime dataNascimento, string telefone)
+        public Alunos(string nome, string sobrenome, string cPF, DateTime dataNascimento, string telefone)
         {
             AddNotifications(
             new Contract<Notification>()
                 .Requires()
                 .IsNotNullOrEmpty(nome, "Nome", "Nome não pode ser vazio.")
                 .IsNotNullOrEmpty(sobrenome, "Sobrenome", "Sobrenome não pode ser vazio.")
-                .IsGreaterOrEqualsThan(cpf, 11, "CPF", "O CPF deve ter pelo menos 11 caracteres.")
+                .IsGreaterOrEqualsThan(cPF, 11, "CPF", "O CPF deve ter pelo menos 11 caracteres.")
                 .IsNotNull(dataNascimento, "DataNascimento", "Data de nascimento não pode ser vazia.")
                 .IsNotEmpty(telefone, "Telefone", "Telefone não pode ser vazio")
             );
@@ -27,7 +27,7 @@ namespace FYI.Domain.Entidades
             {
                 Nome = nome;
                 Sobrenome = sobrenome;
-                CPF = cpf;
+                CPF = cPF;
                 DataNascimento = dataNascimento;
                 Telefone = telefone;
             }
