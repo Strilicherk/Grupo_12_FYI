@@ -7,8 +7,8 @@ class Turmas extends Component{
         return(
             <main className="content">
                 <section className="todasTurmasDisponiveis">
-                    <h1>Todas as Turmas</h1>
-                    <h2>Filtrar por:</h2>
+                    <h1 className="titulo">Todas as Turmas</h1>
+                    <h2 className="filtro">Filtrar por:</h2>
                     <select className="select">
                     <option value="cargaHoraria">40 Horas</option>
                     <option value="dataInicio">Dezembro</option>
@@ -16,34 +16,44 @@ class Turmas extends Component{
                     <option value="tema">Microsoft Dinamics 360</option>
                     </select>
                 </section>
+                <line className="linha"></line>
                 <section className="turmasDisponiveis">
                     <div className="infosGerais">
+                            <h2>Microsoft Dinamics 360</h2>
                         <div className="textoCurso">
-                            <h2></h2>
+                            <p>Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição.</p>
                         </div>
                         <div className="gradeCurricular">
-                            <h2>Carga Horária</h2>
-                            <p>40 Horas</p>
-                        </div>
-                    </div>
+                            <p>Carga Horária</p>
+                            <p className="horas">40 Horas</p>
+                            <p>Data Início</p>
+                            <p className="horas">40 Horas</p>
+                        </div>                        
+                    </div>                    
                     <div className="infosGerais">
+                            <h2>Microsoft Dinamics 360</h2>
                         <div className="textoCurso">
-                            <h2></h2>
+                            <p>Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição.</p>
                         </div>
                         <div className="gradeCurricular">
-                            <h2>Carga Horária</h2>
-                            <p>40 Horas</p>
+                            <p>Carga Horária</p>
+                            <p className="horas">40 Horas</p>
+                            <p>Data Início</p>
+                            <p className="horas">40 Horas</p>
                         </div>
-                    </div>
+                    </div>                    
                     <div className="infosGerais">
+                            <h2>Microsoft Dinamics 360</h2>
                         <div className="textoCurso">
-                            <h2></h2>
+                            <p>Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição.</p>
                         </div>
                         <div className="gradeCurricular">
-                            <h2>Carga Horária</h2>
-                            <p>40 Horas</p>
+                            <p>Carga Horária</p>
+                            <p className="horas">40 Horas</p>
+                            <p>Data Início</p>
+                            <p className="horas">40 Horas</p>
                         </div>
-                    </div>
+                    </div>                    
                 </section>               
             </main>
         )
