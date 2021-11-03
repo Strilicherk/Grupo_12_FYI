@@ -1,6 +1,6 @@
 /* Font */
 @import url("http://fonts.cdnfonts.com/css/gotham");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
 
 :root {
   --azul-escuro: #004b6d;
@@ -167,6 +167,10 @@ h2 {
   animation: bounce 0.8s ease alternate infinite;
 }
 
+.desce:hover{
+  cursor: pointer;
+}
+
 @keyframes bounce {
   to {
     transform: translateY(30px);
@@ -219,7 +223,7 @@ h2 {
   justify-content: space-between;
 }
 
-.sobre {
+#sobre {
   background-color: var(--azul-escuro);
   height: 22.35em;
 

@@ -1,4 +1,5 @@
 import "../../assets/styles/home.css";
+import { Link } from 'react-scroll';
 
 //componetes
  
@@ -31,6 +32,9 @@ import flex from "../../assets/img/flex.svg";
 
 import { Router } from "react-router";
 import { Component } from "react/cjs/react.production.min";
+
+
+ 
 
 class Home extends Component {
   render() {
@@ -90,9 +94,11 @@ class Home extends Component {
             </div>
 
             <div className="desce">
-              <a href="#">
+              
+              <Link to='sobre' smooth={true}>
                 <img src={down} />
-              </a>
+              </Link>
+
             </div>
 
             <div className="container">
@@ -134,7 +140,9 @@ class Home extends Component {
               </div>
             </div>
 
-            <div className="sobre">
+            
+
+            <div id="sobre">
               <div className="sobre-fyi text">
                 <h3>
                   Sobre a <br /> For Your Learning Information
