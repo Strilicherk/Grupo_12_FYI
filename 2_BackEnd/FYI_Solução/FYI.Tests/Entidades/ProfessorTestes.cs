@@ -13,10 +13,10 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeProfessorForValido()
         {
-            Professors professor = new Professor(
+            Professor professor = new Professor(
                 "Paulo",
-                "Brandão",
-                "paulobrandao@hotmail.com"
+                "Brandão"
+
             );
 
             Assert.True(professor.IsValid, "Professor válido");
@@ -25,10 +25,10 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeProfessorForInvalidoSemNome()
         {
-            Professors professor = new Professor(
+            Professor professor = new Professor(
                 "",
-                "Brandão",
-                "paulobrandao@hotmail.com"
+                "Brandão"
+
             );
 
             Assert.True(!professor.IsValid, "Professor invalido, nome incorreto!");
@@ -37,25 +37,14 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeProfessorForInvalidoSemSobrenome()
         {
-            Professors professor = new Professor(
+            Professor professor = new Professor(
                 "Paulo",
-                "",
-                "paulobrandao@hotmail.com"
+                ""
             );
 
             Assert.True(!professor.IsValid, "Professor invalido, sobrenome incorreto!");
         }
 
-        [Fact]
-        public void DeveRetornarSeProfessorForInvalidoSemEmail()
-        {
-            Professors professor = new Professor(
-                "Paulo",
-                "Brandão",
-                ""
-            );
-
-            Assert.True(!professor.IsValid, "Professor invalido, email incorreto!");
-        }
+    
     }
 }

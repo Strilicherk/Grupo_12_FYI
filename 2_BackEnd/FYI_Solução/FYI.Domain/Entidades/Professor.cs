@@ -9,23 +9,21 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Entidades
 {
-    public class Professors : Base
+    public class Professor : Base
     {
-        public Professors(string nomeProfessor, string sobrenome) //int professor
+        public Professor(string nomeProfessor, string sobrenome) 
         {
             AddNotifications(
             new Contract<Notification>()
                 .Requires()
                 .IsNotNullOrEmpty(nomeProfessor, "Nome", "Nome não pode ser vazio.")
                 .IsNotNullOrEmpty(sobrenome, "Sobrenome", "Sobrenome não pode ser vazio.")
-                //.IsNotNullOrEmpty(telefone, "Telefone", "Telefone não pode ser vazio")
             );
 
             if (IsValid)
             {
                 NomeProfessor = nomeProfessor;
                 Sobrenome = sobrenome;
-                //Telefone = telefone;
             }
 
         }
@@ -34,8 +32,14 @@ namespace FYI.Domain.Entidades
 
         public string NomeProfessor { get; private set; }
         public string Sobrenome { get; private set; }
-        //public int Telefone { get; set; }
+        public int Telefone { get; set; }
+
+        // Composição
+        public IReadOnlyCollection<Turmas> Turmas { get; private set; }
+        private List<Turmas> _turmas { get; set; }
+
         public Guid IdUsuario { get; private set; }
         public Usuarios Usuario { get; private set; }
+
     }
 }

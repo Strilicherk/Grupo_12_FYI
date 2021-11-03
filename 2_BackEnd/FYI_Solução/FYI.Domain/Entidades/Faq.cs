@@ -28,6 +28,6 @@ namespace FYI.Domain.Entidades
         }
 
         public string Pergunta { get; private set; }
-        public string Resposta { get; set; }
+        public string Resposta { get; private set; }
     }
 }

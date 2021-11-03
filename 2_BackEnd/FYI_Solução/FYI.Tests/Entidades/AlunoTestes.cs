@@ -17,7 +17,8 @@ namespace FYI.Tests.Entidades
                 "Matheus",
                 "Strilicherk",
                 "12345678910",
-                DateTime.Now
+                DateTime.Now,
+                "11998874568"
             );
 
             Assert.True(aluno.IsValid, "Aluno válido.");
@@ -30,7 +31,8 @@ namespace FYI.Tests.Entidades
                 "",
                 "Strilicherk",
                 "12345678910",
-                DateTime.Now
+                DateTime.Now,
+                "11998874568"
             );
 
             Assert.True(!aluno.IsValid, "Aluno inválido, nome incorreto.");
@@ -43,7 +45,8 @@ namespace FYI.Tests.Entidades
                 "Matheus",
                 "",
                 "12345678910",
-                DateTime.Now
+                DateTime.Now,
+                "11998874568"
             );
 
             Assert.True(!aluno.IsValid, "Aluno inválido, sobrenome incorreto.");
@@ -56,7 +59,22 @@ namespace FYI.Tests.Entidades
                 "Matheus",
                 "Strilicherk",
                 "123456789",
-                DateTime.Now
+                DateTime.Now,
+                "11998874568"
+            );
+
+            Assert.True(!aluno.IsValid, "Aluno inválido, CPF incorreto");
+        }
+
+        [Fact]
+        public void DeveRetornarSeAlunoForInvalidoSemTelefone()
+        {
+            Alunos aluno = new Alunos(
+                "Matheus",
+                "Strilicherk",
+                "123456789",
+                DateTime.Now,
+                ""
             );
 
             Assert.True(!aluno.IsValid, "Aluno inválido, CPF incorreto");

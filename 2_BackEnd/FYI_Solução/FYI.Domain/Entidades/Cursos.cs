@@ -26,5 +26,9 @@ namespace FYI.Domain.Entidades
         }
 
         public string NomeCurso { get; private set; }
+
+        //Composições
+        public IReadOnlyCollection<Turmas> Turmas { get; private set; }
+        private List<Turmas> _turmas { get; set; }
     }
 }

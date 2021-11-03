@@ -21,15 +21,12 @@ namespace FYI.Domain.Entidades
                 .IsNotNullOrEmpty(descricao, "Descrição", "Descrição não pode ser vazio.")
                 .IsNotNullOrEmpty(preRequisito, "Pré-requisito", "Pré-requisito não pode ser vazio.")
                 .IsNotNull(quantidadeAluno, "Quantidade de alunos", "Quantidade de alunos não pode ser null")
-            //.IsNotNullOrEmpty(dataInicio, "Data de início", "A data de início não pode ser null ou vazio")
-            //.IsNotNullOrEmpty(dataFim, "Data de termino", "A data de termino não pode ser null ou vazio")
+
             );
 
             if (IsValid)
             {
                 NomeTurma = nomeTurma;
-                // DataInicio = dataInicio;
-                // DataFim = dataFim;
                 PublicoAlvo = publicoAlvo;
                 Descricao = descricao;
                 PreRequisito = preRequisito;
@@ -38,15 +35,23 @@ namespace FYI.Domain.Entidades
         }
 
         public string NomeTurma { get; private set; }
-        // public DateTime DataInicio { get; set; }
-        // public DateTime DataFim { get; set; }
+        public DateTime DataInicio { get; private set; }
+        public DateTime DataFim { get; private set; }
         public string PublicoAlvo { get; private set; }
         public string Descricao { get; private set; }
         public string PreRequisito { get; private set; }
         public int QuantidadeAluno { get; private set; }
+        public int QtdMax { get; private set; }
+
+        // Composição
+        public IReadOnlyCollection<Alunos> Alunos { get; private set; }
+        private List<Alunos> _alunos { get; set; }
+
+
         public Guid IdCurso { get; private set; }
         public Cursos Curso { get; private set; }
+
         public Guid IdProfessor { get; private set; }
-        public Professors Professor { get; private set; }
+        public Professor Professor { get; private set; }
     }
 }

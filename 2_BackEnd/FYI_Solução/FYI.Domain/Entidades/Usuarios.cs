@@ -32,5 +32,12 @@ namespace FYI.Domain.Entidades
         public string Email { get; private set; }
         public string Senha { get; private set; }
         public EnTipoUsuario TipoUsuario { get; private set; }
+
+        // Composições
+        public IReadOnlyCollection<Alunos> Alunos { get; private set; }
+        private List<Alunos> _alunos { get; set; }
+
+        public IReadOnlyCollection<Professor> Professor { get; private set; }
+        private List<Professor> _professor { get; set; }
     }
 }
