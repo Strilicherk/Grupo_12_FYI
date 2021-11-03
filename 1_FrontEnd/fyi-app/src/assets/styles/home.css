@@ -30,7 +30,6 @@ a {
 .text {
   /* quando for colocar um texto ou algo que fique na coluna de texto é essa a tag B)*/
   max-width: 1140px;
-  padding: 0 85px;
   margin: auto;
   overflow: auto;
 }
@@ -284,6 +283,7 @@ h2 {
 
 .conhecas-nossos {
   width: 50%;
+  background-color: #EFF3F5;
 }
 
 .conhecas-nossos p {
