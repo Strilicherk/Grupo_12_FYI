@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace FYI.Domain.Commands.Turma
 {
-    class CadastrarTurmaCommand : Notifiable<Notification>, ICommand
+    public class CadastrarTurmaCommand : Notifiable<Notification>, ICommand
     {
         public CadastrarTurmaCommand()
         {
@@ -25,17 +25,17 @@ namespace FYI.Domain.Commands.Turma
             QtdMax = qtdMax;
         }
 
-        public string NomeTurma { get; private set; }
-        public DateTime DataInicio { get; private set; }
-        public DateTime DataFim { get; private set; }
-        public string PublicoAlvo { get; private set; }
-        public string Descricao { get; private set; }
-        public string PreRequisito { get; private set; }
-        public int QuantidadeAluno { get; private set; }
-        public int QtdMax { get; private set; }
+        public string NomeTurma { get; set; }
+        public DateTime DataInicio { get; set; }
+        public DateTime DataFim { get; set; }
+        public string PublicoAlvo { get; set; }
+        public string Descricao { get; set; }
+        public string PreRequisito { get; set; }
+        public int QuantidadeAluno { get; set; }
+        public int QtdMax { get; set; }
 
         // Composição
-        public IReadOnlyCollection<Alunos> Alunos { get; private set; }
+        public IReadOnlyCollection<Alunos> Alunos { get; set; }
         private List<Alunos> _alunos { get; set; }
 
 

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\FYI.Api",
+    "\\FYI.Domain",
+    "\\FYI.Domain\\Commands",
+    "\\FYI.Domain\\Commands\\Turma",
+    "\\FYI.Domain\\Commands\\Usuario",
+    "\\FYI.Tests",
+    "\\FYI.Tests\\Commands",
+    "\\FYI.Tests\\Commands\\Usuario",
+    "\\FYI.Tests\\Entidades"
+  ],
+  "SelectedNode": "\\FYI.Domain\\Commands\\Turma",
+  "PreviewInSolutionExplorer": false
+}
