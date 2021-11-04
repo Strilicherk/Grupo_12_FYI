@@ -5675,7 +5675,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\54690823855\\.nuget\\packages\\": {}
+    "C:\\Users\\devops\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -5683,11 +5683,11 @@
       "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Api\\FYI.Api.csproj",
       "projectName": "FYI.Api",
       "projectPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Api\\FYI.Api.csproj",
-      "packagesPath": "C:\\Users\\54690823855\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\devops\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\54690823855\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\devops\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
