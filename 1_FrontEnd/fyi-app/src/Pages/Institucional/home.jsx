@@ -41,7 +41,7 @@ class Home extends Component {
     return (
       <div>
         <div className="background">
-          <div className="container, text">
+          <div className="container">
             {" "}
 
 
@@ -49,7 +49,8 @@ class Home extends Component {
              
 
             <header>           
-            <nav>   
+            <nav className="nav">   
+
                 <a href="#"><img src={logo2} alt="Logo minimalista for your information Learning Solution - FYI"/></a>
 
                 <div className="mobile-menu" >
@@ -60,7 +61,7 @@ class Home extends Component {
 
                 <ul className="nav-list">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Cursos</a></li>
+                    <li><a href="http://localhost:3000/cursos">Cursos</a></li>
                     <li><a href="#">Processo Seletivo</a></li>
                     <li><a href="#">Contato / Duvidas</a></li>
                 </ul>

@@ -1,7 +1,6 @@
 /* Font */
 @import url("http://fonts.cdnfonts.com/css/gotham");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
-
 :root {
   --azul-escuro: #004b6d;
   --azul: #0090d3;
@@ -37,7 +36,7 @@ ul{
 
 
 
-nav a{
+.nav a{
   font-family: 'Gotham', sans-serif;
   font-size: 18px;
   color: #fff;
