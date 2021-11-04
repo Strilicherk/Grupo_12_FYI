@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Handlers.Aluno
 {
-    class BuscarPorIdHandler
+    class BuscarPorIdHandlerHandler
     {
     }
 }

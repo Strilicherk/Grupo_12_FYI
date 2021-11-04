@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Handlers.Faq
 {
-    class AlterarAlunoHandler
+    class AlterarFaqHandler
     {
     }
 }

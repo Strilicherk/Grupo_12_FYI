@@ -1,20 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj": {}
+    "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
+    "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
         "projectName": "FYI.Domain",
+<<<<<<< HEAD
         "projectPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
         "packagesPath": "C:\\Users\\devops\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\devops\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "projectPath": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
+        "packagesPath": "C:\\Users\\48478964835\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\48478964835\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 02661aa489022ec61ae2a9f602b539f89bd20476
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +37,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
-                "projectPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj"
+              "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
+                "projectPath": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj"
               }
             }
           }
@@ -92,17 +101,26 @@
         }
       }
     },
-    "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj": {
+    "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj",
         "projectName": "FYI.Infra.Data",
+<<<<<<< HEAD
         "projectPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj",
         "packagesPath": "C:\\Users\\devops\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\devops\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "projectPath": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\48478964835\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\48478964835\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 02661aa489022ec61ae2a9f602b539f89bd20476
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -116,8 +134,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
-                "projectPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj"
+              "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
+                "projectPath": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj"
               }
             }
           }
@@ -176,17 +194,26 @@
         }
       }
     },
-    "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
+    "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
         "projectName": "FYI.Shared",
+<<<<<<< HEAD
         "projectPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
         "packagesPath": "C:\\Users\\devops\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\devops\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "projectPath": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+        "packagesPath": "C:\\Users\\48478964835\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\48478964835\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 02661aa489022ec61ae2a9f602b539f89bd20476
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
