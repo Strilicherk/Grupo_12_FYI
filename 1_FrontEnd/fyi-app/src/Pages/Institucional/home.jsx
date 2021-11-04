@@ -23,6 +23,7 @@ import prometric from "../../assets/img/empresas/prometric.png";
 //Logo Fyi
 import branca from "../../assets/img/fyi-branca.svg";
 import logo2 from '../../assets/img/logo2.svg';
+import logobranca from '../../assets/img/Logo-branca1.svg';
 
 //Icones
 import pin from "../../assets/img/pin.svg";
@@ -51,7 +52,7 @@ class Home extends Component {
             <header>           
             <nav className="nav">   
 
-                <a href="#"><img src={logo2} alt="Logo minimalista for your information Learning Solution - FYI"/></a>
+                <a href="#"><img src={logobranca} alt="Logo minimalista for your information Learning Solution - FYI"/></a>
 
                 <div className="mobile-menu" >
                     <div className="1"></div>

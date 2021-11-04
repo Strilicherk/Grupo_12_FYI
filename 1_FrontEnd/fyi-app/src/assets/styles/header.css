@@ -39,6 +39,10 @@ a{
     margin: 8px;
 }
 
+nav img{
+    width: 10.5em;
+}
+
 @media (max-width:999px){
     body{
         overflow-x: hidden ;

@@ -14,6 +14,26 @@ class Cursos extends Component {
                 <div className="container">
                     <Header/>
                 </div>
+
+                <div className="areas-container">
+
+                <div className="area-aling">
+
+
+                    <div className="texto-area container">
+                        <p>Áreas de Interesse</p>
+                        <p>Aproveite para aprender mais sobre :</p>
+                    </div>
+
+
+                    
+                </div>
+
+
+                </div>
+
+
+
             </>
         )
     }

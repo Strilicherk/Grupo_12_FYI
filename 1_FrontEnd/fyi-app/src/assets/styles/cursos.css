@@ -1,1 +1,19 @@
+ .areas-container{
+     width: 100%;
+     height: 33.65em;
+     background-color: #EFF3F5;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .texto-sobre{
+
+ }
+
+ .area-aling{
+    height: 440.74px;
+   
+    background-color: royalblue;
+ }
+
  
