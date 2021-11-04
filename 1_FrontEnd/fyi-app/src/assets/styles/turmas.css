@@ -1,6 +1,12 @@
 .content{
+    max-width: 1140px;
+    margin: auto;
+    overflow: auto;
+}
+
+.contentAlinhamento{
     width: 100%;
-    align-items: center;
+    margin-top: 2em;
 }
 .titulo{
     width: auto;
@@ -17,10 +23,11 @@
 }
 
 .todasTurmasDisponiveis{
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2em;
     border-bottom: 2px solid;
 }
 
@@ -31,7 +38,8 @@
 }
 
 .infosGerais{
-    width: 300px;
+    width: 400px;
+    margin: 2em;
     display: flex;
     flex-direction: column;
 }
