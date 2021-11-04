@@ -6,14 +6,78 @@
      flex-direction: column;
  }
 
- .texto-sobre{
-
- }
-
  .area-aling{
-    height: 440.74px;
-   
-    background-color: royalblue;
+     
+     width: 100%;
+     height: 32em;
+
+     display: flex;
+     align-items: center;
+     
+
  }
+
+ .conteudo-curso{
+    
+    /* background-color: rgb(51, 153, 85); */
+    height: 25em;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+
+
+
+ .texto-sobre-curso{
+     width: 100%;
+ }
+
+ .texto-sobre-curso p{
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    color: #212529;
+    font-size: 23px;
+ }
+
+ .texto-sobre-curso p:nth-child(2n){
+    font-size: 35px;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+ }
+
+ .card-area{
+     width: 100%;
+     /* background-color: tomato; */
+     height: 10em;
+
+
+
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .card-da-area{
+    width: 13em;
+    height: 9.2em;
+     background-color: #00A4EF;
+     border-radius: 6px;
+ }
+
+
+ .microsoft-bottom{
+     width: 100%;
+     margin-bottom: 1em;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: rebeccapurple; */
+ }
+
+ .microsoft-bottom img{
+     width: 9.2em;
+ }
+
+
 
  
