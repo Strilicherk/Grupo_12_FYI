@@ -6,7 +6,7 @@ using System;
 
 namespace FYI.Domain.Commands.Aluno
 {
-    class BuscarPorIdAlunoCommand : Notifiable<Notification>, ICommand
+    public class BuscarPorIdAlunoCommand : Notifiable<Notification>, ICommand
     {
         public BuscarPorIdAlunoCommand(Guid id)
         {

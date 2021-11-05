@@ -6,7 +6,7 @@ using System;
 
 namespace FYI.Domain.Commands.Aluno
 {
-    class AlterarAlunoCommand : Notifiable<Notification>, ICommand
+    public class AlterarAlunoCommand : Notifiable<Notification>, ICommand
     {
 
         public AlterarAlunoCommand(string nome, string sobrenome, string cPF, DateTime dataNascimento, string telefone, Guid id)

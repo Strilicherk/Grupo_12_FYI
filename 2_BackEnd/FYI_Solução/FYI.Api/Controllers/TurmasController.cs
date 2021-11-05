@@ -1,20 +1,18 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using FYI.Domain.Commands.Turma;
+using FYI.Shared.Commands;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using FYI.Shared.Commands;
-using FYI.Domain.Commands.Turma;
 
 namespace FYI.Api.Controllers
 {
-    [Route("v1/class")]
-    [Produces("application/json")]
+    [Route("api/[controller]")]
     [ApiController]
-    public class TurmaController : ControllerBase
+    public class TurmasController : ControllerBase
     {
         // commands:
 
         // adicionar
-        [Microsoft.AspNetCore.Mvc.Route("register")]
+        [Route("register")]
         [HttpPost]
         public GenericCommandResult Register(CadastrarTurmaCommand command, [FromServices] CriarTurmaHandle handle)
         {
@@ -22,17 +20,17 @@ namespace FYI.Api.Controllers
         }
 
         // alterar
-        [Microsoft.AspNetCore.Mvc.Route("update")]
+        [Route("update")]
         [HttpPatch]
-        public GenericCommandResult Update(AlterarTurmaCommand command, [FromServices] AlterarCursoHandle handle)
+        public GenericCommandResult Update(AlterarTurmaCommand command, [FromServices] AlterarTurmaHandle handle)
         {
             return (GenericCommandResult)handle.Handler(command);
         }
 
         // deletar
-        [Microsoft.AspNetCore.Mvc.Route("delete")]
+        [Route("delete")]
         [HttpDelete]
-        public GenericCommandResult Delete(ExcluirTurmaCommand command, [FromServices] DeletarCursoHandle handle)
+        public GenericCommandResult Delete(ExcluirTurmaCommand command, [FromServices] DeletarTurmaHandle handle)
         {
             return (GenericCommandResult)handle.Handler(command);
         }
@@ -42,22 +40,22 @@ namespace FYI.Api.Controllers
         // queries:
 
         // listar
-        [Microsoft.AspNetCore.Mvc.Route("list")]
+        [Route("list")]
         [HttpGet]
-        public GenericQueryResult List([FromServices] ListarCursoHandle handle)
+        public GenericQueryResult List([FromServices] ListarTurmaHandle handle)
         {
-            ListarCursoQuery query = new ListarCursoQuery();
+            ListarTurmaQuery query = new ListarTurmaQuery();
 
             return (GenericQueryResult)handle.Handler(query);
         }
 
         // buscar por nome
-        [Microsoft.AspNetCore.Mvc.Route("searchName/{courseName}")]
+        [Route("searchName/{courseName}")]
         [HttpGet]
-        public GenericQueryResult SearchByName(string courseName, [FromServices] BuscarPorNomeCursoHandle handle)
+        public GenericQueryResult SearchByName(string courseName, [FromServices] BuscarPorNomeTurmaHandle handle)
         {
 
-            var query = new BuscarPorNomeCursoQuery
+            var query = new BuscarPorNomeTurmaQuery
             {
                 nomeCurso = courseName
             };
@@ -66,11 +64,11 @@ namespace FYI.Api.Controllers
         }
 
         // buscar por id
-        [Microsoft.AspNetCore.Mvc.Route("searchId/{id}")]
+        [Route("searchId/{id}")]
         [HttpGet]
-        public GenericQueryResult SearchById(Guid id, [FromServices] BuscarPorIdCursoHandle handle)
+        public GenericQueryResult SearchById(Guid id, [FromServices] BuscarPorIdTurmaHandle handle)
         {
-            var query = new BuscarPorIdCursoQuery
+            var query = new BuscarPorIdTurmaQuery
             {
                 id = id
             };
@@ -80,6 +78,5 @@ namespace FYI.Api.Controllers
 
             return (GenericQueryResult)handle.Handler(query);
         }
-
     }
 }
