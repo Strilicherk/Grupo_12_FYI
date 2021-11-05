@@ -4,20 +4,17 @@ using FYI.Domain.Entidades;
 using FYI.Domain.Handlers.Autenticacao;
 using FYI.Domain.Handlers.Usuarios;
 using FYI.Shared.Commands;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace FYI.Api.Controllers
 {
     [Route("v1/account")]
+    [Produces("application/json")]
     [ApiController]
     public class UsuarioController : ControllerBase
     {

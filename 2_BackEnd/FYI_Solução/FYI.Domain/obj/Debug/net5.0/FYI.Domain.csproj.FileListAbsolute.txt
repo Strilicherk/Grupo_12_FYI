@@ -58,3 +58,4 @@ C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj
 C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\ref\FYI.Domain.dll
 C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\FYI.Domain.pdb
 C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\FYI.Domain.genruntimeconfig.cache
+C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\FYI.Domain.csproj.CopyComplete

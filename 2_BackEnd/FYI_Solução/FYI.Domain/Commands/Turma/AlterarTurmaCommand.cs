@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace FYI.Domain.Commands.Turma
 {
-    class AlterarTurmaCommand : Notifiable<Notification>, ICommand
+    public class AlterarTurmaCommand : Notifiable<Notification>, ICommand
     {
         public AlterarTurmaCommand()
         {
