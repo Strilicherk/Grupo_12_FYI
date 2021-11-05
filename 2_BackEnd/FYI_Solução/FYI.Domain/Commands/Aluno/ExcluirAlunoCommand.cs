@@ -6,7 +6,7 @@ using System;
 
 namespace FYI.Domain.Commands.Aluno
 {
-    class ExcluirAlunoCommand : Notifiable<Notification>, ICommand
+    public class ExcluirAlunoCommand : Notifiable<Notification>, ICommand
     {
         
         public ExcluirAlunoCommand(Guid id)

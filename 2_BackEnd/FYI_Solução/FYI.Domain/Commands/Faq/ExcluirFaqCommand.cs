@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Commands.Faq
 {
-    class ExcluirFaqCommand : Notifiable<Notification>, ICommand
+    public class ExcluirFaqCommand : Notifiable<Notification>, ICommand
     {
         public ExcluirFaqCommand(Guid id)
         {

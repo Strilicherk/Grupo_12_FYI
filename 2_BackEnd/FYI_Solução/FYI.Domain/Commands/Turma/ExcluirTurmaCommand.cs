@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace FYI.Domain.Commands.Turma
 {
-    class ExcluirTurmaCommand : Notifiable<Notification>, ICommand
+    public class ExcluirTurmaCommand : Notifiable<Notification>, ICommand
     {
         public ExcluirTurmaCommand(Guid id)
         {

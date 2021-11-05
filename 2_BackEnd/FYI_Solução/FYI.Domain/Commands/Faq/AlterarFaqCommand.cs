@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Commands.Faq
 {
-    class AlterarFaqCommand : Notifiable<Notification>, ICommand
+    public class AlterarFaqCommand : Notifiable<Notification>, ICommand
     {
         public AlterarFaqCommand()
         {

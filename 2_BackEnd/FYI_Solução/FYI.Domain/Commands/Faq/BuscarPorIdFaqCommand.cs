@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Commands.Faq
 {
-    class BuscarPorIdFaqCommand : Notifiable<Notification>, ICommand
+    public class BuscarPorIdFaqCommand : Notifiable<Notification>, ICommand
     {
         public BuscarPorIdFaqCommand(Guid id)
         {
