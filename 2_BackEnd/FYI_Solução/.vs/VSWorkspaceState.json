@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\FYI.Api",
-    "\\FYI.Domain",
     "\\FYI.Domain\\Commands",
-    "\\FYI.Domain\\Commands\\Turma",
-    "\\FYI.Domain\\Commands\\Usuario",
     "\\FYI.Tests",
     "\\FYI.Tests\\Commands",
-    "\\FYI.Tests\\Commands\\Usuario",
-    "\\FYI.Tests\\Entidades"
+    "\\FYI.Tests\\Commands\\Aluno",
+    "\\FYI.Tests\\Commands\\Curso",
+    "\\FYI.Tests\\Commands\\Faq",
+    "\\FYI.Tests\\Commands\\Professor",
+    "\\FYI.Tests\\Commands\\Turmas"
   ],
-  "SelectedNode": "\\FYI.Domain\\Commands\\Turma",
+  "SelectedNode": "\\FYI.Tests\\Commands\\Aluno\\CriarAunoCommandTeste.cs",
   "PreviewInSolutionExplorer": false
 }

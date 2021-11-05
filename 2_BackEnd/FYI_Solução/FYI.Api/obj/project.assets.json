@@ -5675,32 +5675,19 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\devops\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\48478964835\\.nuget\\packages\\": {}
->>>>>>> 02661aa489022ec61ae2a9f602b539f89bd20476
+    "C:\\Users\\mathe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Api\\FYI.Api.csproj",
+      "projectUniqueName": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Api\\FYI.Api.csproj",
       "projectName": "FYI.Api",
-<<<<<<< HEAD
-      "projectPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Api\\FYI.Api.csproj",
-      "packagesPath": "C:\\Users\\devops\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Api\\obj\\",
+      "projectPath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Api\\FYI.Api.csproj",
+      "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\devops\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectPath": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Api\\FYI.Api.csproj",
-      "packagesPath": "C:\\Users\\48478964835\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Api\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\48478964835\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 02661aa489022ec61ae2a9f602b539f89bd20476
+        "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5714,8 +5701,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj": {
-              "projectPath": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj"
+            "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj": {
+              "projectPath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj"
             }
           }
         }
@@ -5781,8 +5768,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.208\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Api\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
