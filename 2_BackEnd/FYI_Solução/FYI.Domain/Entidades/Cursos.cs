@@ -30,5 +30,18 @@ namespace FYI.Domain.Entidades
         //Composições
         public IReadOnlyCollection<Turmas> Turmas { get; private set; }
         private List<Turmas> _turmas { get; set; }
+        public void AlterarCurso(string nomeCurso)
+        {
+            AddNotifications(
+            new Contract<Notification>()
+                .Requires()
+                .IsNotEmpty(nomeCurso, "NomeCurso", "Campo 'NomeCurso' não pode ser vazio!")
+            );
+
+            if (IsValid)
+            {
+                NomeCurso = nomeCurso;
+            }
+        }
     }
 }

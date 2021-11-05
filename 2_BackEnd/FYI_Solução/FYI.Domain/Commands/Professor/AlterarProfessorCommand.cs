@@ -3,21 +3,19 @@ using Flunt.Validations;
 using FYI.Domain.Entidades;
 using FYI.Shared.Commands;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace FYI.Domain.Commands.Professor
 {
-    class AlterarProfessorCommand : Notifiable<Notification>, ICommand
+    public class AlterarProfessorCommand : Notifiable<Notification>, ICommand
     {
-        public AlterarProfessorCommand(string nomeProfessor, string sobrenome)
+        public AlterarProfessorCommand(string nomeProfessor, string sobrenome, Guid id)
         {
+            Id = id;
             NomeProfessor = nomeProfessor;
             Sobrenome = sobrenome;
         }
-
+        public Guid Id { get; private set; }
         public string NomeProfessor { get; set; }
         public string Sobrenome { get;  set; }
         //public int Telefone { get; set; }

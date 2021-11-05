@@ -8,19 +8,17 @@ namespace FYI.Domain.Commands.Aluno
 {
     class AlterarAlunoCommand : Notifiable<Notification>, ICommand
     {
-        public AlterarAlunoCommand()
-        {
 
-        }
-        public AlterarAlunoCommand(string nome, string sobrenome, string cPF, DateTime dataNascimento, string telefone)
+        public AlterarAlunoCommand(string nome, string sobrenome, string cPF, DateTime dataNascimento, string telefone, Guid id)
         {
+            Id = id;
             Nome = nome;
             Sobrenome = sobrenome;
             CPF = cPF;
             DataNascimento = dataNascimento;
             Telefone = telefone;
         }
-
+        public Guid Id { get; private set; }
         public string Nome { get; private set; }
         public string Sobrenome { get; private set; }
         public string CPF { get; private set; }

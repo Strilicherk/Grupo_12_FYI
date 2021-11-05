@@ -8,43 +8,19 @@ namespace FYI.Domain.Commands.Aluno
 {
     class BuscarPorIdAlunoCommand : Notifiable<Notification>, ICommand
     {
-        public BuscarPorIdAlunoCommand()
+        public BuscarPorIdAlunoCommand(Guid id)
         {
-
+            Id = id;
         }
-        public BuscarPorIdAlunoCommand(string nome, string sobrenome, string cPF, DateTime dataNascimento, string telefone)
-        {
-            Nome = nome;
-            Sobrenome = sobrenome;
-            CPF = cPF;
-            DataNascimento = dataNascimento;
-            Telefone = telefone;
-        }
-
-        public string Nome { get; private set; }
-        public string Sobrenome { get; private set; }
-        public string CPF { get; private set; }
-        public DateTime DataNascimento { get; private set; }
-        public string Telefone { get; private set; }
-
-        // Composições
-        public Guid IdUsuario { get; private set; }
-        public Usuarios Usuario { get; private set; }
-
-        public Guid IdTurma { get; private set; }
-        public Turmas Turma { get; private set; }
+        public Guid Id { get; set; }
 
         public void Validar()
         {
             AddNotifications(
-            new Contract<Notification>()
-                .Requires()
-                .IsNotNullOrEmpty(Nome, "Nome", "Nome não pode ser vazio.")
-                .IsNotNullOrEmpty(Sobrenome, "Sobrenome", "Sobrenome não pode ser vazio.")
-                .IsGreaterOrEqualsThan(CPF, 11, "CPF", "O CPF deve ter pelo menos 11 caracteres.")
-                .IsNotNull(DataNascimento, "DataNascimento", "Data de nascimento não pode ser vazia.")
-                .IsNotEmpty(Telefone, "Telefone", "Telefone não pode ser vazio")
-            );
+               new Contract<Notification>()
+               .Requires()
+               .IsNotEmpty(Id, "Id", "Id não pode ser vazio.")
+       ); ;
         }
     }
 }

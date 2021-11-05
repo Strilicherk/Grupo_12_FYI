@@ -11,27 +11,20 @@ namespace FYI.Domain.Commands.Faq
 {
     class ExcluirFaqCommand : Notifiable<Notification>, ICommand
     {
-        public ExcluirFaqCommand()
+        public ExcluirFaqCommand(Guid id)
         {
-
+            Id = id;
         }
-        public ExcluirFaqCommand(string pergunta, string resposta)
-        {
-            Pergunta = pergunta;
-            Resposta = resposta;
-        }
+        public Guid Id { get; set; }
 
-        public string Pergunta { get; set; }
-        public string Resposta { get; set; }
         public void Validar()
         {
-
             AddNotifications(
-            new Contract<Notification>()
-                .Requires()
-                .IsNotNullOrEmpty(Pergunta, "Pergunta", "Pergunta não pode ser vazio.")
-                .IsNotNullOrEmpty(Resposta, "Resposta", "Resposta não pode ser vazio.")
-            );
+               new Contract<Notification>()
+               .Requires()
+               .IsNotEmpty(Id, "Id", "Id não pode ser vazio.")
+       ); ;
         }
     }
 }
+
