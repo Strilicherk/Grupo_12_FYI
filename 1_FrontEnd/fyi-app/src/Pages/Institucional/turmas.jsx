@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 
+import ca from '../../assets/img/cargahoraria.png';
+import da from '../../assets/img/datainicio.png';
+
 import '../../assets/styles/turmas.css';
 
 class Turmas extends Component{
@@ -26,149 +29,221 @@ class Turmas extends Component{
                         <hr className="linha"></hr>
                         <section className="turmasDisponiveis">
                             <div className="infosGerais">
-                                <h3>Microsoft Dinamics 360</h3>
-                                <div className="textoCurso">
+                                <div className="infoCurso">
+                                    <h3>Microsoft Dinamics 360</h3>
                                     <p>Curso prático para profissionais que precisam aprender Gestão de Relacionamento com Clientes.</p>
                                 </div>
                                 <div className="gradeCurricular">
+                                    <img className="logoCargaHoraria" src={ca}/>
                                     <div className="cargaHoraria">
                                         <p>Carga Horária</p>
                                         <p className="horas">40 Horas</p>
                                     </div>
+                                    <img className="logoCargaHoraria" src={da}/>
                                     <div className="dataInicio">
                                         <p>Data Início</p>
-                                        <p className="horas">40 Horas</p>
+                                        <p className="horas">01/01/1991</p>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>             
                             <div className="infosGerais">
-                                <h3>Microsoft Dinamics 360</h3>
-                                <div className="textoCurso">
+                                <div className="infoCurso">
+                                    <h3>Microsoft Dinamics 360</h3>
                                     <p>Curso prático para profissionais que precisam aprender Gestão de Relacionamento com Clientes.</p>
                                 </div>
                                 <div className="gradeCurricular">
+                                    <img className="logoCargaHoraria" src={ca}/>
                                     <div className="cargaHoraria">
                                         <p>Carga Horária</p>
                                         <p className="horas">40 Horas</p>
                                     </div>
+                                    <img className="logoCargaHoraria" src={da}/>
                                     <div className="dataInicio">
                                         <p>Data Início</p>
-                                        <p className="horas">40 Horas</p>
+                                        <p className="horas">01/01/1991</p>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>             
                             <div className="infosGerais">
-                                <h3>Microsoft Dinamics 360</h3>
-                                <div className="textoCurso">
+                                <div className="infoCurso">
+                                    <h3>Microsoft Dinamics 360</h3>
                                     <p>Curso prático para profissionais que precisam aprender Gestão de Relacionamento com Clientes.</p>
                                 </div>
                                 <div className="gradeCurricular">
+                                    <img className="logoCargaHoraria" src={ca}/>
                                     <div className="cargaHoraria">
                                         <p>Carga Horária</p>
                                         <p className="horas">40 Horas</p>
                                     </div>
+                                    <img className="logoCargaHoraria" src={da}/>
                                     <div className="dataInicio">
                                         <p>Data Início</p>
-                                        <p className="horas">40 Horas</p>
+                                        <p className="horas">01/01/1991</p>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>             
                             <div className="infosGerais">
-                                <h3>Microsoft Dinamics 360</h3>
-                                <div className="textoCurso">
+                                <div className="infoCurso">
+                                    <h3>Microsoft Dinamics 360</h3>
                                     <p>Curso prático para profissionais que precisam aprender Gestão de Relacionamento com Clientes.</p>
                                 </div>
                                 <div className="gradeCurricular">
+                                    <img className="logoCargaHoraria" src={ca}/>
                                     <div className="cargaHoraria">
                                         <p>Carga Horária</p>
                                         <p className="horas">40 Horas</p>
                                     </div>
+                                    <img className="logoCargaHoraria" src={da}/>
                                     <div className="dataInicio">
                                         <p>Data Início</p>
-                                        <p className="horas">40 Horas</p>
+                                        <p className="horas">01/01/1991</p>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>             
                             <div className="infosGerais">
-                                <h3>Microsoft Dinamics 360</h3>
-                                <div className="textoCurso">
+                                <div className="infoCurso">
+                                    <h3>Microsoft Dinamics 360</h3>
                                     <p>Curso prático para profissionais que precisam aprender Gestão de Relacionamento com Clientes.</p>
                                 </div>
                                 <div className="gradeCurricular">
+                                    <img className="logoCargaHoraria" src={ca}/>
                                     <div className="cargaHoraria">
                                         <p>Carga Horária</p>
                                         <p className="horas">40 Horas</p>
                                     </div>
+                                    <img className="logoCargaHoraria" src={da}/>
                                     <div className="dataInicio">
                                         <p>Data Início</p>
-                                        <p className="horas">40 Horas</p>
+                                        <p className="horas">01/01/1991</p>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>             
                             <div className="infosGerais">
-                                <h3>Microsoft Dinamics 360</h3>
-                                <div className="textoCurso">
+                                <div className="infoCurso">
+                                    <h3>Microsoft Dinamics 360</h3>
                                     <p>Curso prático para profissionais que precisam aprender Gestão de Relacionamento com Clientes.</p>
                                 </div>
                                 <div className="gradeCurricular">
+                                    <img className="logoCargaHoraria" src={ca}/>
                                     <div className="cargaHoraria">
                                         <p>Carga Horária</p>
                                         <p className="horas">40 Horas</p>
                                     </div>
+                                    <img className="logoCargaHoraria" src={da}/>
                                     <div className="dataInicio">
                                         <p>Data Início</p>
-                                        <p className="horas">40 Horas</p>
+                                        <p className="horas">01/01/1991</p>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>             
                             <div className="infosGerais">
-                                <h3>Microsoft Dinamics 360</h3>
-                                <div className="textoCurso">
+                                <div className="infoCurso">
+                                    <h3>Microsoft Dinamics 360</h3>
                                     <p>Curso prático para profissionais que precisam aprender Gestão de Relacionamento com Clientes.</p>
                                 </div>
                                 <div className="gradeCurricular">
+                                    <img className="logoCargaHoraria" src={ca}/>
                                     <div className="cargaHoraria">
                                         <p>Carga Horária</p>
                                         <p className="horas">40 Horas</p>
                                     </div>
+                                    <img className="logoCargaHoraria" src={da}/>
                                     <div className="dataInicio">
                                         <p>Data Início</p>
-                                        <p className="horas">40 Horas</p>
+                                        <p className="horas">01/01/1991</p>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>             
                             <div className="infosGerais">
-                                <h3>Microsoft Dinamics 360</h3>
-                                <div className="textoCurso">
+                                <div className="infoCurso">
+                                    <h3>Microsoft Dinamics 360</h3>
                                     <p>Curso prático para profissionais que precisam aprender Gestão de Relacionamento com Clientes.</p>
                                 </div>
                                 <div className="gradeCurricular">
+                                    <img className="logoCargaHoraria" src={ca}/>
                                     <div className="cargaHoraria">
                                         <p>Carga Horária</p>
                                         <p className="horas">40 Horas</p>
                                     </div>
+                                    <img className="logoCargaHoraria" src={da}/>
                                     <div className="dataInicio">
                                         <p>Data Início</p>
-                                        <p className="horas">40 Horas</p>
+                                        <p className="horas">01/01/1991</p>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>             
                             <div className="infosGerais">
-                                <h3>Microsoft Dinamics 360</h3>
-                                <div className="textoCurso">
+                                <div className="infoCurso">
+                                    <h3>Microsoft Dinamics 360</h3>
                                     <p>Curso prático para profissionais que precisam aprender Gestão de Relacionamento com Clientes.</p>
                                 </div>
                                 <div className="gradeCurricular">
+                                    <img className="logoCargaHoraria" src={ca}/>
                                     <div className="cargaHoraria">
                                         <p>Carga Horária</p>
                                         <p className="horas">40 Horas</p>
                                     </div>
+                                    <img className="logoCargaHoraria" src={da}/>
                                     <div className="dataInicio">
                                         <p>Data Início</p>
-                                        <p className="horas">40 Horas</p>
+                                        <p className="horas">01/01/1991</p>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>             
+                            <div className="infosGerais">
+                                <div className="infoCurso">
+                                    <h3>Microsoft Dinamics 360</h3>
+                                    <p>Curso prático para profissionais que precisam aprender Gestão de Relacionamento com Clientes.</p>
+                                </div>
+                                <div className="gradeCurricular">
+                                    <img className="logoCargaHoraria" src={ca}/>
+                                    <div className="cargaHoraria">
+                                        <p>Carga Horária</p>
+                                        <p className="horas">40 Horas</p>
+                                    </div>
+                                    <img className="logoCargaHoraria" src={da}/>
+                                    <div className="dataInicio">
+                                        <p>Data Início</p>
+                                        <p className="horas">01/01/1991</p>
+                                    </div>
+                                </div>
+                            </div>             
+                            <div className="infosGerais">
+                                <div className="infoCurso">
+                                    <h3>Microsoft Dinamics 360</h3>
+                                    <p>Curso prático para profissionais que precisam aprender Gestão de Relacionamento com Clientes.</p>
+                                </div>
+                                <div className="gradeCurricular">
+                                    <img className="logoCargaHoraria" src={ca}/>
+                                    <div className="cargaHoraria">
+                                        <p>Carga Horária</p>
+                                        <p className="horas">40 Horas</p>
+                                    </div>
+                                    <img className="logoCargaHoraria" src={da}/>
+                                    <div className="dataInicio">
+                                        <p>Data Início</p>
+                                        <p className="horas">01/01/1991</p>
+                                    </div>
+                                </div>
+                            </div>             
+                            <div className="infosGerais">
+                                <div className="infoCurso">
+                                    <h3>Microsoft Dinamics 360</h3>
+                                    <p>Curso prático para profissionais que precisam aprender Gestão de Relacionamento com Clientes.</p>
+                                </div>
+                                <div className="gradeCurricular">
+                                    <img className="logoCargaHoraria" src={ca}/>
+                                    <div className="cargaHoraria">
+                                        <p>Carga Horária</p>
+                                        <p className="horas">40 Horas</p>
+                                    </div>
+                                    <img className="logoCargaHoraria" src={da}/>
+                                    <div className="dataInicio">
+                                        <p>Data Início</p>
+                                        <p className="horas">01/01/1991</p>
+                                    </div>
+                                </div>
+                            </div>             
                         </section>
                     </div>
                 </main>
