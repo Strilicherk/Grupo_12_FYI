@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Entidades
 {
-    public class Faq : Base
+    public class Faqs : Base
     {
-        public Faq(string pergunta, string resposta)
+        public Faqs(string pergunta, string resposta)
         {
             AddNotifications(
             new Contract<Notification>()
@@ -29,5 +29,19 @@ namespace FYI.Domain.Entidades
 
         public string Pergunta { get; private set; }
         public string Resposta { get; private set; }
+        public void AlterarFaq(string pergunta, string resposta)
+        {
+            AddNotifications(
+            new Contract<Notification>()
+                .Requires()
+                .IsNotNullOrEmpty(pergunta, "Pergunta", "Pergunta não pode ser vazio.")
+                .IsNotNullOrEmpty(resposta, "Resposta", "Resposta não pode ser vazio.")
+            );
+            if (IsValid)
+            {
+                Pergunta = pergunta;
+                Resposta = resposta;
+            }
+        }
     }
 }

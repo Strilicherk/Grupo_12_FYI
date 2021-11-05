@@ -9,11 +9,11 @@ namespace FYI.Domain.Repositorios
 {
     interface IFaqRepositorio
     {
-        void Adicionar(Faq faq);
-        void Alterar(Faq Faq);
-        Faq BuscarPorId(Guid id);
-        void Excluir(Faq faq);
+        void Adicionar(Faqs faq);
+        void Alterar(Faqs Faq);
+        Faqs BuscarPorId(Guid id);
+        void Excluir(Faqs faq);
 
-        ICollection<Faq> Listar();
+        ICollection<Faqs> Listar();
     }
 }

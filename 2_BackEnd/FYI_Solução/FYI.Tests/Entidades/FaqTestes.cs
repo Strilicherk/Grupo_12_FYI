@@ -13,7 +13,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeFaqForValido()
         {
-            Faq faq = new Faq(
+            Faqs faq = new Faqs(
                 "Como adquiro um curso?",
                 "Entre em contato conosco!"
             );
@@ -24,7 +24,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeCursoForInvalidoSemPergunta()
         {
-            Faq faq = new Faq(
+            Faqs faq = new Faqs(
                 "",
                 "Entre em contato conosco!"
             );
@@ -35,7 +35,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeCursoForInvalidoSemResposta()
         {
-            Faq faq = new Faq(
+            Faqs faq = new Faqs(
                 "Como adquiro um curso?",
                 ""
             );

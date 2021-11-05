@@ -8,14 +8,14 @@ using FYI.Shared.Handlers.Contracts;
 
 namespace FYI.Domain.Handlers.Curso
 {
-    class AlterarCursoHandler : Notifiable<Notification>, IHandler<AlterarCursoCommand>
+    class DeletarCursoHandler : Notifiable<Notification>, IHandler<ExcluirCursoCommand>
     {
         private readonly ICursoRepositorio _cursoRepositorio;
-        public AlterarCursoHandler(ICursoRepositorio cursoRepositorio)
+        public DeletarCursoHandler(ICursoRepositorio cursoRepositorio)
         {
             _cursoRepositorio = cursoRepositorio;
         }
-        public ICommandResult Handler(AlterarCursoCommand command)
+        public ICommandResult Handler(ExcluirCursoCommand command)
         {
             //validar command
             command.Validar();
@@ -31,8 +31,7 @@ namespace FYI.Domain.Handlers.Curso
             {
                 return new GenericCommandResult(false, "Curso não encontrado", null);
             };
-            curso.AlterarCurso(command.NomeCurso);
-            _cursoRepositorio.Alterar(curso);
+            _cursoRepositorio.Excluir(curso);
 
             return new GenericCommandResult(true, "Nome do curso alterado com sucesso!", curso);
         }

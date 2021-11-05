@@ -21,7 +21,7 @@ namespace FYI.Infra.Data.Contexts
         public DbSet<Alunos> Alunos { get; set; }
         public DbSet<Professores> Professores { get; set; }
         public DbSet<Turmas> Turmas { get; set; }
-        public DbSet<Faq> Faq { get; set; }
+        public DbSet<Faqs> Faq { get; set; }
         public DbSet<Cursos> Cursos { get; set; }
 
         // Modelando as tabelas
@@ -63,17 +63,17 @@ namespace FYI.Infra.Data.Contexts
 
             #region mapeamento tabela de Faq
                         // ID PK
-                        modelBuilder.Entity<Faq>().Property(x => x.Id);
+                        modelBuilder.Entity<Faqs>().Property(x => x.Id);
 
                         // Pergunta
-                        modelBuilder.Entity<Faq>().Property(x => x.Pergunta).HasMaxLength(60);
-                        modelBuilder.Entity<Faq>().Property(x => x.Pergunta).HasColumnType("varchar(60)");
-                        modelBuilder.Entity<Faq>().Property(x => x.Pergunta).IsRequired();
+                        modelBuilder.Entity<Faqs>().Property(x => x.Pergunta).HasMaxLength(60);
+                        modelBuilder.Entity<Faqs>().Property(x => x.Pergunta).HasColumnType("varchar(60)");
+                        modelBuilder.Entity<Faqs>().Property(x => x.Pergunta).IsRequired();
 
                         // Resposta
-                        modelBuilder.Entity<Faq>().Property(x => x.Resposta).HasMaxLength(60);
-                        modelBuilder.Entity<Faq>().Property(x => x.Resposta).HasColumnType("varchar(60)");
-                        modelBuilder.Entity<Faq>().Property(x => x.Resposta).IsRequired();
+                        modelBuilder.Entity<Faqs>().Property(x => x.Resposta).HasMaxLength(60);
+                        modelBuilder.Entity<Faqs>().Property(x => x.Resposta).HasColumnType("varchar(60)");
+                        modelBuilder.Entity<Faqs>().Property(x => x.Resposta).IsRequired();
 
                         #endregion
 

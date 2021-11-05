@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FYI.Domain.Handlers.Curso
+namespace FYI.Shared.Queries
 {
-    class ExcluirCursoHandler
+    public interface IQueryResult
     {
     }
 }
