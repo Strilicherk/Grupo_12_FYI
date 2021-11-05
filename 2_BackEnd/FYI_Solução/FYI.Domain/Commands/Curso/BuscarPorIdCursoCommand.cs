@@ -11,24 +11,19 @@ namespace FYI.Domain.Commands.Curso
 {
     class BuscarPorIdCursoCommand : Notifiable<Notification>, ICommand
     {
-        public BuscarPorIdCursoCommand()
+        public BuscarPorIdCursoCommand(Guid id)
         {
-
+            Id = id;
         }
-        public BuscarPorIdCursoCommand(string nomeCurso)
-        {
-            NomeCurso = nomeCurso;
-        }
-
-        public string NomeCurso { get; set; }
+        public Guid Id { get; set; }
 
         public void Validar()
         {
             AddNotifications(
-           new Contract<Notification>()
+               new Contract<Notification>()
                .Requires()
-               .IsNotNullOrEmpty(NomeCurso, "NomeCurso", "Nome do curso não pode ser vazio.")
-               );
+               .IsNotEmpty(Id, "Id", "Id não pode ser vazio.")
+       ); ;
         }
     }
 }

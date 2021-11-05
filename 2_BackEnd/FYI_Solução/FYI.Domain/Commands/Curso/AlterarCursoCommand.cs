@@ -11,15 +11,12 @@ namespace FYI.Domain.Commands.Curso
 {
     class AlterarCursoCommand : Notifiable<Notification>, ICommand
     {
-        public AlterarCursoCommand()
+        public AlterarCursoCommand(string nomeCurso, Guid id)
         {
-
-        }
-        public AlterarCursoCommand(string nomeCurso)
-        {
+            Id = id;
             NomeCurso = nomeCurso;
         }
-
+        public Guid Id { get; private set; }
         public string NomeCurso { get; set; }
 
         public void Validar()

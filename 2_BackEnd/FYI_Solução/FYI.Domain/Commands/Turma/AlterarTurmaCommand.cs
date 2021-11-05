@@ -13,8 +13,9 @@ namespace FYI.Domain.Commands.Turma
         {
 
         }
-        public AlterarTurmaCommand(string nomeTurma, DateTime dataInicio, DateTime dataFim, string publicoAlvo, string descricao, string preRequisito, int quantidadeAluno, int qtdMax)
+        public AlterarTurmaCommand(Guid id,string nomeTurma, DateTime dataInicio, DateTime dataFim, string publicoAlvo, string descricao, string preRequisito, int quantidadeAluno, int qtdMax)
         {
+            Id = id;
             NomeTurma = nomeTurma;
             DataInicio = dataInicio;
             DataFim = dataFim;
@@ -24,7 +25,7 @@ namespace FYI.Domain.Commands.Turma
             QuantidadeAluno = quantidadeAluno;
             QtdMax = qtdMax;
         }
-
+        public Guid Id { get; private set; }
         public string NomeTurma { get; private set; }
         public DateTime DataInicio { get; private set; }
         public DateTime DataFim { get; private set; }

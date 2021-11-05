@@ -11,24 +11,24 @@ namespace FYI.Domain.Commands.Curso
 {
     class ExcluirCursoCommand : Notifiable<Notification>, ICommand
     {
-        public ExcluirCursoCommand()
+        public ExcluirCursoCommand(Guid id)
         {
-
-        }
-        public ExcluirCursoCommand(string nomeCurso)
-        {
-            NomeCurso = nomeCurso;
+            {
+                Id = id;
+            }
         }
 
-        public string NomeCurso { get; set; }
+        public Guid Id { get; set; }
+
+
 
         public void Validar()
         {
             AddNotifications(
-           new Contract<Notification>()
-               .Requires()
-               .IsNotNullOrEmpty(NomeCurso, "NomeCurso", "Nome do curso não pode ser vazio.")
-               );
+            new Contract<Notification>()
+                .Requires()
+                .IsNotEmpty(Id, "Id", "Id não pode ser vazio.")
+            ); ;
         }
     }
 }
