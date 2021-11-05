@@ -9,7 +9,13 @@ import Button from "../../components/buttom";
 
 //Imagens
 import microSo from "../../assets/img/microsoftt.svg";
-import { queryByAttribute } from "@testing-library/dom";
+
+
+//cursos logo
+import bi from "../../assets/img/power-bi-1.svg";
+import di from "../../assets/img/dinamic.svg";
+import az from "../../assets/img/azure.svg";
+import my from "../../assets/img/mysql.svg";
 
 class Cursos extends Component {
     render() {
@@ -32,19 +38,25 @@ class Cursos extends Component {
 
                             <div className="card-area">
                                 <div className="card-da-area">
-                                    
+
+
+                                    <img src={my} alt="logo da Microsoft Azure" />
+                                    <p>My Sql</p>
                                 </div>
 
                                 <div className="card-da-area">
-
+                                    <img src={di} alt="logo da Microsoft Dinamic 360 " />
+                                    <p>Dinamics 360</p>
                                 </div>
 
                                 <div className="card-da-area">
-
+                                    <img src={az} alt="logo da Microsoft Azure" />
+                                    <p>Azure</p>
                                 </div>
 
                                 <div className="card-da-area">
-
+                                    <img src={bi} alt="logo do power bi " />
+                                    <p>Power BI</p>
                                 </div>
                             </div>
 
@@ -61,6 +73,23 @@ class Cursos extends Component {
                     </div>
 
 
+
+
+
+
+                </div>
+
+                <div className="cursos-main container">
+
+                    <p>Cursos para você <span>começar</span></p>
+                    <hr />
+
+                    <div className="local-do-curso">
+                        <p>Nome da Area do curso</p>
+                        <div className="scroll-curso">
+                            
+                        </div>
+                    </div>
 
 
                 </div>
