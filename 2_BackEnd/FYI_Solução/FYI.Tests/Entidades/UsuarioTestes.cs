@@ -13,7 +13,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeUsuarioForValido()
         {
-            Usuarios usuario = new Usuarios(
+            Usuario usuario = new Usuario(
                 "strilicherk@hotmail.com",
                 "strilicherk",
                 Shared.Enums.EnTipoUsuario.Admin
@@ -25,7 +25,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeUsuarioForInvalidoSemEmail()
         {
-            Usuarios usuario = new Usuarios(
+            Usuario usuario = new Usuario(
                 "strilicherk@",
                 "strilicherk",
                 Shared.Enums.EnTipoUsuario.Admin
@@ -37,7 +37,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeUsuarioForInvalidoComSenhaFraca()
         {
-            Usuarios usuario = new Usuarios(
+            Usuario usuario = new Usuario(
                 "strilicherk@hotmail.com",
                 "strili",
                 Shared.Enums.EnTipoUsuario.Admin

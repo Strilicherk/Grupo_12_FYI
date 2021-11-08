@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Entidades
 {
-    public class Usuarios : Base
+    public class Usuario : Base
     {
-        public Usuarios(string email, string senha, EnTipoUsuario tipoUsuario)
+        public Usuario(string email, string senha, EnTipoUsuario tipoUsuario)
         {
             AddNotifications(
             new Contract<Notification>()

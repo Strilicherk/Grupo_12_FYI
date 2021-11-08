@@ -11,7 +11,7 @@ namespace FYI.Domain.Entidades
 {
     public class Turmas : Base
     {
-        public Turmas(string nomeTurma, string publicoAlvo, string descricao, string preRequisito, int quantidadeAluno, int qtdMax)
+        public Turmas(string nomeTurma, string publicoAlvo, string descricao, string preRequisito, int quantidadeAluno, int qtdMax, Guid idCurso, Guid idProfessor)
         {
             AddNotifications(
             new Contract<Notification>()
@@ -22,6 +22,8 @@ namespace FYI.Domain.Entidades
                 .IsNotNullOrEmpty(preRequisito, "Pré-requisito", "Pré-requisito não pode ser vazio.")
                 .IsNotNull(quantidadeAluno, "Quantidade de alunos", "Quantidade de alunos não pode ser null")
                 .IsNotNull(qtdMax, "Qantidade Maxima", "Quantidade maxima não pode ser null")
+                .IsNotEmpty(idCurso, "IdCurso", "IdCurso não pode ser vazio")
+                .IsNotEmpty(idProfessor, "IdProfessor", "IdProfessor não pode ser vazio")
             );
 
             if (IsValid)
@@ -32,6 +34,8 @@ namespace FYI.Domain.Entidades
                 PreRequisito = preRequisito;
                 QuantidadeAluno = quantidadeAluno;
                 QtdMax = qtdMax;
+                IdCurso = idCurso;
+                IdProfessor = idProfessor;
             }
         }
 
@@ -54,5 +58,28 @@ namespace FYI.Domain.Entidades
 
         public Guid IdProfessor { get; private set; }
         public Professores Professor { get; private set; }
+        public void AlterarFaq(string nomeTurma, string publicoAlvo, string descricao, string preRequisito, int quantidadeAluno, int qtdMax)
+        {
+            AddNotifications(
+            new Contract<Notification>()
+                .Requires()
+                .IsNotNullOrEmpty(nomeTurma, "Nome", "Nome não pode ser vazio.")
+                .IsNotNullOrEmpty(publicoAlvo, "Público alvo", "Publico alvo não pode ser vazio.")
+                .IsNotNullOrEmpty(descricao, "Descrição", "Descrição não pode ser vazio.")
+                .IsNotNullOrEmpty(preRequisito, "Pré-requisito", "Pré-requisito não pode ser vazio.")
+                .IsNotNull(quantidadeAluno, "Quantidade de alunos", "Quantidade de alunos não pode ser null")
+                .IsNotNull(qtdMax, "Qantidade Maxima", "Quantidade maxima não pode ser null")
+            );
+
+            if (IsValid)
+            {
+                NomeTurma = nomeTurma;
+                PublicoAlvo = publicoAlvo;
+                Descricao = descricao;
+                PreRequisito = preRequisito;
+                QuantidadeAluno = quantidadeAluno;
+                QtdMax = qtdMax;
+            }
+        }
     }
 }

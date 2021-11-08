@@ -23,17 +23,17 @@ namespace FYI.Domain.Handlers.Curso
             //procurar curso
             if (!command.IsValid)
             {
-                return new GenericCommandResult(false, "Informe o curso corretamente", command.Notifications);
+                return new GenericCommandResult(false, "Informe o faq corretamente", command.Notifications);
             };
             //curso existe?
             Faqs faq = _faqRepositorio.BuscarPorId(command.Id);
             if (faq == null)
             {
-                return new GenericCommandResult(false, "Curso não encontrado", null);
+                return new GenericCommandResult(false, "Faq não encontrado", null);
             };
             _faqRepositorio.Excluir(faq);
 
-            return new GenericCommandResult(true, "Nome do curso alterado com sucesso!", faq);
+            return new GenericCommandResult(true, "Nome do Faq alterado com sucesso!", faq);
         }
     }
 }

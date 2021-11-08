@@ -33,7 +33,7 @@ namespace FYI.Api.Controllers
             var resultado = (GenericCommandResult)handle.Handler(command);
             if (resultado.Sucesso)
             {
-                var token = GenerateJSONWebToken((Usuarios)resultado.Data);
+                var token = GenerateJSONWebToken((Usuario)resultado.Data);
                 return new GenericCommandResult(resultado.Sucesso, resultado.Mensagem, new { Token = token });
             }
 
@@ -43,7 +43,7 @@ namespace FYI.Api.Controllers
 
 
         // Criamos nosso método que vai gerar nosso Token
-        private string GenerateJSONWebToken(Usuarios userInfo)
+        private string GenerateJSONWebToken(Usuario userInfo)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("ChaveSecretaMuitoSecreta"));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);

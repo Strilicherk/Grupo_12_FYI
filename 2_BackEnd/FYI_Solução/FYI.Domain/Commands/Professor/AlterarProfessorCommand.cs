@@ -20,7 +20,7 @@ namespace FYI.Domain.Commands.Professor
         public string Sobrenome { get;  set; }
         //public int Telefone { get; set; }
         public Guid IdUsuario { get;  set; }
-        public Usuarios Usuario { get;  set; }
+        public Entidades.Usuario Usuario { get;  set; }
         public void Validar()
         {
             AddNotifications(

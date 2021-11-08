@@ -9,11 +9,11 @@ namespace FYI.Domain.Repositorios
 {
     public interface IUsuarioRepositorio
     {
-        void Adicionar(Usuarios usuario);
-        void Alterar(Usuarios usuario);
-        Usuarios BuscarPorEmail(string email);
-        Usuarios BuscarPorId(Guid id);
+        void Adicionar(Usuario usuario);
+        void Alterar(Usuario usuario);
+        Usuario BuscarPorEmail(string email);
+        Usuario BuscarPorId(Guid id);
 
-        ICollection<Usuarios> Listar();
+        ICollection<Usuario> Listar();
     }
 }

@@ -2,6 +2,7 @@
 using Flunt.Validations;
 using FYI.Domain.Entidades;
 using FYI.Shared.Commands;
+using FYI.Shared.Enums;
 using System;
 
 
@@ -13,17 +14,23 @@ namespace FYI.Domain.Commands.Professor
         {
 
         }
-        public CadastrarProfessorCommand(string nomeProfessor, string sobrenome)
+        public CadastrarProfessorCommand(string nomeProfessor, string sobrenome, string email, string senha, EnTipoUsuario tipoUsuario)
         {
             NomeProfessor = nomeProfessor;
             Sobrenome = sobrenome;
+            Senha = senha;
+            Email = email;
+            TipoUsuario = tipoUsuario;
         }
 
         public string NomeProfessor { get; set; }
         public string Sobrenome { get; set; }
         //public int Telefone { get; set; }
-        public Guid IdUsuario { get; set; }
-        public Usuarios Usuario { get; set; }
+        public Guid IdUsuario { get; private set; }
+        public Entidades.Usuario Usuario { get; private set; }
+        public string Email { get; set; }
+        public string Senha { get; set; }
+        public EnTipoUsuario TipoUsuario { get; set; }
         public void Validar()
         {
             AddNotifications(

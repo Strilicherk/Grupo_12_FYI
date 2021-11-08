@@ -17,29 +17,29 @@ namespace FYI.Infra.Data.Repositories.Usuario
         {
             _context = context;
         }
-        public void Adicionar(Domain.Entidades.Usuarios usuario)
+        public void Adicionar(Domain.Entidades.Usuario usuario)
         {
             _context.Usuarios.Add(usuario);
             _context.SaveChanges();
         }
 
-        public void Alterar(Domain.Entidades.Usuarios usuario)
+        public void Alterar(Domain.Entidades.Usuario usuario)
         {
             _context.Entry(usuario).State = EntityState.Modified;
             _context.SaveChanges();
         }
 
-        public Domain.Entidades.Usuarios BuscarPorEmail(string email)
+        public Domain.Entidades.Usuario BuscarPorEmail(string email)
         {
             return _context.Usuarios.FirstOrDefault(x => x.Email.ToLower() == email.ToLower());
         }
 
-        public Domain.Entidades.Usuarios BuscarPorId(Guid id)
+        public Domain.Entidades.Usuario BuscarPorId(Guid id)
         {
             return _context.Usuarios.FirstOrDefault(x => x.Id == id);
         }
 
-        public ICollection<Domain.Entidades.Usuarios> Listar()
+        public ICollection<Domain.Entidades.Usuario> Listar()
         {
             return _context.Usuarios
                 .AsNoTracking()
