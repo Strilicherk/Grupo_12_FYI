@@ -85,9 +85,40 @@ class Cursos extends Component {
                     <hr />
 
                     <div className="local-do-curso">
-                        <p>Nome da Area do curso</p>
+                        <div className="title__content">
+                            <div className="pixel__title"></div>
+                            <p>Nome da Area do curso</p>
+
+                        </div>
+
                         <div className="scroll-curso">
-                            
+
+
+                            <div class="scrolling-wrapper">
+
+                                <div class="card__curso">
+
+                                    <div className="imagem__card">
+
+                                    </div>  
+
+                                    <div className="card__botton">
+                                        <p>
+                                        Aprenda o passo a passo exato para criar dashboards e relatórios dinâmicos usando Business Intelligence
+                                        </p>
+                                    </div>
+                                    
+
+
+                                </div>
+                              
+                             
+                            </div>
+
+
+
+
+
                         </div>
                     </div>
 
