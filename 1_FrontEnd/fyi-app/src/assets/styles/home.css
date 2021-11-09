@@ -429,9 +429,85 @@ h2 {
   right: 33px;
 }
 
+.treinamento, .alunos, .empresas{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 footer{
   margin-top: 5em; 
   position : relative;
    bottom : 0;
      
 }
+
+/* Responsivo  */
+
+@media only screen and (max-width: 1024px){
+
+.container{
+  max-width: 900px;
+}  
+
+
+.treinamento, .alunos, .empresas img{
+  height: 3em;
+  width: 3em;
+  
+}
+
+
+.treinamento, .alunos, .empresas{
+  display: flex;
+  align-items: center;
+  justify-content: safe;
+  width: 11em;
+ 
+}
+
+
+
+.down-txt p{
+  font-size: 15px;
+}
+
+.empresas-carrosel img{
+  width: 8.5em;
+}
+
+.sobre-fyi{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nossos-valores {
+  display: flex;
+  justify-content: center;
+}
+
+.texto-motivacional{
+  margin-left: 0;
+}
+ 
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 721px){
+ 
+}
+
+@media only screen and (max-width: 720px) and (min-width: 719px){
+
+
+}
+
+
+
+@media only screen and (max-width: 718px) and (min-width: 350px){
+
+
+}
+
+/* responsivo safeeeee do safe*/
+/* div1 arrumada */

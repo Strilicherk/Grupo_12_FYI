@@ -76,7 +76,7 @@ class Home extends Component {
           </div>
 
           <main>
-            <div className="texto">
+            <div className="container">
               <div className="information">
                 <h2 className="container, text">
                   For Your Information Learning solution
