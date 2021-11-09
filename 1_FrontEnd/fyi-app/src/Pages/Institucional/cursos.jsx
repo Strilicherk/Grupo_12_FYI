@@ -17,6 +17,7 @@ import di from "../../assets/img/dinamic.svg";
 import az from "../../assets/img/azure.svg";
 import my from "../../assets/img/mysql.svg";
 
+
 class Cursos extends Component {
     render() {
         return (
@@ -100,19 +101,304 @@ class Cursos extends Component {
 
                                     <div className="imagem__card">
 
-                                    </div>  
+                                        <div className="icone-aling">
+
+                                            <div className="tag_curso">
+
+                                                <div className="tag__ok">
+                                                    <img src={bi} alt="icon power bi" />
+                                                </div>
+                                    
+                                            </div>
+
+                                            <div className="titulo_card_curso">
+                                            <div className="quote_p"></div>
+
+                                                <p>Power BI</p>
+                                            </div>
+
+
+
+                                        </div>
+
+
+                                    </div>
 
                                     <div className="card__botton">
+                                        
                                         <p>
-                                        Aprenda o passo a passo exato para criar dashboards e relatórios dinâmicos usando Business Intelligence
+                                            Aprenda o passo a passo exato para criar dashboards e relatórios dinâmicos usando Business Intelligence
                                         </p>
                                     </div>
-                                    
+
 
 
                                 </div>
-                              
-                             
+
+                                <div class="card__curso">
+
+<div className="imagem__card">
+
+    <div className="icone-aling">
+
+        <div className="tag_curso">
+
+            <div className="tag__ok">
+                <img src={bi} alt="icon power bi" />
+            </div>
+
+        </div>
+
+        <div className="titulo_card_curso">
+        <div className="quote_p"></div>
+
+            <p>Power BI</p>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+<div className="card__botton">
+    
+    <p>
+        Aprenda o passo a passo exato para criar dashboards e relatórios dinâmicos usando Business Intelligence
+    </p>
+</div>
+
+
+
+</div>
+
+<div class="card__curso">
+
+<div className="imagem__card">
+
+    <div className="icone-aling">
+
+        <div className="tag_curso">
+
+            <div className="tag__ok">
+                <img src={bi} alt="icon power bi" />
+            </div>
+
+        </div>
+
+        <div className="titulo_card_curso">
+        <div className="quote_p"></div>
+
+            <p>Power BI</p>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+<div className="card__botton">
+    
+    <p>
+        Aprenda o passo a passo exato para criar dashboards e relatórios dinâmicos usando Business Intelligence
+    </p>
+</div>
+
+
+
+</div>
+
+
+<div class="card__curso">
+
+<div className="imagem__card">
+
+    <div className="icone-aling">
+
+        <div className="tag_curso">
+
+            <div className="tag__ok">
+                <img src={bi} alt="icon power bi" />
+            </div>
+
+        </div>
+
+        <div className="titulo_card_curso">
+        <div className="quote_p"></div>
+
+            <p>Power BI</p>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+<div className="card__botton">
+    
+    <p>
+        Aprenda o passo a passo exato para criar dashboards e relatórios dinâmicos usando Business Intelligence
+    </p>
+</div>
+
+
+
+</div>
+<div class="card__curso">
+
+<div className="imagem__card">
+
+    <div className="icone-aling">
+
+        <div className="tag_curso">
+
+            <div className="tag__ok">
+                <img src={bi} alt="icon power bi" />
+            </div>
+
+        </div>
+
+        <div className="titulo_card_curso">
+        <div className="quote_p"></div>
+
+            <p>Power BI</p>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+<div className="card__botton">
+    
+    <p>
+        Aprenda o passo a passo exato para criar dashboards e relatórios dinâmicos usando Business Intelligence
+    </p>
+</div>
+
+
+
+</div>
+<div class="card__curso">
+
+<div className="imagem__card">
+
+    <div className="icone-aling">
+
+        <div className="tag_curso">
+
+            <div className="tag__ok">
+                <img src={bi} alt="icon power bi" />
+            </div>
+
+        </div>
+
+        <div className="titulo_card_curso">
+        <div className="quote_p"></div>
+
+            <p>Power BI</p>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+<div className="card__botton">
+    
+    <p>
+        Aprenda o passo a passo exato para criar dashboards e relatórios dinâmicos usando Business Intelligence
+    </p>
+</div>
+
+
+
+</div>
+<div class="card__curso">
+
+<div className="imagem__card">
+
+    <div className="icone-aling">
+
+        <div className="tag_curso">
+
+            <div className="tag__ok">
+                <img src={bi} alt="icon power bi" />
+            </div>
+
+        </div>
+
+        <div className="titulo_card_curso">
+        <div className="quote_p"></div>
+
+            <p>Power BI</p>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+<div className="card__botton">
+    
+    <p>
+        Aprenda o passo a passo exato para criar dashboards e relatórios dinâmicos usando Business Intelligence
+    </p>
+</div>
+
+
+
+</div>
+<div class="card__curso">
+
+<div className="imagem__card">
+
+    <div className="icone-aling">
+
+        <div className="tag_curso">
+
+            <div className="tag__ok">
+                <img src={bi} alt="icon power bi" />
+            </div>
+
+        </div>
+
+        <div className="titulo_card_curso">
+        <div className="quote_p"></div>
+
+            <p>Power BI</p>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+<div className="card__botton">
+    
+    <p>
+        Aprenda o passo a passo exato para criar dashboards e relatórios dinâmicos usando Business Intelligence
+    </p>
+</div>
+
+
+
+</div>
+
+
                             </div>
 
 
