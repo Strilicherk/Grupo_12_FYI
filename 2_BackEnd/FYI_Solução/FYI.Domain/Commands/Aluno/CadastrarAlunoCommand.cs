@@ -2,6 +2,7 @@
 using Flunt.Validations;
 using FYI.Domain.Entidades;
 using FYI.Shared.Commands;
+using FYI.Shared.Enums;
 using System;
 
 namespace FYI.Domain.Commands.Aluno
@@ -33,6 +34,9 @@ namespace FYI.Domain.Commands.Aluno
 
         public Guid IdTurma { get; private set; }
         public Turmas Turma { get; private set; }
+        public string Email { get; set; }
+        public string Senha { get; set; }
+        public EnTipoUsuario TipoUsuario { get; set; }
 
         public void Validar()
         {

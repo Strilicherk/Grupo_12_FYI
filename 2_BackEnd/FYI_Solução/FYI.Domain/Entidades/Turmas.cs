@@ -11,7 +11,7 @@ namespace FYI.Domain.Entidades
 {
     public class Turmas : Base
     {
-        public Turmas(string nomeTurma, string publicoAlvo, string descricao, string preRequisito, int quantidadeAluno, int qtdMax, Guid idCurso, Guid idProfessor)
+        public Turmas(string nomeTurma, string publicoAlvo, string descricao, string preRequisito, int quantidadeAluno, int qtdMax, Guid idCurso, Guid idProfessor, DateTime dataInicio, DateTime dataFim)
         {
             AddNotifications(
             new Contract<Notification>()
@@ -21,9 +21,12 @@ namespace FYI.Domain.Entidades
                 .IsNotNullOrEmpty(descricao, "Descrição", "Descrição não pode ser vazio.")
                 .IsNotNullOrEmpty(preRequisito, "Pré-requisito", "Pré-requisito não pode ser vazio.")
                 .IsNotNull(quantidadeAluno, "Quantidade de alunos", "Quantidade de alunos não pode ser null")
+               // .IsNotMaxValue(quantidadeAluno, "", "")
                 .IsNotNull(qtdMax, "Qantidade Maxima", "Quantidade maxima não pode ser null")
                 .IsNotEmpty(idCurso, "IdCurso", "IdCurso não pode ser vazio")
                 .IsNotEmpty(idProfessor, "IdProfessor", "IdProfessor não pode ser vazio")
+                .IsNotNull(dataInicio, "Data Inicio", "data de inicio não pode ser vazio")
+                .IsNotNull(dataFim, "Data Fim", "data de Fim não pode ser vazio")
             );
 
             if (IsValid)
@@ -36,8 +39,11 @@ namespace FYI.Domain.Entidades
                 QtdMax = qtdMax;
                 IdCurso = idCurso;
                 IdProfessor = idProfessor;
+                DataInicio = dataInicio;
+                DataFim = dataFim;
             }
         }
+
 
         public string NomeTurma { get; private set; }
         public DateTime DataInicio { get; private set; }
@@ -58,18 +64,21 @@ namespace FYI.Domain.Entidades
 
         public Guid IdProfessor { get; private set; }
         public Professores Professor { get; private set; }
-        public void AlterarFaq(string nomeTurma, string publicoAlvo, string descricao, string preRequisito, int quantidadeAluno, int qtdMax)
+        public void AlterarTurma(string nomeTurma, string publicoAlvo, string descricao, string preRequisito, int quantidadeAluno, int qtdMax, DateTime dataInicio, DateTime dataFim)
         {
             AddNotifications(
-            new Contract<Notification>()
-                .Requires()
-                .IsNotNullOrEmpty(nomeTurma, "Nome", "Nome não pode ser vazio.")
-                .IsNotNullOrEmpty(publicoAlvo, "Público alvo", "Publico alvo não pode ser vazio.")
-                .IsNotNullOrEmpty(descricao, "Descrição", "Descrição não pode ser vazio.")
-                .IsNotNullOrEmpty(preRequisito, "Pré-requisito", "Pré-requisito não pode ser vazio.")
-                .IsNotNull(quantidadeAluno, "Quantidade de alunos", "Quantidade de alunos não pode ser null")
-                .IsNotNull(qtdMax, "Qantidade Maxima", "Quantidade maxima não pode ser null")
-            );
+           new Contract<Notification>()
+               .Requires()
+               .IsNotNullOrEmpty(nomeTurma, "Nome", "Nome não pode ser vazio.")
+               .IsNotNullOrEmpty(publicoAlvo, "Público alvo", "Publico alvo não pode ser vazio.")
+               .IsNotNullOrEmpty(descricao, "Descrição", "Descrição não pode ser vazio.")
+               .IsNotNullOrEmpty(preRequisito, "Pré-requisito", "Pré-requisito não pode ser vazio.")
+               .IsNotNull(quantidadeAluno, "Quantidade de alunos", "Quantidade de alunos não pode ser null")
+               // .IsNotMaxValue(quantidadeAluno, "", "")
+               .IsNotNull(qtdMax, "Qantidade Maxima", "Quantidade maxima não pode ser null")
+               .IsNotNull(dataInicio, "Data Inicio", "data de inicio não pode ser vazio")
+
+           );
 
             if (IsValid)
             {
@@ -79,6 +88,8 @@ namespace FYI.Domain.Entidades
                 PreRequisito = preRequisito;
                 QuantidadeAluno = quantidadeAluno;
                 QtdMax = qtdMax;
+                DataInicio = dataInicio;
+                DataFim = dataFim;
             }
         }
     }

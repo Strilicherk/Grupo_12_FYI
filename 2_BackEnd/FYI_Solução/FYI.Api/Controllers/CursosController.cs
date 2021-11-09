@@ -1,6 +1,7 @@
 ﻿using FYI.Domain.Commands.Aluno;
 using FYI.Domain.Commands.Curso;
 using FYI.Shared.Commands;
+using FYI.Shared.Queries;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;

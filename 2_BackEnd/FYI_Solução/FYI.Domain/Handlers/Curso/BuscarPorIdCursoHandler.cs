@@ -8,36 +8,35 @@ using FYI.Shared.Handlers.Contracts;
 
 namespace FYI.Domain.Handlers.Curso
 {
-    class BuscarPorIdCursoHandler : Notifiable<Notification>, IHandler<BuscarPorIdCursoCommand>
+    public class BuscarPorIdCursoHandle : Notifiable<Notification>, IHandlerQuery<BuscarPorIdCursoQuery>
     {
-        private readonly ICursoRepositorio _cursoRepositorio;
-        public BuscarPorIdCursoHandler(ICursoRepositorio cursoRepositorio)
+        private readonly ICursoRepository _cursoRepository;
+
+        public BuscarPorIdCursoHandle(ICursoRepository cursoRepository)
         {
-            _cursoRepositorio = cursoRepositorio;
+            _cursoRepository = cursoRepository;
         }
 
-        public ICommandResult Handler(BuscarPorIdCursoCommand command)
+        public IQueryResult Handler(BuscarPorIdCursoQuery query)
         {
-            throw new System.NotImplementedException();
+            query.Validar();
+
+            if (!query.IsValid)
+            {
+                return new GenericQueryResult(false, "Informe corretamente os dados do curso!", query.Notifications);
+            }
+
+            // listar todos os cursos
+            var cursoBuscado = _cursoRepository.BuscarPorId(query.id);
+
+            if (cursoBuscado == null)
+            {
+                return new GenericQueryResult(false, "Não existe nenhum curso com este id!", query.Notifications);
+            }
+
+            return new GenericQueryResult(true, "Cursos encontrados!", cursoBuscado);
         }
-        //public ICommandResult Handler(BuscarPorIdCursoCommand command)
-        //{
-        //    //validar command
-        //    command.Validar();
 
-        //    //procurar curso
-        //    if (!command.IsValid)
-        //    {
-        //        return new GenericCommandResult(false, "Informe o curso corretamente", command.Notifications);
-        //    };
-        //    //curso existe?
-        //    Cursos curso = _cursoRepositorio.BuscarPorId(command.Id);
-        //    if (curso == null)
-        //    {
-        //        return new GenericCommandResult(false, "Curso não encontrado", null);
-        //    };
-
-        //}
     }
 }
 

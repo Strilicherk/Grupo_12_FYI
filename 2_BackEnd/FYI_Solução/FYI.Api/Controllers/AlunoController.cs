@@ -1,5 +1,6 @@
 ﻿using FYI.Domain.Commands.Aluno;
 using FYI.Shared.Commands;
+using FYI.Shared.Queries;
 using Microsoft.AspNetCore.Mvc;
 using System;
 

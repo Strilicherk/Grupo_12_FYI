@@ -73,7 +73,7 @@ namespace FYI.Api
 
             // Injeções de dependencia
             #region Usuarios
-            services.AddTransient<IUsuarioRepositorio, UsuarioRepository>();
+            services.AddTransient<IUsuarioRepositorio, UsuarioRepositorio>();
             services.AddTransient<CriarContaHandle, CriarContaHandle>();
             services.AddTransient<LogarHandle, LogarHandle>();
             #endregion

@@ -34,7 +34,7 @@ namespace FYI.Domain.Handlers.Curso
                 return new GenericCommandResult(false, "Informe corretamente os dados do professor!", command.Notifications);
             }
             Usuario usuario = _usuarioRepositorio.BuscarPorEmail(command.Email);
-            if (usuario!= null)
+            if (usuario != null)
             {
                 return new GenericCommandResult(false, "Email ja existente", null);
             };
