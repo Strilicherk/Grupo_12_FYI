@@ -6,6 +6,7 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import reactDom from 'react-dom';
 import Home from './Pages/Institucional/home.jsx';
 import Cursos from './Pages/Institucional/cursos.jsx';
+import InscricaoCurso from './Pages/Institucional/inscricaocurso.jsx';
 import Processo from './Pages/Institucional/processo.jsx';
 import Contato from './Pages/Institucional/contato.jsx';
 import Login from './Pages/Administrador/login.jsx';
@@ -19,6 +20,7 @@ const routing = (
 
     <Route exact path = "/" component = { Home }/> 
     <Route exact path = "/cursos" component = { Cursos }/> 
+    <Route exact path = "/inscricaocurso" component = { InscricaoCurso }/> 
     <Route exact path = "/processo-seletivo" component = { Processo }/> 
     <Route exact path = "/contato-duvidas" component = { Contato }/> 
     <Route exact path = "/Login" component = { Login }/>

@@ -302,6 +302,7 @@
 
 }
 
+/* Responsivo 763px */
 @media only screen and (max-width: 763px){
 
     .titulo{
@@ -375,6 +376,7 @@
 
 }
 
+/* Responsivo 646px */
 @media only screen and (max-width: 646px){
 
     .titulo{
@@ -402,6 +404,7 @@
 
 }
 
+/* Responsivo 475px */
 @media only screen and (max-width: 475px){
 
     .infosGerais{
@@ -456,6 +459,7 @@
 
 }
 
+/* Responsivo 378px */
 @media only screen and (max-width: 378px){
 
     .infosGerais{
@@ -493,7 +497,3 @@
     }
 
 }
-
-
-
-
