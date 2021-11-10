@@ -405,6 +405,7 @@ h2 {
   position: relative;
   transition: 0.5s;
   height: 3em;
+
 }
 
 .botao-cl button:after {
@@ -421,8 +422,10 @@ h2 {
   padding-right: 24px;
   padding-left: 8px;
   background-color: var(--azul);
-  box-shadow: 0 0 10px #00000073;
+  box-shadow: 0 0 10px #00000073;  
 }
+
+
 
 .botao-cl button:hover:after {
   opacity: 1;
@@ -444,7 +447,7 @@ footer{
 
 /* Responsivo  */
 
-@media only screen and (max-width: 1024px){
+@media only screen and (min-width: 1024px) and ( max-width:1352px){
 
 .container{
   max-width: 900px;
@@ -490,24 +493,364 @@ footer{
 .texto-motivacional{
   margin-left: 0;
 }
+
+.foto-clica{
+  display: none;
+}
  
+
+.conhecas-nossos{
+  width: 100%;
+  background-image: url('../img/foto-clica.png');
 }
 
-@media only screen and (max-width: 1023px) and (min-width: 721px){
+.informacoes-clica p,
+.conhecas-nossos p{
+  color: #ffff;
+}
+
+.fill{
+  fill: #fff;
+}
+
+
+
+
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 900px){
  
+
+  .container{
+    max-width: 900px;
+  }  
+  
+  
+  .treinamento, .alunos, .empresas img{
+    height: 3em;
+    width: 3em;
+    
+  }
+  
+  
+  .treinamento, .alunos, .empresas{
+    display: flex;
+    align-items: center;
+    justify-content: safe;
+    width: 11em;
+   
+  }
+  
+  
+  
+  .down-txt p{
+    font-size: 15px;
+  }
+  
+  .empresas-carrosel img{
+    width: 8.5em;
+  }
+  
+  .sobre-fyi{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .nossos-valores {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .texto-motivacional{
+    margin-left: 0;
+  }
+  
+  .foto-clica{
+    display: none;
+  }
+   
+  
+  .conhecas-nossos{
+    width: 100%;
+    background-image: url('../img/foto-clica.png');
+  }
+  
+  .informacoes-clica p,
+  .conhecas-nossos p{
+    color: #ffff;
+  }
+  
+  .fill{
+    fill: #fff;
+  }
+
+
 }
 
-@media only screen and (max-width: 720px) and (min-width: 719px){
+@media only screen and (max-width: 899px) and (min-width: 651px){
 
+  
+  .container{
+    max-width: 570px;
+  }  
 
+  .information{
+    text-align: justify;
+  }
+
+  .information p{
+    font-size: 37px;
+  }
+
+  .saiba-btt {
+    margin: 5em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.solid{
+  height: 19em;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 18em;
+}
+
+.empresas-carrosel {
+
+  width: 80%;
+  height: 14.75em;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.empresas-aling{
+  display: flex;
+  justify-content: center ;
+}
+
+.sobre-fyi h3,
+.texto-motivacional h3{
+  font-size: 1.95em;
+}
+
+.sobre-fyi p,
+.texto-motivacional p{
+  font-size: .95em;
+}
+ 
+
+.texto-motivacional{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  
+  
+  .treinamento, .alunos, .empresas{
+    display: flex;
+    align-items: center;
+    justify-content: safe;
+    width: 11em;
+   
+  }
+
+  .treinamento img{
+    margin-right: 3em;
+  }
+
+  .alunos img{
+    margin-right: 2em;
+  }
+
+  .empresas img{
+    margin-right: 2.5em;
+  }
+  
+  
+  
+  .down-txt p{
+    font-size: 15px;
+  }
+  
+  .empresas-carrosel img{
+    width: 8.5em;
+  }
+  
+  .sobre-fyi{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .nossos-valores {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .texto-motivacional{
+    margin-left: 0;
+  }
+  
+  .foto-clica{
+    display: none;
+  }
+   
+  
+  .conhecas-nossos{
+    width: 100%;
+    background-image: url('../img/foto-clica.png');
+  }
+  
+  .informacoes-clica p,
+  .conhecas-nossos p{
+    color: #ffff;
+  }
+  
+  .fill{
+    fill: #fff;
+  }
 }
 
 
 
-@media only screen and (max-width: 718px) and (min-width: 350px){
+@media only screen and (max-width: 660px) and (min-width: 400px){
 
+  
+  .container{
+    max-width: 530px;
+  }  
 
+  .information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .information p{
+    font-size: 34px;
+  }
+
+  .saiba-btt {
+    margin: 5em 0;
+    display: flex;
+    justify-content: center;
 }
+
+.solid{
+  height: 19em;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 18em;
+}
+
+.empresas-carrosel {
+
+  width: 80%;
+  height: 14.75em;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.empresas-aling{
+  display: flex;
+  justify-content: center ;
+}
+
+.sobre-fyi h3,
+.texto-motivacional h3{
+  font-size: 1.95em;
+}
+
+.sobre-fyi p,
+.texto-motivacional p{
+  font-size: .95em;
+}
+ 
+
+.texto-motivacional{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 27em;
+}
+  
+  
+  .treinamento, .alunos, .empresas{
+    display: flex;
+    align-items: center;
+    justify-content: safe;
+    width: 11em;
+   
+  }
+
+  .treinamento img{
+    margin-right: 3em;
+  }
+
+  .alunos img{
+    margin-right: 2em;
+  }
+
+  .empresas img{
+    margin-right: 2.5em;
+  }
+  
+  
+  
+  .down-txt p{
+    font-size: 15px;
+  }
+  
+  .empresas-carrosel img{
+    width: 8.5em;
+  }
+  
+  .sobre-fyi{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .nossos-valores {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .texto-motivacional{
+    margin-left: 0;
+  }
+  
+  .foto-clica{
+    display: none;
+  }
+   
+  
+  .conhecas-nossos{
+    width: 100%;
+    background-image: url('../img/foto-clica.png');
+  }
+  
+  .informacoes-clica p,
+  .conhecas-nossos p{
+    font-size: 21px;
+    color: #ffff;
+  }
+
+
+  
+  .fill{
+    fill: #fff;
+  }
+  
+}
+
+
+
 
 /* responsivo safeeeee do safe*/
 /* div1 arrumada */
