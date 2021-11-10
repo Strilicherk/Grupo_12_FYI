@@ -1,5 +1,8 @@
 ﻿using FYI.Domain.Commands.Professor;
+using FYI.Domain.Handlers.Professor;
+using FYI.Domain.Queries.Professores;
 using FYI.Shared.Commands;
+using FYI.Shared.Queries;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -18,7 +21,7 @@ namespace FYI.Api.Controllers
         // adicionar
         [Route("register")]
         [HttpPost]
-        public GenericCommandResult Register(CadastrarProfessorCommand command, [FromServices] CriarProfessorHandle handle)
+        public GenericCommandResult Register(CadastrarProfessorCommand command, [FromServices] CadastrarProfessorHandler handle)
         {
             return (GenericCommandResult)handle.Handler(command);
         }
@@ -26,7 +29,7 @@ namespace FYI.Api.Controllers
         // alterar
         [Route("update")]
         [HttpPatch]
-        public GenericCommandResult Update(AlterarProfessorCommand command, [FromServices] AlterarProfessorHandle handle)
+        public GenericCommandResult Update(AlterarProfessorCommand command, [FromServices] AlterarProfessorHandler handle)
         {
             return (GenericCommandResult)handle.Handler(command);
         }
@@ -34,7 +37,7 @@ namespace FYI.Api.Controllers
         // deletar
         [Route("delete")]
         [HttpDelete]
-        public GenericCommandResult Delete(ExcluirProfessorCommand command, [FromServices] DeletarProfessorHandle handle)
+        public GenericCommandResult Delete(ExcluirProfessorCommand command, [FromServices] ExcluirProfessorHandler handle)
         {
             return (GenericCommandResult)handle.Handler(command);
         }
@@ -46,33 +49,33 @@ namespace FYI.Api.Controllers
         // listar
         [Route("list")]
         [HttpGet]
-        public GenericQueryResult List([FromServices] ListarProfessorHandle handle)
+        public GenericQueryResult List([FromServices] ListarProfessorHandler handle)
         {
-            ListarFaqQuery query = new ListarProfessorQuery();
+            ListarProfessorQuery query = new ListarProfessorQuery();
 
             return (GenericQueryResult)handle.Handler(query);
         }
 
         // buscar por nome
-        [Route("searchName/{courseName}")]
-        [HttpGet]
-        public GenericQueryResult SearchByName(string courseName, [FromServices] BuscarPorNomeProfessorHandle handle)
-        {
+        //[Route("searchName/{courseName}")]
+        //[HttpGet]
+        //public GenericQueryResult SearchByName(string courseName, [FromServices] BuscarPorNomeProfessorHandle handle)
+        //{
 
-            var query = new BuscarPorNomeProfessorQuery
-            {
-                nomeCurso = courseName
-            };
+        //    var query = new BuscarPorNomeProfessorQuery
+        //    {
+        //        nomeCurso = courseName
+        //    };
 
-            return (GenericQueryResult)handle.Handler(query);
-        }
+        //    return (GenericQueryResult)handle.Handler(query);
+        //}
 
         // buscar por id
         [Route("searchId/{id}")]
         [HttpGet]
         public GenericQueryResult SearchById(Guid id, [FromServices] BuscarPorIdProfessorHandle handle)
         {
-            var query = new BuscarPorIdProfessorQuery
+            var query = new BuscarPorIdProfessoresQuery
             {
                 id = id
             };

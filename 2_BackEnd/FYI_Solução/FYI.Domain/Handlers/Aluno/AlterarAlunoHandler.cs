@@ -8,7 +8,7 @@ using FYI.Shared.Handlers.Contracts;
 
 namespace FYI.Domain.Handlers.Curso
 {
-    class AlterarAlunoHandler : Notifiable<Notification>, IHandler<AlterarAlunoCommand>
+   public class AlterarAlunoHandler : Notifiable<Notification>, IHandler<AlterarAlunoCommand>
     {
         private readonly IAlunoRepositorio _alunoRepositorio;
         public AlterarAlunoHandler(IAlunoRepositorio alunoRepositorio)

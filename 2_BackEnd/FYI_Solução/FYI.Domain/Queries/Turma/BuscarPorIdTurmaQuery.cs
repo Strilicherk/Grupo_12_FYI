@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FYI.Domain.Queries.Turma
+namespace FYI.Domain.Queries.Turmas
 {
-    class BuscarPorIdTurmaQuery : Notifiable<Notification>, IQuery
+   public class BuscarPorIdTurmaQuery : Notifiable<Notification>, IQuery
     {
         public Guid id { get; set; }
 

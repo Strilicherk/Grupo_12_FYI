@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Queries.Curso
 {
-    class ListarCursoQuery : IQuery
+   public class ListarCursoQuery : IQuery
     {
         public void Validar()
         {

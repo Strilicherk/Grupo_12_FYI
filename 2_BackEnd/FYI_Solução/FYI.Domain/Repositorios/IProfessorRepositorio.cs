@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Repositorios
 {
-    interface IProfessorRepositorio
+    public interface IProfessorRepositorio
     {
         void Adicionar(Professores Professor);
         void Alterar(Professores Professor);

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Repositorios
 {
-    interface ITurmaRepositorio
+    public interface ITurmaRepositorio
     {
         void Adicionar(Turmas Turma);
         void Alterar(Turmas Turma);

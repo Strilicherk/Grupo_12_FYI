@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Queries.Faq
 {
-    class ListarFaqQuery : IQuery
+    public class ListarFaqQuery : IQuery
     {
         public void Validar()
         {

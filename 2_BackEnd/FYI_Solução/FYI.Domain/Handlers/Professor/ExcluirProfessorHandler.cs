@@ -6,9 +6,9 @@ using FYI.Shared.Commands;
 using FYI.Shared.Handlers.Contracts;
 
 
-namespace FYI.Domain.Handlers.Curso
+namespace FYI.Domain.Handlers.Professor
 {
-    class ExcluirProfessorHandler : Notifiable<Notification>, IHandler<ExcluirProfessorCommand>
+    public class ExcluirProfessorHandler : Notifiable<Notification>, IHandler<ExcluirProfessorCommand>
     {
         private readonly IProfessorRepositorio _professorRepositorio;
         public ExcluirProfessorHandler(IProfessorRepositorio professorRepositorio)

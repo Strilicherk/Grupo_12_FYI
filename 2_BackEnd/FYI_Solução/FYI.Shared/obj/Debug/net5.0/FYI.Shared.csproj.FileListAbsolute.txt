@@ -57,3 +57,4 @@ C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj
 C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\ref\FYI.Shared.dll
 C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.pdb
 C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.genruntimeconfig.cache
+C:\Users\54690823855\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.csproj.AssemblyReference.cache

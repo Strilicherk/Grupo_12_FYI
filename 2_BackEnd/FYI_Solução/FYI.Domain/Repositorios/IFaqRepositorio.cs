@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Repositorios
 {
-    interface IFaqRepositorio
+    public interface IFaqRepositorio
     {
         void Adicionar(Faqs faq);
         void Alterar(Faqs Faq);

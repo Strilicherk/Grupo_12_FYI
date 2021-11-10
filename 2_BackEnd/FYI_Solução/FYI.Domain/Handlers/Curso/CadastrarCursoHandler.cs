@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Handlers.Curso
 {
-    class CadastrarCursoHandler : Notifiable<Notification>, IHandler<CadastrarCursoCommand>
+    public class CadastrarCursoHandler : Notifiable<Notification>, IHandler<CadastrarCursoCommand>
     {
         private readonly ICursoRepositorio _cursoRepositorio;
 

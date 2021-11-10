@@ -1,5 +1,8 @@
 ﻿using FYI.Domain.Commands.Turma;
+using FYI.Domain.Handlers.Turma;
+using FYI.Domain.Queries.Turmas;
 using FYI.Shared.Commands;
+using FYI.Shared.Queries;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
@@ -14,7 +17,7 @@ namespace FYI.Api.Controllers
         // adicionar
         [Route("register")]
         [HttpPost]
-        public GenericCommandResult Register(CadastrarTurmaCommand command, [FromServices] CriarTurmaHandle handle)
+        public GenericCommandResult Register(CadastrarTurmaCommand command, [FromServices] CadastrarTurmaHandler handle)
         {
             return (GenericCommandResult)handle.Handler(command);
         }
@@ -22,7 +25,7 @@ namespace FYI.Api.Controllers
         // alterar
         [Route("update")]
         [HttpPatch]
-        public GenericCommandResult Update(AlterarTurmaCommand command, [FromServices] AlterarTurmaHandle handle)
+        public GenericCommandResult Update(AlterarTurmaCommand command, [FromServices] AlterarTurmaHandler handle)
         {
             return (GenericCommandResult)handle.Handler(command);
         }
@@ -30,7 +33,7 @@ namespace FYI.Api.Controllers
         // deletar
         [Route("delete")]
         [HttpDelete]
-        public GenericCommandResult Delete(ExcluirTurmaCommand command, [FromServices] DeletarTurmaHandle handle)
+        public GenericCommandResult Delete(ExcluirTurmaCommand command, [FromServices] ExcluirTurmaHandler handle)
         {
             return (GenericCommandResult)handle.Handler(command);
         }
@@ -42,7 +45,7 @@ namespace FYI.Api.Controllers
         // listar
         [Route("list")]
         [HttpGet]
-        public GenericQueryResult List([FromServices] ListarTurmaHandle handle)
+        public GenericQueryResult List([FromServices] ListarTurmaHandler handle)
         {
             ListarTurmaQuery query = new ListarTurmaQuery();
 
@@ -50,18 +53,18 @@ namespace FYI.Api.Controllers
         }
 
         // buscar por nome
-        [Route("searchName/{courseName}")]
-        [HttpGet]
-        public GenericQueryResult SearchByName(string courseName, [FromServices] BuscarPorNomeTurmaHandle handle)
-        {
+        //[Route("searchName/{courseName}")]
+       // [HttpGet]
+        //public GenericQueryResult SearchByName(string courseName, [FromServices] BuscarPorNomeTurmaHandler handle)
+        //{
 
-            var query = new BuscarPorNomeTurmaQuery
-            {
-                nomeCurso = courseName
-            };
+        //    var query = new BuscarPorNomeTurmaQuery
+        //    {
+        //        nomeCurso = courseName
+        //    };
 
-            return (GenericQueryResult)handle.Handler(query);
-        }
+        //    return (GenericQueryResult)handle.Handler(query);
+        //}
 
         // buscar por id
         [Route("searchId/{id}")]

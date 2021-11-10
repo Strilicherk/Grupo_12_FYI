@@ -12,9 +12,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace FYI.Domain.Handlers.Curso
+namespace FYI.Domain.Handlers.Professor
 {
-    class CadastrarProfessorHandler : Notifiable<Notification>, IHandler<CadastrarProfessorCommand>
+    public class CadastrarProfessorHandler : Notifiable<Notification>, IHandler<CadastrarProfessorCommand>
     {
         private readonly IProfessorRepositorio _professorRepositorio;
         private readonly IUsuarioRepositorio _usuarioRepositorio;

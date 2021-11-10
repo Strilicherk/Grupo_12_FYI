@@ -8,7 +8,7 @@ using FYI.Shared.Handlers.Contracts;
 
 namespace FYI.Domain.Handlers.Curso
 {
-    class ExcluirAlunoHandler : Notifiable<Notification>, IHandler<ExcluirAlunoCommand>
+    public class ExcluirAlunoHandler : Notifiable<Notification>, IHandler<ExcluirAlunoCommand>
     {
         private readonly IAlunoRepositorio _alunoRepositorio;
         public ExcluirAlunoHandler(IAlunoRepositorio alunoRepositorio)

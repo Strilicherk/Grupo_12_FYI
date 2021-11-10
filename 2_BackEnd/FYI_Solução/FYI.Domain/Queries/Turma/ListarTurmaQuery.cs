@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FYI.Domain.Queries.Turma
+namespace FYI.Domain.Queries.Turmas
 {
-    class ListarTurmaQuery : IQuery
+   public class ListarTurmaQuery : IQuery
     {
         public void Validar()
         {

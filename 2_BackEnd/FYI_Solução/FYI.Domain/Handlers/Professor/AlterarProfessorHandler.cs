@@ -6,9 +6,9 @@ using FYI.Shared.Commands;
 using FYI.Shared.Handlers.Contracts;
 
 
-namespace FYI.Domain.Handlers.Curso
+namespace FYI.Domain.Handlers.Professor
 {
-    class AlterarProfessorHandler : Notifiable<Notification>, IHandler<AlterarProfessorCommand>
+    public class AlterarProfessorHandler : Notifiable<Notification>, IHandler<AlterarProfessorCommand>
     {
         private readonly IProfessorRepositorio _professorRepositorio;
         public AlterarProfessorHandler(IProfessorRepositorio professorRepositorio)

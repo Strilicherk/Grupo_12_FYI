@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FYI.Domain.Queries.Alunos
 {
-    class BuscarPorIdAlunoQuery : Notifiable<Notification>, IQuery
+    public class BuscarPorIdAlunoQuery : Notifiable<Notification>, IQuery
     {
         public Guid id { get; set; }
 

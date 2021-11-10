@@ -1,5 +1,8 @@
 ﻿using FYI.Domain.Commands.Faq;
+using FYI.Domain.Handlers.Faq;
+using FYI.Domain.Queries.Faq;
 using FYI.Shared.Commands;
+using FYI.Shared.Queries;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -18,7 +21,7 @@ namespace FYI.Api.Controllers
         // adicionar
         [Route("register")]
         [HttpPost]
-        public GenericCommandResult Register(CadastrarFaqCommand command, [FromServices] CriarFaqHandle handle)
+        public GenericCommandResult Register(CadastrarFaqCommand command, [FromServices] CadastrarFaqHandler handle)
         {
             return (GenericCommandResult)handle.Handler(command);
         }
@@ -26,7 +29,7 @@ namespace FYI.Api.Controllers
         // alterar
         [Route("update")]
         [HttpPatch]
-        public GenericCommandResult Update(AlterarFaqCommand command, [FromServices] AlterarFaqHandle handle)
+        public GenericCommandResult Update(AlterarFaqCommand command, [FromServices] AlterarFaqHandler handle)
         {
             return (GenericCommandResult)handle.Handler(command);
         }
@@ -34,7 +37,7 @@ namespace FYI.Api.Controllers
         // deletar
         [Route("delete")]
         [HttpDelete]
-        public GenericCommandResult Delete(ExcluirFaqCommand command, [FromServices] DeletarFaqHandle handle)
+        public GenericCommandResult Delete(ExcluirFaqCommand command, [FromServices] ExcluirFaqHandler handle)
         {
             return (GenericCommandResult)handle.Handler(command);
         }
@@ -46,7 +49,7 @@ namespace FYI.Api.Controllers
         // listar
         [Route("list")]
         [HttpGet]
-        public GenericQueryResult List([FromServices] ListarFaqHandle handle)
+        public GenericQueryResult List([FromServices] ListarFaqHandler handle)
         {
             ListarFaqQuery query = new ListarFaqQuery();
 
@@ -54,18 +57,18 @@ namespace FYI.Api.Controllers
         }
 
         // buscar por nome
-        [Route("searchName/{courseName}")]
-        [HttpGet]
-        public GenericQueryResult SearchByName(string courseName, [FromServices] BuscarPorNomeFaqHandle handle)
-        {
+       // [Route("searchName/{courseName}")]
+       // [HttpGet]
+        //public GenericQueryResult SearchByName(string courseName, [FromServices] BuscarPorNomeFaqHandler handle)
+        //{
 
-            var query = new BuscarPorNomeFaqQuery
-            {
-                nomeCurso = courseName
-            };
+        //    var query = new BuscarPorNomeFaqQuery
+        //    {
+        //        nomeCurso = courseName
+        //    };
 
-            return (GenericQueryResult)handle.Handler(query);
-        }
+        //    return (GenericQueryResult)handle.Handler(query);
+        //}
 
         // buscar por id
         [Route("searchId/{id}")]

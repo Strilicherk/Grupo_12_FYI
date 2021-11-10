@@ -6,9 +6,9 @@ using FYI.Shared.Commands;
 using FYI.Shared.Handlers.Contracts;
 
 
-namespace FYI.Domain.Handlers.Curso
+namespace FYI.Domain.Handlers.Faq
 {
-    class CadastrarFaqHandler : Notifiable<Notification>, IHandler<CadastrarFaqCommand>
+    public class CadastrarFaqHandler : Notifiable<Notification>, IHandler<CadastrarFaqCommand>
     {
         private readonly IFaqRepositorio _faqRepositorio;
         public CadastrarFaqHandler(IFaqRepositorio faqRepositorio)

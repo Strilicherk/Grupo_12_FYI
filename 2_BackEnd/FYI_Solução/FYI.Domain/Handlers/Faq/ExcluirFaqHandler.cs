@@ -6,9 +6,9 @@ using FYI.Shared.Commands;
 using FYI.Shared.Handlers.Contracts;
 
 
-namespace FYI.Domain.Handlers.Curso
+namespace FYI.Domain.Handlers.Faq
 {
-    class ExcluirFaqHandler : Notifiable<Notification>, IHandler<ExcluirFaqCommand>
+    public class ExcluirFaqHandler : Notifiable<Notification>, IHandler<ExcluirFaqCommand>
     {
         private readonly IFaqRepositorio _faqRepositorio;
         public ExcluirFaqHandler(IFaqRepositorio faqRepositorio)

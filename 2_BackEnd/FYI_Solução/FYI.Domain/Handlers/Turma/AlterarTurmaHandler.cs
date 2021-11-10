@@ -7,9 +7,9 @@ using FYI.Shared.Commands;
 using FYI.Shared.Handlers.Contracts;
 
 
-namespace FYI.Domain.Handlers.Curso
+namespace FYI.Domain.Handlers.Turma
 {
-    class AlterarTurmaHandler : Notifiable<Notification>, IHandler<AlterarTurmaCommand>
+    public class AlterarTurmaHandler : Notifiable<Notification>, IHandler<AlterarTurmaCommand>
     {
         private readonly ITurmaRepositorio _turmaRepositorio;
         public AlterarTurmaHandler(ITurmaRepositorio turmaRepositorio)

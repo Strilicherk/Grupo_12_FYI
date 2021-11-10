@@ -9,7 +9,7 @@ using FYI.Shared.Handlers.Contracts;
 
 namespace FYI.Domain.Handlers.Curso
 {
-    class CadastrarAlunoHandler : Notifiable<Notification>, IHandler<CadastrarAlunoCommand>
+    public class CadastrarAlunoHandler : Notifiable<Notification>, IHandler<CadastrarAlunoCommand>
     {
         private readonly IAlunoRepositorio _alunoRepositorio;
         private readonly IUsuarioRepositorio _usuarioRepositorio;
