@@ -1,3 +1,5 @@
+
+
 class MobileNavbar{
     
     constructor(mobileMenu, navList , navLinks){
@@ -38,6 +40,10 @@ class MobileNavbar{
     }
 
     
+
+
+
+
 }
 
 const mobileNavbar = new MobileNavbar(

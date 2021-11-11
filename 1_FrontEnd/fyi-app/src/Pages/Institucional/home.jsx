@@ -33,12 +33,17 @@ import flex from "../../assets/img/flex.svg";
 
 import { Router } from "react-router";
 import { Component } from "react/cjs/react.production.min";
+import { useState } from "react";
+
 
 
 
 
 class Home extends Component {
+
+
   render() {
+
     return (
       <div>
         <div className="background">
@@ -63,7 +68,7 @@ class Home extends Component {
                 <ul className="nav-list">
                   <li><a href="#">Home</a></li>
                   <li><a href="http://localhost:3000/cursos">Cursos</a></li>
-                  <li><a href="#">Processo Seletivo</a></li>
+                  <li><a href="#">Teste Cognitivo</a></li>
                   <li><a href="#">Contato / Duvidas</a></li>
                 </ul>
               </nav>
@@ -91,7 +96,9 @@ class Home extends Component {
 
             <div className="container text">
               <div className="saiba-btt">
-                <Button>Saiba Mais</Button>
+                <Link to='sobre' smooth={true}>
+                  <Button>Saiba Mais</Button>
+                </Link>
               </div>
             </div>
 
@@ -242,7 +249,7 @@ class Home extends Component {
                 </div>
 
                 <div className="botao-cl">
-                  <Button>Nossos cursos</Button>
+                  <a href="http://localhost:3000/cursos"><Button>Nossos cursos</Button></a>
                 </div>
               </div>
 
@@ -251,6 +258,8 @@ class Home extends Component {
             </div>
 
             <Footer />
+
+            
 
           </main>
         </div>
