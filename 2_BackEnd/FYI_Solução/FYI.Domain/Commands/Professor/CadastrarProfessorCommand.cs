@@ -14,23 +14,22 @@ namespace FYI.Domain.Commands.Professor
         {
 
         }
-        public CadastrarProfessorCommand(string nomeProfessor, string sobrenome, string email, string senha, EnTipoUsuario tipoUsuario)
+        public CadastrarProfessorCommand(string nomeProfessor, string sobrenome, string email, string senha, int telefone)
         {
             NomeProfessor = nomeProfessor;
             Sobrenome = sobrenome;
             Senha = senha;
             Email = email;
-            TipoUsuario = tipoUsuario;
+            Telefone = telefone;
         }
 
         public string NomeProfessor { get; set; }
         public string Sobrenome { get; set; }
-        //public int Telefone { get; set; }
+        public int Telefone { get; set; }
         public Guid IdUsuario { get; private set; }
-        public Entidades.Usuario Usuario { get; private set; }
+       
         public string Email { get; set; }
         public string Senha { get; set; }
-        public EnTipoUsuario TipoUsuario { get; set; }
         public void Validar()
         {
             AddNotifications(

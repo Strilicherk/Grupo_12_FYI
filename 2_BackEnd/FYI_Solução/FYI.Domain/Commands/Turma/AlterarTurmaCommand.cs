@@ -25,15 +25,15 @@ namespace FYI.Domain.Commands.Turma
             QuantidadeAluno = quantidadeAluno;
             QtdMax = qtdMax;
         }
-        public Guid Id { get; private set; }
-        public string NomeTurma { get; private set; }
-        public DateTime DataInicio { get; private set; }
-        public DateTime DataFim { get; private set; }
-        public string PublicoAlvo { get; private set; }
-        public string Descricao { get; private set; }
-        public string PreRequisito { get; private set; }
-        public int QuantidadeAluno { get; private set; }
-        public int QtdMax { get; private set; }
+        public Guid Id { get;  set; }
+        public string NomeTurma { get;  set; }
+        public DateTime DataInicio { get;  set; }
+        public DateTime DataFim { get;  set; }
+        public string PublicoAlvo { get;  set; }
+        public string Descricao { get;  set; }
+        public string PreRequisito { get;  set; }
+        public int QuantidadeAluno { get;  set; }
+        public int QtdMax { get;  set; }
 
         // Composição
         public IReadOnlyCollection<Alunos> Alunos { get; private set; }
@@ -41,10 +41,8 @@ namespace FYI.Domain.Commands.Turma
 
 
         public Guid IdCurso { get; private set; }
-        public Cursos Curso { get; private set; }
 
         public Guid IdProfessor { get; private set; }
-        public Professores Professor { get; private set; }
         public void Validar()
         {
             AddNotifications(

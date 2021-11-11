@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FYI.Infra.Data.Migrations
 {
     [DbContext(typeof(ForYouContext))]
-    [Migration("20211104193222_banco inicial - Criando tabelas")]
-    partial class bancoinicialCriandotabelas
+    [Migration("20211111181353_Criando Tabelas")]
+    partial class CriandoTabelas
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -86,7 +86,7 @@ namespace FYI.Infra.Data.Migrations
                     b.ToTable("Cursos");
                 });
 
-            modelBuilder.Entity("FYI.Domain.Entidades.Faq", b =>
+            modelBuilder.Entity("FYI.Domain.Entidades.Faqs", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -200,7 +200,7 @@ namespace FYI.Infra.Data.Migrations
                     b.ToTable("Turmas");
                 });
 
-            modelBuilder.Entity("FYI.Domain.Entidades.Usuarios", b =>
+            modelBuilder.Entity("FYI.Domain.Entidades.Usuario", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -231,7 +231,7 @@ namespace FYI.Infra.Data.Migrations
                         .WithMany("Alunos")
                         .HasForeignKey("TurmaId");
 
-                    b.HasOne("FYI.Domain.Entidades.Usuarios", "Usuario")
+                    b.HasOne("FYI.Domain.Entidades.Usuario", "Usuario")
                         .WithMany("Alunos")
                         .HasForeignKey("UsuarioId");
 
@@ -242,7 +242,7 @@ namespace FYI.Infra.Data.Migrations
 
             modelBuilder.Entity("FYI.Domain.Entidades.Professores", b =>
                 {
-                    b.HasOne("FYI.Domain.Entidades.Usuarios", "Usuario")
+                    b.HasOne("FYI.Domain.Entidades.Usuario", "Usuario")
                         .WithMany("Professor")
                         .HasForeignKey("UsuarioId");
 
@@ -279,7 +279,7 @@ namespace FYI.Infra.Data.Migrations
                     b.Navigation("Alunos");
                 });
 
-            modelBuilder.Entity("FYI.Domain.Entidades.Usuarios", b =>
+            modelBuilder.Entity("FYI.Domain.Entidades.Usuario", b =>
                 {
                     b.Navigation("Alunos");
 

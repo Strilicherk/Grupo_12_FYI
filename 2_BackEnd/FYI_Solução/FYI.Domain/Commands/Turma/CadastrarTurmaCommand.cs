@@ -35,15 +35,14 @@ namespace FYI.Domain.Commands.Turma
         public int QtdMax { get; set; }
 
         // Composição
-        public IReadOnlyCollection<Alunos> Alunos { get; set; }
+        public IReadOnlyCollection<Alunos> Alunos { get { return _alunos.ToArray(); } }
         private List<Alunos> _alunos { get; set; }
 
 
-        public Guid IdCurso { get; private set; }
-        public Cursos Curso { get; private set; }
+        public Guid IdCurso { get; set; }
 
-        public Guid IdProfessor { get; private set; }
-        public Professores Professor { get; private set; }
+
+        public Guid IdProfessor { get; set; }
         public void Validar()
         {
             AddNotifications(

@@ -30,13 +30,10 @@ namespace FYI.Domain.Commands.Aluno
 
         // Composições
         public Guid IdUsuario { get; private set; }
-        public Entidades.Usuario Usuario { get; private set; }
 
         public Guid IdTurma { get; private set; }
-        public Turmas Turma { get; private set; }
         public string Email { get; set; }
         public string Senha { get; set; }
-        public EnTipoUsuario TipoUsuario { get; set; }
 
         public void Validar()
         {

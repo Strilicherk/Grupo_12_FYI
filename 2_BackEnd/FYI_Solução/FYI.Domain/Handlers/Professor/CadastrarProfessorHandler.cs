@@ -48,7 +48,7 @@ namespace FYI.Domain.Handlers.Professor
             _usuarioRepositorio.Adicionar(novoUsuario);
 
 
-            Professores professor = new Professores(command.NomeProfessor, command.Sobrenome, novoUsuario.Id);
+            Professores professor = new Professores(command.NomeProfessor, command.Sobrenome, novoUsuario.Id, command.Telefone);
             if(!professor.IsValid)
             {
                 return new GenericCommandResult(false, "Informe corretamente os dados do professor!", command.Notifications);

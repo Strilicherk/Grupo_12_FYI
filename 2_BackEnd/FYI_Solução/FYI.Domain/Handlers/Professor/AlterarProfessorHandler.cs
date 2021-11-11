@@ -32,7 +32,7 @@ namespace FYI.Domain.Handlers.Professor
                 return new GenericCommandResult(false, "Professor não encontrado", null);
             };
 
-            professor.AlterarProfessor(command.NomeProfessor, command.Sobrenome);
+            professor.AlterarProfessor(command.NomeProfessor, command.Sobrenome, command.Telefone);
 
             _professorRepositorio.Alterar(professor);
 

@@ -27,11 +27,9 @@ namespace FYI.Domain.Commands.Aluno
 
         // Composições
         public Guid IdUsuario { get; private set; }
-        public Entidades.Usuario Usuario { get; private set; }
+
 
         public Guid IdTurma { get; private set; }
-        public Turmas Turma { get; private set; }
-
         public void Validar()
         {
             AddNotifications(

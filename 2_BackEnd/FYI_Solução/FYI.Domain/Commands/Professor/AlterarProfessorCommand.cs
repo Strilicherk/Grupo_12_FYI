@@ -9,18 +9,19 @@ namespace FYI.Domain.Commands.Professor
 {
     public class AlterarProfessorCommand : Notifiable<Notification>, ICommand
     {
-        public AlterarProfessorCommand(string nomeProfessor, string sobrenome, Guid id)
+        public AlterarProfessorCommand(string nomeProfessor, string sobrenome, Guid id, int telefone)
         {
             Id = id;
             NomeProfessor = nomeProfessor;
             Sobrenome = sobrenome;
+            Telefone = telefone;
         }
         public Guid Id { get; private set; }
         public string NomeProfessor { get; set; }
-        public string Sobrenome { get;  set; }
+        public string Sobrenome { get; set; }
         //public int Telefone { get; set; }
-        public Guid IdUsuario { get;  set; }
-        public Entidades.Usuario Usuario { get;  set; }
+        public Guid IdUsuario { get; set; }
+        public int Telefone {get ; set;}
         public void Validar()
         {
             AddNotifications(

@@ -11,7 +11,7 @@ namespace FYI.Domain.Entidades
 {
     public class Professores : Base
     {
-        public Professores(string nomeProfessor, string sobrenome, Guid idUsuario) 
+        public Professores(string nomeProfessor, string sobrenome, Guid idUsuario, int telefone) 
         {
             AddNotifications(
             new Contract<Notification>()
@@ -26,6 +26,7 @@ namespace FYI.Domain.Entidades
                 NomeProfessor = nomeProfessor;
                 Sobrenome = sobrenome;
                 IdUsuario = idUsuario;
+                Telefone = telefone;
             }
 
         }
@@ -42,7 +43,7 @@ namespace FYI.Domain.Entidades
         public Guid IdUsuario { get; private set; }
         public Usuario Usuario { get; private set; }
 
-        public void AlterarProfessor(string nomeProfessor, string sobrenome)
+        public void AlterarProfessor(string nomeProfessor, string sobrenome,int telefone)
         {
             AddNotifications(
              new Contract<Notification>()
@@ -55,6 +56,7 @@ namespace FYI.Domain.Entidades
             {
                 NomeProfessor = nomeProfessor;
                 Sobrenome = sobrenome;
+                Telefone = telefone;
             }
         }
 
