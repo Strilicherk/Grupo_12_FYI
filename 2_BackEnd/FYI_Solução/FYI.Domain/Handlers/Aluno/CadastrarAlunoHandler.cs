@@ -5,7 +5,7 @@ using FYI.Domain.Repositorios;
 using FYI.Shared.Commands;
 using FYI.Shared.Enums;
 using FYI.Shared.Handlers.Contracts;
-
+using System;
 
 namespace FYI.Domain.Handlers.Curso
 {
@@ -46,12 +46,14 @@ namespace FYI.Domain.Handlers.Curso
             Turmas turma = _turmaRepositorio.BuscarPorId(command.IdTurma);
             if (turma == null)
             {
+                _usuarioRepositorio.excluir(novoUsuario.Id);
                 return new GenericCommandResult(false, "Curso não encontrado", command.Notifications);
             }
 
              Alunos aluno = new Alunos(command.Nome, command.Sobrenome, command.CPF, command.DataNascimento, command.Telefone, novoUsuario.Id, turma.Id);
             if (!aluno.IsValid)
             {
+                _usuarioRepositorio.excluir(novoUsuario.Id);
                 return new GenericCommandResult(false, "Informe corretamente os dados do aluno!", command.Notifications);
             }
 

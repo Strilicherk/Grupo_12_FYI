@@ -4,7 +4,7 @@ using FYI.Domain.Entidades;
 using FYI.Domain.Repositorios;
 using FYI.Shared.Commands;
 using FYI.Shared.Handlers.Contracts;
-
+using System;
 
 namespace FYI.Domain.Handlers.Curso
 {
@@ -31,9 +31,9 @@ namespace FYI.Domain.Handlers.Curso
             {
                 return new GenericCommandResult(false, "Aluno não encontrado", null);
             };
+            
 
-
-            _alunoRepositorio.Excluir(aluno);
+             _alunoRepositorio.Excluir(aluno);
 
             return new GenericCommandResult(true, "Aluno alterado com sucesso!", aluno);
         }

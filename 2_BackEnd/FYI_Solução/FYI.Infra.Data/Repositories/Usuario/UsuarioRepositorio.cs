@@ -39,6 +39,11 @@ namespace FYI.Infra.Data.Repositories.Usuario
             return _context.Usuarios.FirstOrDefault(x => x.Id == id);
         }
 
+        public void excluir(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
         public ICollection<Domain.Entidades.Usuario> Listar()
         {
             return _context.Usuarios

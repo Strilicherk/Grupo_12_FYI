@@ -16,7 +16,7 @@ namespace FYI.Domain.Commands.Curso
             Id = id;
             NomeCurso = nomeCurso;
         }
-        public Guid Id { get; private set; }
+        public Guid Id { get;  set; }
         public string NomeCurso { get; set; }
 
         public void Validar()

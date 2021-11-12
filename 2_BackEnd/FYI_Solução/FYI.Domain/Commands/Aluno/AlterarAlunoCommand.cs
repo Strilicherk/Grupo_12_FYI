@@ -18,15 +18,15 @@ namespace FYI.Domain.Commands.Aluno
             DataNascimento = dataNascimento;
             Telefone = telefone;
         }
-        public Guid Id { get; private set; }
-        public string Nome { get; private set; }
-        public string Sobrenome { get; private set; }
-        public string CPF { get; private set; }
-        public DateTime DataNascimento { get; private set; }
-        public string Telefone { get; private set; }
+        public Guid Id { get;set; }
+        public string Nome { get;  set; }
+        public string Sobrenome { get;  set; }
+        public string CPF { get;  set; }
+        public DateTime DataNascimento { get;  set; }
+        public string Telefone { get;  set; }
 
         // Composições
-        public Guid IdUsuario { get; private set; }
+        public Guid IdUsuario { get; private  set; }
 
 
         public Guid IdTurma { get; private set; }
