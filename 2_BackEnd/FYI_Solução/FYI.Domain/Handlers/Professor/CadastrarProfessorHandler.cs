@@ -45,7 +45,7 @@ namespace FYI.Domain.Handlers.Professor
                 return new GenericCommandResult(false, "Informe corretamente os dados do professor!", command.Notifications);
             }
 
-            _usuarioRepositorio.Adicionar(novoUsuario);
+           
 
 
             Professores professor = new Professores(command.NomeProfessor, command.Sobrenome, novoUsuario.Id, command.Telefone);
@@ -53,8 +53,9 @@ namespace FYI.Domain.Handlers.Professor
             {
                 return new GenericCommandResult(false, "Informe corretamente os dados do professor!", command.Notifications);
             }
-            _professorRepositorio.Adicionar(professor);
 
+            _usuarioRepositorio.Adicionar(novoUsuario);
+            _professorRepositorio.Adicionar(professor);
 
             return new GenericCommandResult(true, "Novo Professor Criado!", professor);
         }

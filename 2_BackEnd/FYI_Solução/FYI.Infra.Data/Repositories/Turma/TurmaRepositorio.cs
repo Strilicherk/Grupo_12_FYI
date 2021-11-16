@@ -45,6 +45,8 @@ namespace FYI.Infra.Data.Repositories.Turma
         {
             return _ctx.Turmas
                 .AsNoTracking()
+                .Include(x=>x.Curso.NomeCurso)
+                .Include(x=>x.Professor)
                 .ToList();
         }
     }

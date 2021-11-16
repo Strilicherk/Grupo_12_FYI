@@ -39,6 +39,7 @@ namespace FYI.Infra.Data.Repositories.Aluno
         public void Excluir(Alunos Aluno)
         {
             _ctx.Alunos.Remove(Aluno);
+            _ctx.Usuarios.Remove(Aluno.Usuario);
             _ctx.SaveChanges();
         }
 
@@ -46,6 +47,8 @@ namespace FYI.Infra.Data.Repositories.Aluno
         {
             return _ctx.Alunos
                 .AsNoTracking()
+                .Include(x=>x.Turma.NomeTurma)
+                .Include(x=>x.Usuario)
                 .ToList();
         }
     }

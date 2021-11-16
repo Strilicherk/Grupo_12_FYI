@@ -38,6 +38,7 @@ namespace FYI.Infra.Data.Repositories.Professor
         public void Excluir(Professores Professor)
         {
             _ctx.Professores.Remove(Professor);
+            _ctx.Usuarios.Remove(Professor.Usuario);
             _ctx.SaveChanges();
         }
 
@@ -45,6 +46,7 @@ namespace FYI.Infra.Data.Repositories.Professor
         {
             return _ctx.Professores
                      .AsNoTracking()
+                     .Include(x => x.Usuario)
                        .ToList();
         }
     }
