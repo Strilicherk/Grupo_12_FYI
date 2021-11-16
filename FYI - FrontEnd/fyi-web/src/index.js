@@ -6,6 +6,7 @@ import './index.css';
 
 import App from './pages/home/App';
 import Login from './pages/login/login';
+import Turmas from './pages/turmas/turmas';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -15,6 +16,7 @@ const routing = (
       <Switch>
         <Route exact path="/" component={App}/>
         <Route exact path="/login" component={Login}/>
+        <Route exact path="/turmas" component={Turmas}/>
       </Switch>
     </div>
   </Router>

@@ -1,0 +1,50 @@
+.content{
+    width: 100%;
+    align-items: center;
+}
+.titulo{
+    width: auto;
+    padding-right: 500px;
+}
+
+.filtro{
+    width: auto;
+    padding-right: 50px;
+}
+
+.select{
+    height: 30px;
+}
+
+.todasTurmasDisponiveis{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid;
+}
+
+.turmasDisponiveis{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.infosGerais{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gradeCurricular{
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.horas{
+    font-size: 12px;
+}
+
