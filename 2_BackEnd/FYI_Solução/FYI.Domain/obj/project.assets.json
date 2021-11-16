@@ -5877,7 +5877,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\devops\\.nuget\\packages\\": {}
+    "C:\\Users\\54690823855\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -5885,11 +5885,11 @@
       "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
       "projectName": "FYI.Domain",
       "projectPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
-      "packagesPath": "C:\\Users\\devops\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\54690823855\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\devops\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\54690823855\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

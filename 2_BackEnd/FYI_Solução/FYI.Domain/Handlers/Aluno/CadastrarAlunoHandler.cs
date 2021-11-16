@@ -37,7 +37,7 @@ namespace FYI.Domain.Handlers.Curso
             };
             Usuario novoUsuario = new Usuario(command.Email, command.Senha, EnTipoUsuario.Aluno);
 
-            _usuarioRepositorio.Adicionar(novoUsuario);
+            
 
             if (!novoUsuario.IsValid)
             {
@@ -51,12 +51,8 @@ namespace FYI.Domain.Handlers.Curso
             }
 
              Alunos aluno = new Alunos(command.Nome, command.Sobrenome, command.CPF, command.DataNascimento, command.Telefone, novoUsuario.Id, turma.Id);
-            if (!aluno.IsValid)
-            {
-                _usuarioRepositorio.excluir(novoUsuario.Id);
-                return new GenericCommandResult(false, "Informe corretamente os dados do aluno!", command.Notifications);
-            }
-
+            _usuarioRepositorio.Adicionar(novoUsuario);
+            _alunoRepositorio.Adicionar(aluno);
             return new GenericCommandResult(true, "Aluno Criado com sucesso!", aluno);
         }
     }

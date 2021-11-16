@@ -57,4 +57,3 @@ C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data
 C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\obj\Debug\net5.0\ref\FYI.Infra.Data.dll
 C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\obj\Debug\net5.0\FYI.Infra.Data.pdb
 C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\obj\Debug\net5.0\FYI.Infra.Data.genruntimeconfig.cache
-C:\Users\54690823855\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\obj\Debug\net5.0\FYI.Infra.Data.csproj.CopyComplete

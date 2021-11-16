@@ -143,11 +143,11 @@ namespace FYI.Api
 
             app.UseRouting();
 
-            app.UseAuthentication();
-
             app.UseAuthorization();
 
             app.UseCors("CorsPolicy");
+
+            app.UseStaticFiles();
 
             app.UseEndpoints(endpoints =>
             {
