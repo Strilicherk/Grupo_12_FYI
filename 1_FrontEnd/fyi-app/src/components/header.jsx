@@ -16,7 +16,7 @@ const Header = () => {
 
         <header>           
             <nav className="header">   
-                <a href="http://localhost:3000/"><img src={logoazul} alt="Logo minimalista for your information Learning Solution - FYI"/></a>
+                <a href="#"><img src={logoazul} alt="Logo minimalista for your information Learning Solution - FYI"/></a>
 
                 <div className="mobile-menu" >
                     <div className="1"></div>
