@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "FYI.Api/1.0.0": {
         "dependencies": {
+          "FYI.Domain": "1.0.0",
           "FYI.Infra.Data": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.11",
           "Microsoft.EntityFrameworkCore": "5.0.11",

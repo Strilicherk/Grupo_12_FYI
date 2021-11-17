@@ -11,6 +11,7 @@ namespace FYI.Domain.Repositorios
     {
         void Adicionar(Usuario usuario);
         void Alterar(Usuario usuario);
+        void excluir(Guid id);
         Usuario BuscarPorEmail(string email);
         Usuario BuscarPorId(Guid id);
 

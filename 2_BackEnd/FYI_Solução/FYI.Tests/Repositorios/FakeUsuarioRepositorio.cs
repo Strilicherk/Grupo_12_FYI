@@ -32,6 +32,11 @@ namespace FYI.Tests.Repositorios
             return new Usuario("teste@teste.com", "teste123", FYI.Shared.Enums.EnTipoUsuario.Admin);
         }
 
+        public void excluir(Guid id)
+        {
+            
+        }
+
         public ICollection<Usuario> Listar()
         {
             return new List<Usuario>()
