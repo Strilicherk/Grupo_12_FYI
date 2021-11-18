@@ -43,7 +43,7 @@ namespace FYI.Domain.Handlers.Usuarios
             command.Senha = Senha.Criptografar(command.Senha);
 
             // Salva no banco -> repositorio.Adicionar(usuario)
-            Usuario u1 = new Usuario
+            Entidades.Usuario u1 = new Entidades.Usuario
                 (
                     command.Email,
                     command.Senha,

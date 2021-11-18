@@ -13,7 +13,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeCursoForValido()
         {
-            Curso curso = new Curso(
+            Cursos curso = new Cursos(
                 "Dev"
             );
 
@@ -23,7 +23,7 @@ namespace FYI.Tests.Entidades
         [Fact]
         public void DeveRetornarSeCursoForInvalidoSemNome()
         {
-            Curso curso = new Curso(
+            Cursos curso = new Cursos(
                 ""
             );
 
