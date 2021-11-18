@@ -205,6 +205,7 @@ C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\obj\De
 C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\obj\Debug\net5.0\FYI.Api.pdb
 C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\obj\Debug\net5.0\FYI.Api.genruntimeconfig.cache
 C:\Users\54690823855\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\obj\Debug\net5.0\FYI.Api.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\bin\Debug\net5.0\appsettings.json
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\bin\Debug\net5.0\FYI.Api.exe
@@ -273,3 +274,5 @@ C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\obj\De
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\obj\Debug\net5.0\ref\FYI.Api.dll
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\obj\Debug\net5.0\FYI.Api.pdb
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\obj\Debug\net5.0\FYI.Api.genruntimeconfig.cache
+=======
+>>>>>>> c8bd0711a7fe34119463d21c48e181bce355373c

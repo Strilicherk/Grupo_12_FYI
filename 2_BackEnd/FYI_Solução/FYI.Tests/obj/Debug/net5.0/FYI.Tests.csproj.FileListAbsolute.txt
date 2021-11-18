@@ -456,6 +456,7 @@ C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Tests\obj\
 C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Tests\obj\Debug\net5.0\ref\FYI.Tests.dll
 C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Tests\obj\Debug\net5.0\FYI.Tests.pdb
 C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Tests\obj\Debug\net5.0\FYI.Tests.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Tests\bin\Debug\net5.0\testhost.exe
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Tests\bin\Debug\net5.0\testhost.dll
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Tests\bin\Debug\net5.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
@@ -609,3 +610,5 @@ C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Tests\obj\
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Tests\obj\Debug\net5.0\ref\FYI.Tests.dll
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Tests\obj\Debug\net5.0\FYI.Tests.pdb
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Tests\obj\Debug\net5.0\FYI.Tests.genruntimeconfig.cache
+=======
+>>>>>>> c8bd0711a7fe34119463d21c48e181bce355373c

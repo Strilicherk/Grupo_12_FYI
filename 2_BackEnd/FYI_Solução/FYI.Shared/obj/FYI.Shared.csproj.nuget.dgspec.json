@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\48737833804\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {}
   },
   "projects": {
@@ -12,12 +13,29 @@
         "projectPath": "C:\\Users\\48737833804\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
         "packagesPath": "C:\\Users\\48737833804\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\48737833804\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
+=======
+    "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+        "projectName": "FYI.Shared",
+        "projectPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+        "packagesPath": "C:\\Users\\54690823855\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\54690823855\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
+>>>>>>> c8bd0711a7fe34119463d21c48e181bce355373c
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\48737833804\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\54690823855\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> c8bd0711a7fe34119463d21c48e181bce355373c
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

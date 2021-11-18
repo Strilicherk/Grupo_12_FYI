@@ -57,6 +57,7 @@ C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj
 C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\ref\FYI.Shared.dll
 C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.pdb
 C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.deps.json
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.runtimeconfig.json
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.runtimeconfig.dev.json
@@ -72,3 +73,5 @@ C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\ref\FYI.Shared.dll
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.pdb
 C:\Users\48737833804\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.genruntimeconfig.cache
+=======
+>>>>>>> c8bd0711a7fe34119463d21c48e181bce355373c
