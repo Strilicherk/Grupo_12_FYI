@@ -8,7 +8,7 @@
 }
 
 .sobreCurso{
-    width: 30em;
+    width: 26em;
     height: 35em;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@
 }
 
 .inscricao{
-    width: 30em;
+    width: 26em;
     height: 35em;
     display: flex;
     flex-direction: column;
@@ -97,7 +97,7 @@
 }
 
 .publicoAlvo{
-    width: 30em;
+    width: 26em;
     height: 7em;
     text-align: justify;
     /* background-color: cadetblue; */
@@ -113,7 +113,7 @@
 }
 
 .preRequisto{
-    width: 30em;
+    width: 26em;
     height: 7em;
     text-align: justify;
     /* background-color: cadetblue; */
