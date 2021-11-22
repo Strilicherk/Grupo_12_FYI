@@ -135,14 +135,14 @@ namespace FYI.Api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwaggerUI(c => {
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-                    //c.RoutePrefix = string.Empty;
-                });
-                app.UseSwagger();
+                
             }
-
-            app.UseHttpsRedirection();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.RoutePrefix = string.Empty;
+            });
+            app.UseSwagger();
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
 
