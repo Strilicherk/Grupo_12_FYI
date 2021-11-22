@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\54690823855\\Desktop\\Nova pasta (2)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {}
+    "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\Back-endAp\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\54690823855\\Desktop\\Nova pasta (2)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
+    "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\Back-endAp\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\Nova pasta (2)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\Back-endAp\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
         "projectName": "FYI.Shared",
-        "projectPath": "C:\\Users\\54690823855\\Desktop\\Nova pasta (2)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
-        "packagesPath": "C:\\Users\\54690823855\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\54690823855\\Desktop\\Nova pasta (2)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
+        "projectPath": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\Back-endAp\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+        "packagesPath": "C:\\Users\\35834520898\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\Back-endAp\\FYI_Solução\\FYI.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\54690823855\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\35834520898\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

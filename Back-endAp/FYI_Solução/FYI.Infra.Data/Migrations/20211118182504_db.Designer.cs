@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FYI.Infra.Data.Migrations
 {
     [DbContext(typeof(ForYouContext))]
-    [Migration("20211111181353_Criando Tabelas")]
-    partial class CriandoTabelas
+    [Migration("20211118182504_db")]
+    partial class db
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
