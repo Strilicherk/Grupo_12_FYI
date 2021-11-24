@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ULPU9QyJ1GjF3gduQ0jrHsFxWxfVKrI9Rm99pCjwYVy8XsfLN9eVIRE0dVg6k6nYBzbF3TVeA4FRxChkcIRDxQ==",
+  "dgSpecHash": "hMdWUGe5L46Rru2cQ2cUGT9TT0+fuAjBwdiv7E44dRXoKY3F2l9bxFzHJxO9vHI+r4UPtm+xkx5gjpPp2c4m/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\54690823855\\Desktop\\Nova pasta (2)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
+  "projectFilePath": "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\54690823855\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\54690823855\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
