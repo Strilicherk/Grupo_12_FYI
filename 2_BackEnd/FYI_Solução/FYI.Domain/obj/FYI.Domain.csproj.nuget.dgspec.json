@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {}
   },
   "projects": {
@@ -12,12 +13,26 @@
         "projectPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
         "packagesPath": "C:\\Users\\48737833804\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\obj\\",
+=======
+    "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
+        "projectName": "FYI.Domain",
+        "projectPath": "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
+        "packagesPath": "C:\\Users\\54690823855\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\obj\\",
+>>>>>>> b46cf679f3753b536c4868808ccd3ff802e2b0ff
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\48737833804\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\54690823855\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> b46cf679f3753b536c4868808ccd3ff802e2b0ff
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,8 +46,13 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
                 "projectPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj"
+=======
+              "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
+                "projectPath": "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj"
+>>>>>>> b46cf679f3753b536c4868808ccd3ff802e2b0ff
               }
             }
           }
@@ -95,6 +115,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -103,12 +124,23 @@
         "projectPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
         "packagesPath": "C:\\Users\\48737833804\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
+=======
+    "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+        "projectName": "FYI.Shared",
+        "projectPath": "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+        "packagesPath": "C:\\Users\\54690823855\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
+>>>>>>> b46cf679f3753b536c4868808ccd3ff802e2b0ff
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\48737833804\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\54690823855\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> b46cf679f3753b536c4868808ccd3ff802e2b0ff
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
