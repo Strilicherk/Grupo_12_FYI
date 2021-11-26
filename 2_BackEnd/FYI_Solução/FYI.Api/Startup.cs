@@ -142,7 +142,7 @@ namespace FYI.Api
                 app.UseSwagger();
             }
 
-            app.UseHttpsRedirection();
+           // app.UseHttpsRedirection();
 
             app.UseRouting();
 

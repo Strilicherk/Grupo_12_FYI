@@ -2,7 +2,6 @@
   "ExpandedNodes": [
     "",
     "\\FYI.Api",
-    "\\FYI.Domain\\Commands",
     "\\FYI.Tests",
     "\\FYI.Tests\\Commands",
     "\\FYI.Tests\\Commands\\Aluno",
@@ -11,6 +10,6 @@
     "\\FYI.Tests\\Commands\\Professor",
     "\\FYI.Tests\\Commands\\Turmas"
   ],
-  "SelectedNode": "\\FYI.Tests\\Commands\\Aluno\\CriarAunoCommandTeste.cs",
+  "SelectedNode": "\\FYI_Solução.sln",
   "PreviewInSolutionExplorer": false
 }
