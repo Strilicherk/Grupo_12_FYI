@@ -1,7 +1,24 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {}
+=======
+<<<<<<< HEAD
+    "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
+        "projectName": "FYI.Domain",
+        "projectPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
+        "packagesPath": "C:\\Users\\48737833804\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\obj\\",
+=======
+    "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {}
+>>>>>>> 26d1bf0e179c4a3ddf1c1b6f513cf98f857a657a
   },
   "projects": {
     "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
@@ -9,12 +26,26 @@
       "restore": {
         "projectUniqueName": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
         "projectName": "FYI.Domain",
+<<<<<<< HEAD
         "projectPath": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
         "packagesPath": "C:\\Users\\48478964835\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\48478964835\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "projectPath": "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
+        "packagesPath": "C:\\Users\\54690823855\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\obj\\",
+>>>>>>> b46cf679f3753b536c4868808ccd3ff802e2b0ff
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+<<<<<<< HEAD
+          "C:\\Users\\48737833804\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\54690823855\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> b46cf679f3753b536c4868808ccd3ff802e2b0ff
+>>>>>>> 26d1bf0e179c4a3ddf1c1b6f513cf98f857a657a
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +59,18 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
                 "projectPath": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj"
+=======
+<<<<<<< HEAD
+              "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
+                "projectPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj"
+=======
+              "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
+                "projectPath": "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj"
+>>>>>>> b46cf679f3753b536c4868808ccd3ff802e2b0ff
+>>>>>>> 26d1bf0e179c4a3ddf1c1b6f513cf98f857a657a
               }
             }
           }
@@ -88,21 +129,53 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
     "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+<<<<<<< HEAD
+    "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+        "projectName": "FYI.Shared",
+        "projectPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+        "packagesPath": "C:\\Users\\48737833804\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
+=======
+    "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
+>>>>>>> 26d1bf0e179c4a3ddf1c1b6f513cf98f857a657a
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
         "projectName": "FYI.Shared",
+<<<<<<< HEAD
         "projectPath": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
         "packagesPath": "C:\\Users\\48478964835\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\48478964835\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\48478964835\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "projectPath": "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+        "packagesPath": "C:\\Users\\54690823855\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\54690823855\\Desktop\\Nova pasta (3)\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
+>>>>>>> b46cf679f3753b536c4868808ccd3ff802e2b0ff
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+<<<<<<< HEAD
+          "C:\\Users\\48737833804\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\54690823855\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> b46cf679f3753b536c4868808ccd3ff802e2b0ff
+>>>>>>> 26d1bf0e179c4a3ddf1c1b6f513cf98f857a657a
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -176,7 +249,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+>>>>>>> 26d1bf0e179c4a3ddf1c1b6f513cf98f857a657a
         }
       }
     }

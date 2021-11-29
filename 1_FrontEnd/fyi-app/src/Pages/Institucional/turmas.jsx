@@ -8,6 +8,31 @@ import da from '../../assets/img/datainicio.png';
 import '../../assets/styles/turmas.css';
 
 class Turmas extends Component{
+
+    constructor(props){
+        super(props);
+        this.state = {
+            listaTodasTurmas : []
+        }
+    }
+
+    listaTodasTurmas = () => {
+        console.log('agora vamos fazer a chamada para API para atualizar a lista');
+
+        // Faz a chamada para a API usando o fetch
+        fetch('http://localhost:5000/api/turmas/list')
+
+        .then(resposta => resposta.json())
+
+        .then(dados => this.setState({listaTodasTurmas : dados}))
+
+        .catch(erro => console.log(erro))
+    }
+
+    componentDidMount(){
+        this.listaTodasTurmas();
+    }
+
     render(){
         return(
             <>

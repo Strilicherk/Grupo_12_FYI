@@ -13,6 +13,7 @@ import Form from 'react-bootstrap/Form'
 import FloatingLabel from 'react-bootstrap/Form'
 
 class Turmas extends Component{
+<<<<<<< HEAD
     constructor(props){
         super(props);
         this.state = {
@@ -45,6 +46,8 @@ class Turmas extends Component{
           this.buscarTurmas();
       }
 
+=======
+>>>>>>> 26d1bf0e179c4a3ddf1c1b6f513cf98f857a657a
     render(){
         return(
             <main>
