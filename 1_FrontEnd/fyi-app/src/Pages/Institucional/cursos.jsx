@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 //css
 import "../../assets/styles/cursos.css";
@@ -61,7 +62,9 @@ class Cursos extends Component {
                                 </div>
                             </div>
 
-                            <Button>Todas as turmas</Button>
+                           <Link to="/turmas">
+                                <Button>Todas as turmas</Button>
+                           </Link>
 
 
                         </div>

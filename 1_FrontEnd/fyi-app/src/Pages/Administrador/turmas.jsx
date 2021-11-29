@@ -19,11 +19,31 @@ class Turmas extends Component{
             email : '',
             senha : '',
             erroMenssagem : '',
-            isLoading : false
+            isLoading : false,
+            listaTurmas: []
         }
     };
 
+    buscarTurmas = () => {
+        axios('http://localhost:5000/api/turmas/list', {
+        //   headers: {
+        //     'Authorization': 'Bearer ' + localStorage.getItem('usuario-login')
+        //   }
+        })
+    
+          .then(resposta => {
+            if (resposta.status === 200) {
+              this.setState({ listaTurmas: resposta.data })
+              console.log(this.state.listaTurmas)
+            }
+          })
+    
+          .catch(erro => console.log(erro))
+      }
 
+      componentDidMount() {
+          this.buscarTurmas();
+      }
 
     render(){
         return(
@@ -43,7 +63,19 @@ class Turmas extends Component{
                             <div className="form-content">
                                 <form className="formulario">
                                     <div className="esquerda">
-                                        <input placeholder="Nome"/>
+                                    <div className="text-input">
+                                            <label>Descrição</label>
+                                            <textarea id="descricao" placeholder="Escreva a sua descrição aqui"></textarea>
+                                        </div>
+                                        <div className="text-input">
+                                            <label>Pré-requisitos</label>
+                                            <textarea placeholder="Escreva os pré-requisitos aqui"></textarea>
+                                        </div>
+                                        <div className="text-input">
+                                            <label>Público alvo</label>
+                                            <textarea placeholder="Escreva o público alvo aqui"></textarea>
+                                        </div>
+                                        {/* <input placeholder="Nome"/>
                                         <input placeholder="Curso"/>
                                         <input placeholder="Quant. Alunos"/>
                                         <input placeholder="Professor"/>
@@ -58,7 +90,7 @@ class Turmas extends Component{
                                                 <label>Data de término</label>
                                                 <input type="date"/> 
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className="direita">
                                         <div className="text-input">
@@ -98,7 +130,16 @@ class Turmas extends Component{
                                     </tr>
                                 </thead>
                                 <tbody className="table-body">
-                                    <tr>
+                                    {
+                                        this.state.listaTurmas.map((turmas) => {
+                                            return(
+                                                <tr key={turmas.Id}>    
+
+                                                </tr>
+                                            )
+                                        })
+                                    }
+                                    {/* <tr>
                                         <td>Power BI avançado</td>
                                         <td>Power BI</td>
                                         <td>Paulo Brandão</td>
@@ -113,7 +154,7 @@ class Turmas extends Component{
                                         <td>25 / 40</td>
                                         <td>03 / 03 / 2003</td>
                                         <td>16 / 11 / 2021</td>
-                                    </tr>
+                                    </tr> */}
                                 </tbody>
                             </table>
                         </div>
