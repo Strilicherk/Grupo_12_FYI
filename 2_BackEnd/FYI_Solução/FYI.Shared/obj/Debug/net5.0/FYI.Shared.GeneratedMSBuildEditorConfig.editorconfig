@@ -7,12 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = FYI.Shared
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\48478964835\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\
-=======
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\
-=======
-build_property.ProjectDir = C:\Users\54690823855\Desktop\Nova pasta (3)\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\
->>>>>>> b46cf679f3753b536c4868808ccd3ff802e2b0ff
->>>>>>> 26d1bf0e179c4a3ddf1c1b6f513cf98f857a657a
+build_property.ProjectDir = C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\

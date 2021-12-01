@@ -1,22 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\FYI.Api",
-<<<<<<< HEAD
-=======
-    "\\FYI.Tests",
->>>>>>> 26d1bf0e179c4a3ddf1c1b6f513cf98f857a657a
-    "\\FYI.Tests\\Commands",
-    "\\FYI.Tests\\Commands\\Aluno",
-    "\\FYI.Tests\\Commands\\Curso",
-    "\\FYI.Tests\\Commands\\Faq",
-    "\\FYI.Tests\\Commands\\Professor",
-    "\\FYI.Tests\\Commands\\Turmas"
+    ""
   ],
-<<<<<<< HEAD
-  "SelectedNode": "\\FYI.Api\\appsettings.Development.json",
-=======
-  "SelectedNode": "\\FYI_Solução.sln",
->>>>>>> 26d1bf0e179c4a3ddf1c1b6f513cf98f857a657a
   "PreviewInSolutionExplorer": false
 }

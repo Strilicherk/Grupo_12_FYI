@@ -13,41 +13,7 @@ import Form from 'react-bootstrap/Form'
 import FloatingLabel from 'react-bootstrap/Form'
 
 class Turmas extends Component{
-<<<<<<< HEAD
-    constructor(props){
-        super(props);
-        this.state = {
-            email : '',
-            senha : '',
-            erroMenssagem : '',
-            isLoading : false,
-            listaTurmas: []
-        }
-    };
 
-    buscarTurmas = () => {
-        axios('http://localhost:5000/api/turmas/list', {
-        //   headers: {
-        //     'Authorization': 'Bearer ' + localStorage.getItem('usuario-login')
-        //   }
-        })
-    
-          .then(resposta => {
-            if (resposta.status === 200) {
-              this.setState({ listaTurmas: resposta.data })
-              console.log(this.state.listaTurmas)
-            }
-          })
-    
-          .catch(erro => console.log(erro))
-      }
-
-      componentDidMount() {
-          this.buscarTurmas();
-      }
-
-=======
->>>>>>> 26d1bf0e179c4a3ddf1c1b6f513cf98f857a657a
     render(){
         return(
             <main>
