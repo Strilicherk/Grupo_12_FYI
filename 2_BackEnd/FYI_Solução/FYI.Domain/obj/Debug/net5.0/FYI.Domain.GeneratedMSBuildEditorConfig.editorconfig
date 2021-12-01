@@ -1,0 +1,14 @@
+is_global = true
+build_property.TargetFramework = net5.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.PublishSingleFile = 
+build_property.IncludeAllContentForSelfExtract = 
+build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.RootNamespace = FYI.Domain
+<<<<<<< HEAD
+build_property.ProjectDir = C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\
+=======
+build_property.ProjectDir = C:\Users\54690823855\Desktop\Nova pasta (3)\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\
+>>>>>>> b46cf679f3753b536c4868808ccd3ff802e2b0ff

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\54690823855\Desktop\Nova pasta</_PublishTargetUrl>
+    <History>True|2021-11-19T19:38:11.5167962Z;True|2021-11-19T16:35:08.2243149-03:00;True|2021-11-19T16:34:17.7766439-03:00;True|2021-11-19T16:25:40.8738465-03:00;True|2021-11-19T16:21:28.9012770-03:00;True|2021-11-19T15:08:20.3842045-03:00;True|2021-11-19T15:01:56.1965775-03:00;True|2021-11-19T14:51:20.1876023-03:00;True|2021-11-19T14:42:27.3773403-03:00;True|2021-11-19T14:36:03.1736503-03:00;True|2021-11-19T14:35:38.8788800-03:00;True|2021-11-16T17:06:33.0336096-03:00;True|2021-11-16T15:19:04.7961398-03:00;True|2021-11-16T15:01:06.2583517-03:00;</History>
+  </PropertyGroup>
+</Project>
