@@ -30,11 +30,9 @@ nav{
 
 
 ul{
-  color: white;
   display: flex;
   justify-content: space-between;   
   width: 540px;
-  color: white;
 }
 
 
