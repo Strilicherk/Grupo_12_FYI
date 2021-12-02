@@ -184,7 +184,7 @@ class Turmas extends Component{
                                                 <label>Data de término</label>
                                                 <input type="date" value={this.state.dataFim} onChange={this.atualizaEstadoDataFim}/> 
                                             </div>
-                                        </div> */}
+                                        </div>
                                     </div>
                                     <div className="direita">
                                         <div className="text-input">
