@@ -7,8 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = FYI.Infra.Data
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\
-=======
-build_property.ProjectDir = C:\Users\54690823855\Desktop\Nova pasta (3)\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\
->>>>>>> b46cf679f3753b536c4868808ccd3ff802e2b0ff
+build_property.ProjectDir = C:\Users\35834520898\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\

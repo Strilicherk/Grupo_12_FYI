@@ -1,8 +1,6 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FYI.Api",
-    "\\FYI.Tests",
     "\\FYI.Tests\\Commands",
     "\\FYI.Tests\\Commands\\Aluno",
     "\\FYI.Tests\\Commands\\Curso",
