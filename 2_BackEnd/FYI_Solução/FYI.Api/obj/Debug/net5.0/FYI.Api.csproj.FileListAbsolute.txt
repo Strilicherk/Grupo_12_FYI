@@ -135,3 +135,4 @@ C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.
 C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\obj\Debug\net5.0\ref\FYI.Api.dll
 C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\obj\Debug\net5.0\FYI.Api.pdb
 C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\obj\Debug\net5.0\FYI.Api.genruntimeconfig.cache
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\obj\Debug\net5.0\FYI.Api.csproj.CopyComplete
