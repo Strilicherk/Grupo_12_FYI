@@ -5855,19 +5855,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gusta\\.nuget\\packages\\": {}
+    "C:\\Users\\54690823855\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Senai\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
       "projectName": "FYI.Shared",
-      "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Senai\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
-      "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Senai\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
+      "projectPath": "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+      "packagesPath": "C:\\Users\\54690823855\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\54690823855\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5941,7 +5941,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
