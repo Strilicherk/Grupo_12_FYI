@@ -16,3 +16,21 @@ C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solu�
 C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\ref\FYI.Domain.dll
 C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\FYI.Domain.pdb
 C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\FYI.Domain.genruntimeconfig.cache
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\bin\Debug\net5.0\FYI.Domain.deps.json
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\bin\Debug\net5.0\FYI.Domain.runtimeconfig.json
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\bin\Debug\net5.0\FYI.Domain.runtimeconfig.dev.json
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\bin\Debug\net5.0\FYI.Domain.dll
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\bin\Debug\net5.0\ref\FYI.Domain.dll
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\bin\Debug\net5.0\FYI.Domain.pdb
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\bin\Debug\net5.0\FYI.Shared.dll
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\bin\Debug\net5.0\FYI.Shared.pdb
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\FYI.Domain.csproj.AssemblyReference.cache
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\FYI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\FYI.Domain.AssemblyInfoInputs.cache
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\FYI.Domain.AssemblyInfo.cs
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\FYI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\FYI.Domain.csproj.CopyComplete
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\FYI.Domain.dll
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\ref\FYI.Domain.dll
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\FYI.Domain.pdb
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Domain\obj\Debug\net5.0\FYI.Domain.genruntimeconfig.cache
