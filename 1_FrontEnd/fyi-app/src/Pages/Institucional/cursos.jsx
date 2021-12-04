@@ -98,9 +98,9 @@ class Cursos extends Component {
                         <div className="scroll-curso">
 
 
-                            <div class="scrolling-wrapper">
+                            <div className="scrolling-wrapper">
 
-                                <div class="card__curso">
+                                <div className="card__curso">
 
                                     <div className="imagem__card">
 
@@ -138,7 +138,7 @@ class Cursos extends Component {
 
                                 </div>
 
-                                <div class="card__curso">
+                                <div className="card__curso">
 
 <div className="imagem__card">
 
@@ -176,7 +176,7 @@ class Cursos extends Component {
 
 </div>
 
-<div class="card__curso">
+<div className="card__curso">
 
 <div className="imagem__card">
 
@@ -215,7 +215,7 @@ class Cursos extends Component {
 </div>
 
 
-<div class="card__curso">
+<div className="card__curso">
 
 <div className="imagem__card">
 
@@ -252,7 +252,7 @@ class Cursos extends Component {
 
 
 </div>
-<div class="card__curso">
+<div className="card__curso">
 
 <div className="imagem__card">
 
@@ -289,7 +289,7 @@ class Cursos extends Component {
 
 
 </div>
-<div class="card__curso">
+<div className="card__curso">
 
 <div className="imagem__card">
 
@@ -326,7 +326,7 @@ class Cursos extends Component {
 
 
 </div>
-<div class="card__curso">
+<div className="card__curso">
 
 <div className="imagem__card">
 
@@ -363,7 +363,7 @@ class Cursos extends Component {
 
 
 </div>
-<div class="card__curso">
+<div className="card__curso">
 
 <div className="imagem__card">
 

@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\FYI.Tests.csproj": {}
+    "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\FYI.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
+    "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
         "projectName": "FYI.Domain",
-        "projectPath": "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
-        "packagesPath": "C:\\Users\\54690823855\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\obj\\",
+        "projectPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
+        "packagesPath": "C:\\Users\\48737833804\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\54690823855\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\48737833804\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +31,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
-                "projectPath": "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj"
+              "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
+                "projectPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj"
               }
             }
           }
@@ -88,21 +91,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
+    "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
         "projectName": "FYI.Shared",
-        "projectPath": "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
-        "packagesPath": "C:\\Users\\54690823855\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
+        "projectPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
+        "packagesPath": "C:\\Users\\48737833804\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\54690823855\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\48737833804\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -176,21 +182,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\FYI.Tests.csproj": {
+    "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\FYI.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\FYI.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\FYI.Tests.csproj",
         "projectName": "FYI.Tests",
-        "projectPath": "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\FYI.Tests.csproj",
-        "packagesPath": "C:\\Users\\54690823855\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\obj\\",
+        "projectPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\FYI.Tests.csproj",
+        "packagesPath": "C:\\Users\\48737833804\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Tests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\54690823855\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\48737833804\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -204,8 +213,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
-                "projectPath": "C:\\Users\\54690823855\\Desktop\\gntrstom,\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj"
+              "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj": {
+                "projectPath": "C:\\Users\\48737833804\\Desktop\\FYI\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj"
               }
             }
           }
@@ -284,7 +293,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
