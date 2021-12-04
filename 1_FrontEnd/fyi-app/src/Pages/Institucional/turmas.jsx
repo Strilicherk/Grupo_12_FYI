@@ -39,6 +39,15 @@ class Turmas extends Component {
             .catch(erro => console.log(erro))
     }
 
+    mudaFiltro = (campo) => {
+        // quando estiver digitando no campo username
+        //                     email        :       adm@adm.com
+    
+        // quando estiver digitando no campo password
+        //                     senha        :        senha123
+        this.setState({ [campo.target.name]: campo.target.value });
+      };
+
     componentDidMount() {
         this.listaTodasTurmas();
     }
@@ -53,8 +62,17 @@ class Turmas extends Component {
                             <h1 className="titulo">Todas as turmas</h1>
                             <div className="filtro">
                                 <h3>Filtrar por:</h3>
-                                <select className="select">
+                                <select className="select" name="filtro" value={this.state.filtro} onChange={this.mudaFiltro}>
                                     <option className="option" value="0">Selecione</option>
+                                    {/* {
+                                        this.state.listaTodasTurmas.filter((turmas) => {
+                                            return (turmas.nomeTurma == this.state.filtro
+                                            <option className="option" key={turmas.id} value={turmas.no}>
+
+                                            </option>
+                                            )
+                                        })
+                                    } */}
                                     <option className="option" value="cargaHoraria">40 Horas</option>
                                     <option className="option" value="tema">Microsoft Dinamics 360</option>
                                 </select>
@@ -63,9 +81,10 @@ class Turmas extends Component {
                         <hr className="linha"></hr>
                         <section className="turmasDisponiveis">
                             {
-                                this.state.listaTodasTurmas.filter((turmas) => {
-                                    return (turmas.nomeTurma == this.state.filtro)
-                                }).map((turmas) => {
+                                this.state.listaTodasTurmas
+                                // .filter((turmas) => {
+                                //     return (turmas.nomeTurma == this.state.filtro)})
+                                    .map((turmas) => {
                                     return (
                                         <div className="infosGerais">
                                             <div className="infoCurso">
