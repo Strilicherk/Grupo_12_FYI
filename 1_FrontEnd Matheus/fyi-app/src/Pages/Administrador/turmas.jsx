@@ -38,7 +38,7 @@ class Turmas extends Component{
     }
 
     buscarTurmas = () => {
-        axios('http://localhost:5000/api/Turmas/list', {
+        axios('http://54.90.205.161/api/Turmas/list', {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                 "Content-Type": "application/json"
@@ -56,7 +56,7 @@ class Turmas extends Component{
     cadastrarTurmas = async (event) => {
         event.preventDefault();
 
-        fetch('http://localhost:5000/api/Turmas/register', {
+        fetch('http://54.90.205.161/api/Turmas/register', {
             method: 'POST',
 
             body: JSON.stringify({ nomeTurma: this.state.nomeTurma, tamanhoTurma: this.state.tamanhoTurma, cursoTurma: this.state.cursoTurma, professorTurma: this.state.professorTurma, dataIncio: this.state.dataIncio, dataFim: this.state.dataFim, descricao: this.state.descricao, preRequisito: this.state.preRequisito, publicoAlvo: this.state.publicoAlvo }),
@@ -76,45 +76,10 @@ class Turmas extends Component{
 
         .catch(erro => console.log(erro))
 
-        // var turma = {
-        //     nomeTurma : this.state.nomeTurma,
-        //     tamanhoTurma : this.state.tamanhoTurma,
-        //     cursoTurma : this.state.cursoTurma,
-        //     professorTurma : this.state.professorTurma,
-        //     dataIncio : this.state.dataIncio,
-        //     dataFim : this.state.dataFim,
-        //     descricao : this.state.descricao,
-        //     preRequisito : this.state.preRequisito,
-        //     publicoAlvo : this.state.publicoAlvo,
-        // }
-
-        // await axios.post('http://localhost:5000/api/Turmas/register', {
-        //     nomeTurma : this.state.nomeTurma,
-        //     tamanhoTurma : this.state.tamanhoTurma,
-        //     cursoTurma : this.state.cursoTurma,
-        //     professorTurma : this.state.professorTurma,
-        //     dataIncio : this.state.dataInicio,
-        //     dataFim : this.state.dataFim,
-        //     descricao : this.state.descricao,
-        //     preRequisito : this.state.preRequisito,
-        //     publicoAlvo : this.state.publicoAlvo}
-        //     , 
-        //     {
-        //     headers : {
-        //         'Authorization' : 'Bearer ' + localStorage.getItem('user-token')
-        //     }
-        // })
-
-        // .then(resposta => {if (resposta.status == 200) {
-        //     console.log("cadastro")
-        //     console.log(this.state.listaTurmas)
-        // }})
-
-        // .catch(erro => console.log(erro))
     }
 
     buscarCursos = () => {
-        axios('http://localhost:5000/api/Cursos/list', {
+        axios('http://54.90.205.161/api/Cursos/list', {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                 "Content-Type": "application/json"
@@ -130,7 +95,7 @@ class Turmas extends Component{
     }
     
     buscarProfessores = () => {
-        axios('http://localhost:5000/api/Professor/list', {
+        axios('http://54.90.205.161/api/Professor/list', {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                 "Content-Type": "application/json"
@@ -205,11 +170,7 @@ class Turmas extends Component{
                                                 <label>Data de término</label>
                                                 <input type="date" value={this.state.dataFim} name="dataFim" onChange={this.funcaoMudaState}/> 
                                             </div>
-<<<<<<< HEAD
                                         </div> 
-=======
-                                        </div>
->>>>>>> main
                                     </div>
                                     <div className="direita">
                                         <div className="text-input">
@@ -263,22 +224,6 @@ class Turmas extends Component{
                                             )
                                         })
                                     }
-                                    {/* <tr>
-                                        <td>Power BI avançado</td>
-                                        <td>Power BI</td>
-                                        <td>Paulo Brandão</td>
-                                        <td>25 / 40</td>
-                                        <td>03 / 03 / 2003</td>
-                                        <td>16 / 11 / 2021</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Power BI avançado</td>
-                                        <td>Power BI</td>
-                                        <td>Paulo Brandão</td>
-                                        <td>25 / 40</td>
-                                        <td>03 / 03 / 2003</td>
-                                        <td>16 / 11 / 2021</td>
-                                    </tr> */}
                                 </tbody>
                             </table>
                         </div>

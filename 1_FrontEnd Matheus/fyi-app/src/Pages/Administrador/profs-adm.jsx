@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-//import axios from 'axios';
+import axios from 'axios';
 
 // components
 import Header from '../../components/header';
@@ -16,6 +16,10 @@ class ProfsAdm extends Component{
     constructor(props){
         super(props);
         this.state = {
+            listaProfessores: [],
+            nomeProfessor: '',
+            sobrenomeProfessor: '',
+            telefoneProfessor: '',
             email : '',
             senha : '',
             erroMenssagem : '',
@@ -33,9 +37,55 @@ class ProfsAdm extends Component{
         x.style.color = "#FFB900"
     }
 
+    funcaoMudaState = async (campo) => {
+        await this.setState({ [campo.target.name]: campo.target.value })
+    }
+
     componentDidMount(){
         this.mudaCor();
         this.mudaMenu();
+        this.buscarProfessores();
+    }
+
+    cadastrarProfessores = async (event) => {
+        event.preventDefault();
+
+        fetch('http://54.90.205.161/api/Turmas/register', {
+            method: 'POST',
+
+            body: JSON.stringify({ nomeProfessor: this.state.nomeProfessor, sobrenomeProfessor: this.state.sobrenomeProfessor, telefone: this.state.telefoneProfessor }),
+
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
+                "Content-Type": "application/json"
+            }
+        }) 
+
+        .then(resposta => {if (resposta.status == 200) {
+            console.log("cadastro")
+            console.log(this.state.listaProfessores)
+        }})
+
+        .then(this.buscarProfessores())
+
+        .catch(erro => console.log(erro))
+
+    }
+
+    buscarProfessores = () => {
+        axios('http://54.90.205.161/api/Professor/list', {
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
+                "Content-Type": "application/json"
+            }
+        })
+            .then(resposta => {
+                if (resposta.status === 200) {
+                    this.setState({ listaProfessores: resposta.data.data })
+                    console.log(this.state.listaProfessores)
+                }
+            })
+            .catch(erro => console.log(erro))
     }
 
     render(){
@@ -54,15 +104,24 @@ class ProfsAdm extends Component{
                         <div className="side-content-profs">
                             <h1>Cadastrando Professores</h1>
                             <div className="form-content-profs">
-                                <form className="formulario-profs">
+                                <form className="formulario-profs" onSubmit={this.cadastrarProfessores}>
                                 <div className="esquerda-profs">
-                                        <input placeholder="Nome"/>
-                                        <input placeholder="Sobrenome"/>
+                                    <div className="text-input">
+                                        <label>Nome</label>
+                                        <textarea id="nome" placeholder="Insira o nome do professor" value={this.state.nomeProfessor} name="nomeProfessor" onChange={this.funcaoMudaState}></textarea>
                                     </div>
-                                    <div className="direita-profs">
-                                        <input placeholder="Telefone"/>
-                                        <button className="btn-cadastrar-profs">Cadastrar Professor</button>
+                                    <div className="text-input">
+                                        <label>Sobrenome</label>
+                                        <textarea id="sobrenome" placeholder="Insira o sobrenome do professor" value={this.state.sobrenomeProfessor} name="sobrenomeProfessor" onChange={this.funcaoMudaState}></textarea>
                                     </div>
+                                </div>
+                                <div className="direita-profs">
+                                    <div className="text-input">
+                                        <label>Telefone</label>
+                                        <textarea id="telefone" placeholder="Insira o telefone aqui" value={this.state.telefoneProfessor} name="telefoneProfessor" onChange={this.funcaoMudaState}></textarea>
+                                    </div>
+                                    <button className="btn-cadastrar-profs" type="submit">Cadastrar Professor</button>
+                                </div>
                                 </form>
                             </div>
                         </div>
@@ -78,25 +137,20 @@ class ProfsAdm extends Component{
                                         <th>Nome</th>
                                         <th>Sobrenome</th>
                                         <th>Telefone</th>
-                                        <th>CPF</th>
-                                        <th>Data de Nascimento</th>
                                     </tr>
                                 </thead>
                                 <tbody className="table-body-profs">
-                                    <tr>
-                                        <td>Lucas</td>
-                                        <td>Apolinario</td>
-                                        <td>11 94002 - 8922</td>
-                                        <td>123.456.748 - 43</td>
-                                        <td>03 / 03 / 2003</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lucas</td>
-                                        <td>Apolinario</td>
-                                        <td>11 94002 - 8922</td>
-                                        <td>123.456.748 - 43</td>
-                                        <td>03 / 03 / 2003</td>
-                                    </tr>
+                                    {
+                                        this.state.listaProfessores.map((professor) => {
+                                            return(
+                                                <tr key={professor.id}>    
+                                                    <td>{professor.nomeProfessor}</td>
+                                                    <td>{professor.sobrenome}</td>
+                                                    <td>{professor.telefone}</td>
+                                                </tr>
+                                            )
+                                        })
+                                    }
                                 </tbody>
                             </table>
                         </div>
