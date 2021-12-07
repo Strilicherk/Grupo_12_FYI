@@ -46,9 +46,8 @@ namespace FYI.Infra.Data.Repositories.Aluno
         public ICollection<Alunos> Listar()
         {
             return _ctx.Alunos
-                .AsNoTracking()
-                .Include(x=>x.Turma.NomeTurma)
-                .Include(x=>x.Usuario)
+                .Include(x=>x.Turma)
+              //  .Include(x=>x.Usuario)
                 .ToList();
         }
     }

@@ -57,3 +57,22 @@ C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.
 C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\obj\Debug\net5.0\ref\FYI.Infra.Data.dll
 C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\obj\Debug\net5.0\FYI.Infra.Data.pdb
 C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\obj\Debug\net5.0\FYI.Infra.Data.genruntimeconfig.cache
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\bin\Debug\net5.0\FYI.Infra.Data.deps.json
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\bin\Debug\net5.0\FYI.Infra.Data.runtimeconfig.json
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\bin\Debug\net5.0\FYI.Infra.Data.runtimeconfig.dev.json
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\bin\Debug\net5.0\FYI.Infra.Data.dll
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\bin\Debug\net5.0\ref\FYI.Infra.Data.dll
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\bin\Debug\net5.0\FYI.Infra.Data.pdb
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\bin\Debug\net5.0\FYI.Domain.dll
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\bin\Debug\net5.0\FYI.Shared.dll
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\bin\Debug\net5.0\FYI.Domain.pdb
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\bin\Debug\net5.0\FYI.Shared.pdb
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\obj\Debug\net5.0\FYI.Infra.Data.csproj.AssemblyReference.cache
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\obj\Debug\net5.0\FYI.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\obj\Debug\net5.0\FYI.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\obj\Debug\net5.0\FYI.Infra.Data.AssemblyInfo.cs
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\obj\Debug\net5.0\FYI.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\obj\Debug\net5.0\FYI.Infra.Data.dll
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\obj\Debug\net5.0\ref\FYI.Infra.Data.dll
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\obj\Debug\net5.0\FYI.Infra.Data.pdb
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Infra.Data\obj\Debug\net5.0\FYI.Infra.Data.genruntimeconfig.cache

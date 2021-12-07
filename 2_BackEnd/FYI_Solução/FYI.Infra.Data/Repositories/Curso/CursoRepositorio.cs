@@ -45,7 +45,6 @@ namespace FYI.Infra.Data.Repositories.Curso
         public ICollection<Cursos> Listar()
         {
             return _ctx.Cursos
-                .AsNoTracking()
                 .ToList();
         }
     }

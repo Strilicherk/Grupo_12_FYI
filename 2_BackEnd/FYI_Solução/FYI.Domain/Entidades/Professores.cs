@@ -3,6 +3,7 @@ using Flunt.Validations;
 using FYI.Shared.Entidades;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,6 +41,7 @@ namespace FYI.Domain.Entidades
         public IReadOnlyCollection<Turmas> Turmas { get; private set; }
         private List<Turmas> _turmas { get; set; }
 
+        [ForeignKey("Usuario")]
         public Guid IdUsuario { get; private set; }
         public Usuario Usuario { get; private set; }
 

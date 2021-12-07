@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace FYI.Infra.Data.Migrations
 {
-    public partial class CriandoTabelas : Migration
+    public partial class atualizacaoinclude : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -54,18 +54,17 @@ namespace FYI.Infra.Data.Migrations
                     NomeProfessor = table.Column<string>(type: "varchar(60)", maxLength: 60, nullable: false),
                     Sobrenome = table.Column<string>(type: "varchar(60)", maxLength: 60, nullable: false),
                     Telefone = table.Column<int>(type: "INT", nullable: false),
-                    IdUsuario = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    UsuarioId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                    IdUsuario = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Professores", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Professores_Usuarios_UsuarioId",
-                        column: x => x.UsuarioId,
+                        name: "FK_Professores_Usuarios_IdUsuario",
+                        column: x => x.IdUsuario,
                         principalTable: "Usuarios",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -82,25 +81,23 @@ namespace FYI.Infra.Data.Migrations
                     QuantidadeAluno = table.Column<int>(type: "INT", maxLength: 3, nullable: false),
                     QtdMax = table.Column<int>(type: "INT", maxLength: 3, nullable: false),
                     IdCurso = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    CursoId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    IdProfessor = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    ProfessorId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                    IdProfessor = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Turmas", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Turmas_Cursos_CursoId",
-                        column: x => x.CursoId,
+                        name: "FK_Turmas_Cursos_IdCurso",
+                        column: x => x.IdCurso,
                         principalTable: "Cursos",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Turmas_Professores_ProfessorId",
-                        column: x => x.ProfessorId,
+                        name: "FK_Turmas_Professores_IdProfessor",
+                        column: x => x.IdProfessor,
                         principalTable: "Professores",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -115,18 +112,17 @@ namespace FYI.Infra.Data.Migrations
                     Telefone = table.Column<string>(type: "VARCHAR(15)", nullable: false),
                     IdUsuario = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     UsuarioId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    IdTurma = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    TurmaId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                    IdTurma = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Alunos", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Alunos_Turmas_TurmaId",
-                        column: x => x.TurmaId,
+                        name: "FK_Alunos_Turmas_IdTurma",
+                        column: x => x.IdTurma,
                         principalTable: "Turmas",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Alunos_Usuarios_UsuarioId",
                         column: x => x.UsuarioId,
@@ -136,9 +132,9 @@ namespace FYI.Infra.Data.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Alunos_TurmaId",
+                name: "IX_Alunos_IdTurma",
                 table: "Alunos",
-                column: "TurmaId");
+                column: "IdTurma");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Alunos_UsuarioId",
@@ -146,19 +142,19 @@ namespace FYI.Infra.Data.Migrations
                 column: "UsuarioId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Professores_UsuarioId",
+                name: "IX_Professores_IdUsuario",
                 table: "Professores",
-                column: "UsuarioId");
+                column: "IdUsuario");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Turmas_CursoId",
+                name: "IX_Turmas_IdCurso",
                 table: "Turmas",
-                column: "CursoId");
+                column: "IdCurso");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Turmas_ProfessorId",
+                name: "IX_Turmas_IdProfessor",
                 table: "Turmas",
-                column: "ProfessorId");
+                column: "IdProfessor");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Usuarios_Email",

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FYI.Infra.Data.Migrations
 {
     [DbContext(typeof(ForYouContext))]
-    [Migration("20211117175227_banco de dados")]
-    partial class bancodedados
+    [Migration("20211207191337_atualizacao include")]
+    partial class atualizacaoinclude
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -55,15 +55,12 @@ namespace FYI.Infra.Data.Migrations
                         .IsRequired()
                         .HasColumnType("VARCHAR(15)");
 
-                    b.Property<Guid?>("TurmaId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid?>("UsuarioId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("TurmaId");
+                    b.HasIndex("IdTurma");
 
                     b.HasIndex("UsuarioId");
 
@@ -129,12 +126,9 @@ namespace FYI.Infra.Data.Migrations
                     b.Property<int>("Telefone")
                         .HasColumnType("INT");
 
-                    b.Property<Guid?>("UsuarioId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("UsuarioId");
+                    b.HasIndex("IdUsuario");
 
                     b.ToTable("Professores");
                 });
@@ -143,9 +137,6 @@ namespace FYI.Infra.Data.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("CursoId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("DataFim")
@@ -175,9 +166,6 @@ namespace FYI.Infra.Data.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("varchar(200)");
 
-                    b.Property<Guid?>("ProfessorId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("PublicoAlvo")
                         .IsRequired()
                         .HasMaxLength(200)
@@ -193,9 +181,9 @@ namespace FYI.Infra.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CursoId");
+                    b.HasIndex("IdCurso");
 
-                    b.HasIndex("ProfessorId");
+                    b.HasIndex("IdProfessor");
 
                     b.ToTable("Turmas");
                 });
@@ -229,7 +217,9 @@ namespace FYI.Infra.Data.Migrations
                 {
                     b.HasOne("FYI.Domain.Entidades.Turmas", "Turma")
                         .WithMany("Alunos")
-                        .HasForeignKey("TurmaId");
+                        .HasForeignKey("IdTurma")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("FYI.Domain.Entidades.Usuario", "Usuario")
                         .WithMany("Alunos")
@@ -244,7 +234,9 @@ namespace FYI.Infra.Data.Migrations
                 {
                     b.HasOne("FYI.Domain.Entidades.Usuario", "Usuario")
                         .WithMany("Professor")
-                        .HasForeignKey("UsuarioId");
+                        .HasForeignKey("IdUsuario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Usuario");
                 });
@@ -253,11 +245,15 @@ namespace FYI.Infra.Data.Migrations
                 {
                     b.HasOne("FYI.Domain.Entidades.Cursos", "Curso")
                         .WithMany("Turmas")
-                        .HasForeignKey("CursoId");
+                        .HasForeignKey("IdCurso")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("FYI.Domain.Entidades.Professores", "Professor")
                         .WithMany("Turmas")
-                        .HasForeignKey("ProfessorId");
+                        .HasForeignKey("IdProfessor")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Curso");
 

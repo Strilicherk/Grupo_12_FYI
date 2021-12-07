@@ -47,7 +47,6 @@ namespace FYI.Infra.Data.Repositories.Usuario
         public ICollection<Domain.Entidades.Usuario> Listar()
         {
             return _context.Usuarios
-                .AsNoTracking()
                 .ToList();
         }
     }

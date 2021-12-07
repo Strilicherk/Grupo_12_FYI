@@ -46,7 +46,13 @@ namespace FYI.Api
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(options =>
+            {
+                //Correção do erro object cycle
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                //Remover propriedades nulas
+                options.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
+            });
 
             services.AddDbContext<ForYouContext>(z => z.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
@@ -81,7 +87,7 @@ namespace FYI.Api
 
                 });
 
-            // Injeções de dependencia
+            // Injecoes de dependencia
             #region Usuarios
             services.AddTransient<IUsuarioRepositorio, UsuarioRepositorio>();
             services.AddTransient<CriarContaHandle, CriarContaHandle>();
@@ -141,7 +147,7 @@ namespace FYI.Api
 
             app.UseSwaggerUI(c => {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-               c.RoutePrefix = string.Empty;
+                // c.RoutePrefix = string.Empty;
             });
             app.UseSwagger();
             // app.UseHttpsRedirection();

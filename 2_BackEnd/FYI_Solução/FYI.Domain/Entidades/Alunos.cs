@@ -3,6 +3,7 @@ using Flunt.Validations;
 using FYI.Shared.Entidades;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,11 +45,14 @@ namespace FYI.Domain.Entidades
         public string Telefone { get; private set; }
 
         // Composições
+      //  [ForeignKey("Usuario")]
         public Guid IdUsuario { get; private set; }
         public Usuario Usuario { get; private set; }
 
+        //[ForeignKey("Turmas")]
         public Guid IdTurma { get; private set; }
         public Turmas Turma { get; private set; }
+
 
         public void AlterarAluno(string nome, string sobrenome, string cPF, DateTime dataNascimento, string telefone)
         {
