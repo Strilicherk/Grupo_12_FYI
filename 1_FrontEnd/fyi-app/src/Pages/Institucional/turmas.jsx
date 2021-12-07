@@ -39,13 +39,10 @@ class Turmas extends Component {
             .catch(erro => console.log(erro))
     }
 
-    mudaFiltro = (campo) => {
-        // quando estiver digitando no campo username
-        //                     email        :       adm@adm.com
-    
-        // quando estiver digitando no campo password
-        //                     senha        :        senha123
-        this.setState({ [campo.target.name]: campo.target.value });
+    mudaFiltro = campo => {
+
+        this.setState({ filtro: campo.target.value });
+
       };
 
     componentDidMount() {
@@ -62,19 +59,9 @@ class Turmas extends Component {
                             <h1 className="titulo">Todas as turmas</h1>
                             <div className="filtro">
                                 <h3>Filtrar por:</h3>
-                                <select className="select" name="filtro" value={this.state.filtro} onChange={this.mudaFiltro}>
-                                    <option className="option" value="0">Selecione</option>
-                                    {/* {
-                                        this.state.listaTodasTurmas.filter((turmas) => {
-                                            return (turmas.nomeTurma == this.state.filtro
-                                            <option className="option" key={turmas.id} value={turmas.no}>
-
-                                            </option>
-                                            )
-                                        })
-                                    } */}
-                                    <option className="option" value="cargaHoraria">40 Horas</option>
-                                    <option className="option" value="tema">Microsoft Dinamics 360</option>
+                                <select className="select" name="filtro" value={this.state.listaTodasTurmas} onChange={this.mudaFiltro}>
+                                    <option className="option" value="listaTodasTurmas">Selecione</option>                                        
+                                    <option className="option" value="Microsoft Dinamics 360">Microsoft Dinamics 360</option>                                        
                                 </select>
                             </div>
                         </section>
@@ -82,8 +69,8 @@ class Turmas extends Component {
                         <section className="turmasDisponiveis">
                             {
                                 this.state.listaTodasTurmas
-                                // .filter((turmas) => {
-                                //     return (turmas.nomeTurma == this.state.filtro)})
+                                .filter((turmas) => {
+                                    return (turmas.nomeTurma  == this.state.filtro)})
                                     .map((turmas) => {
                                     return (
                                         <div className="infosGerais">

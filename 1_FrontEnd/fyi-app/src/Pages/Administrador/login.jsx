@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import { parseJwt, usuarioAutenticado } from '../../services/auth';
 
 import logo from '../../assets/img/logo1branca.svg'
 
@@ -11,7 +12,7 @@ class Login extends Component{
         this.state = {
             email : '',
             senha : '',
-            erroMenssagem : '',
+            erroMensagem : '',
             isLoading : false
         }
     };
@@ -19,25 +20,31 @@ class Login extends Component{
     efetuaLogin = (event) => {
         event.preventDefault();
 
-        this.setState({ erroMenssagem : '', isLoading : true })
+        this.setState({ erroMensagem : '', isLoading : true })
 
-        axios.post('http://localhost:5000/api/login', {
+        axios.post('http://localhost:5000/v1/account/signin', {
             email : this.state.email,
             senha : this.state.senha
         })
 
         .then(resposta => {
             if (resposta.status === 200) {
-                localStorage.setItem('adm-login', resposta.data.token)
+                localStorage.setItem('adm-login', resposta.data.data.token)
 
-                console.log('Meu token é: ' + resposta.data.token)
+                // console.log('Meu Token é: ' + resposta.data.data.token)
 
                 this.setState({ isLoading : false })
+
+                console.log( parseJwt().role);
+
+                if (parseJwt().role === 'Admin') {
+                    this.props.history.push('/adm/turmas');
+                }
             }
         })
 
         .catch(() => {
-            this.setState({ erroMenssagem : 'Email ou senha inválidos!', isLoading : false })
+            this.setState({ erroMensagem : 'Email ou senha inválidos!', isLoading : false })
         })
 
     }
@@ -71,11 +78,11 @@ class Login extends Component{
                                     onChange={this.atualizaStateCampo}
                                 className="inserirDados"/>
 
-                                <p>{this.state.erroMenssagem}</p>
+                                <p style={{ color : 'red', fontWeight : '500' }} >{this.state.erroMensagem}</p>
 
                                 {
                                     this.state.isLoading === true &&
-                                    <button type="submit" disabled className="botaoEntrar">Carregando...</button>
+                                    <button type="submit" disabled className="botaoEntrar">Loading...</button>
                                 }
                                 {
                                     this.state.isLoading === false &&
