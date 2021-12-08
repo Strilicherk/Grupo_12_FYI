@@ -24,7 +24,7 @@ class Turmas extends Component {
         console.log('agora vamos fazer a chamada para API para atualizar a lista');
 
         // Faz a chamada para a API usando o fetch
-        fetch('http://localhost:5000/api/turmas/list', {
+        fetch('http://34.193.56.51/api/turmas/list', {
             headers: {
                 // 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                 "Content-Type": "application/json"
@@ -59,9 +59,11 @@ class Turmas extends Component {
                             <h1 className="titulo">Todas as turmas</h1>
                             <div className="filtro">
                                 <h3>Filtrar por:</h3>
-                                <select className="select" name="filtro" value={this.state.listaTodasTurmas} onChange={this.mudaFiltro}>
+                                <select className="select" name="filtro" value={this.state.campo} onChange={this.mudaFiltro}>
                                     <option className="option" value="listaTodasTurmas">Selecione</option>                                        
                                     <option className="option" value="Microsoft Dinamics 360">Microsoft Dinamics 360</option>                                        
+                                    <option className="option" value="Power BI">Power BI</option>                                        
+                                    <option className="option" value="Tesete">Tesete</option>                                        
                                 </select>
                             </div>
                         </section>

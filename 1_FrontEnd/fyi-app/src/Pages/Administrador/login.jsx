@@ -22,7 +22,7 @@ class Login extends Component{
 
         this.setState({ erroMensagem : '', isLoading : true })
 
-        axios.post('http://localhost:5000/v1/account/signin', {
+        axios.post('http://34.193.56.51/v1/account/signin', {
             email : this.state.email,
             senha : this.state.senha
         })
