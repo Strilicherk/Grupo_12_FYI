@@ -277,3 +277,7 @@ C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solu�
 C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Api\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
