@@ -71,14 +71,21 @@
 
 .esquerda input{
     width: 302px;
-    background-color: #EFF3F5;
-    border: none;
-    outline: none;
     height: 40px;
     font-size: 18px;
-    border-bottom: 2px solid black;
 }
 
+.professor-curso{
+    display: flex;
+    justify-content: space-between;
+    height: 67px;
+    margin-bottom: 20px;
+}
+
+.curso-professor{
+    width: 45%;
+
+}
 .datas{
     display: flex;
     justify-content: space-between;

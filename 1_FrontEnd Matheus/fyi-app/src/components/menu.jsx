@@ -19,9 +19,9 @@ class Menu extends Component{
                 <Link to="/adm/cursos" className="opcoes">
                     <p id="cursos-p" className="menu-p">Cursos</p>
                 </Link>
-                <Link to="/adm/alunos" className="opcoes">
+                {/* <Link to="/adm/alunos" className="opcoes">
                     <p id="alunos-p" className="menu-p">Alunos</p>
-                </Link>
+                </Link> */}
                 <Link to="/adm/professores" className="opcoes">
                     <p id="professores-p" className="menu-p">Professor</p>
                 </Link>

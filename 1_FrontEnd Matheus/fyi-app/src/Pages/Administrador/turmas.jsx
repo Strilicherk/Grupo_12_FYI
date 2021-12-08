@@ -20,7 +20,7 @@ class Turmas extends Component{
             listaCursos: [],
             listaProfessores: [],
             nomeTurma: '',
-            tamanhoTurma: '',
+            cargaHoraria: '',
             cursoTurma: '',
             professorTurma: '',
             dataInicio: '',
@@ -137,28 +137,30 @@ class Turmas extends Component{
                                             <textarea id="nome" placeholder="Insira o nome da turma" value={this.state.nomeTurma} name="nomeTurma" onChange={this.funcaoMudaState}></textarea>
                                         </div>
                                         <div className="text-input">
-                                            <label>Tamanho</label>
-                                            <textarea id="tamanho" placeholder="Insira o limite de alunos da turma" value={this.state.tamanhoTurma} name="tamanhoTurma" onChange={this.funcaoMudaState}></textarea>
+                                            <label>Carga horária</label>
+                                            <input type="number" class="carga-horaria" id="carga horária" value={this.state.cargaHoraria} name="tamanhoTurma" onChange={this.funcaoMudaState}></input>
                                         </div>
-                                        <div className="text-input">
-                                            <label>Curso</label>
-                                            <select name="cars" id="cars" value={this.state.cursoTurma} name="cursoTurma" onChange={this.funcaoMudaState}>
-                                                {this.state.listaCursos.map(cursos => {
-                                                    return(
-                                                        <option value={cursos.id}>{cursos.nomeCurso}</option>
-                                                    )
-                                                })}
-                                            </select>
-                                        </div>
-                                        <div className="text-input">
-                                            <label>Professores</label>
-                                            <select name="cars" id="cars" value={this.state.professorTurma} name="professorTurma" onChange={this.funcaoMudaState}>
-                                                {this.state.listaProfessores.map(professores => {
-                                                    return(
-                                                        <option value={professores.id}>{professores.nomeProfessor}</option>
-                                                    )
-                                                })}
-                                            </select>
+                                        <div className="professor-curso">
+                                            <div className="text-input curso-professor">
+                                                <label>Curso</label>
+                                                <select name="cars" id="cars" value={this.state.cursoTurma} name="cursoTurma" onChange={this.funcaoMudaState}>
+                                                    {this.state.listaCursos.map(cursos => {
+                                                        return(
+                                                            <option value={cursos.id}>{cursos.nomeCurso}</option>
+                                                        )
+                                                    })}
+                                                </select>
+                                            </div>
+                                            <div className="text-input curso-professor">
+                                                <label>Professores</label>
+                                                <select name="cars" id="cars" value={this.state.professorTurma} name="professorTurma" onChange={this.funcaoMudaState}>
+                                                    {this.state.listaProfessores.map(professores => {
+                                                        return(
+                                                            <option value={professores.id}>{professores.nomeProfessor}</option>
+                                                        )
+                                                    })}
+                                                </select>
+                                            </div>
                                         </div>
                                         <div className="datas">
                                             <div className="data-inicio">
@@ -202,7 +204,7 @@ class Turmas extends Component{
                                         <th>Nome</th>
                                         <th>Curso</th>
                                         <th>Professor</th>
-                                        <th>Alunos / Max. Alunos</th>
+                                        <th>Carga Horária</th>
                                         <th>Data de Início</th>
                                         <th>Data de Término</th>
                                         <th>Editar</th>
