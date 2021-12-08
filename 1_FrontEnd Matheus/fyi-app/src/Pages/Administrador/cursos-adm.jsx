@@ -44,7 +44,7 @@ class CursosAdm extends Component{
 
     cadastrarCursos = async (event) => {
         // event.preventDefault();
-
+        
         fetch('http://54.90.205.161/api/Cursos/register', {
             method: 'POST',
 

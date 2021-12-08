@@ -50,7 +50,7 @@ class ProfsAdm extends Component{
     cadastrarProfessores = async (event) => {
         event.preventDefault();
 
-        fetch('http://54.90.205.161/api/Turmas/register', {
+        fetch('http://localhost:5000/api/Turmas/register', {
             method: 'POST',
 
             body: JSON.stringify({ nomeProfessor: this.state.nomeProfessor, sobrenomeProfessor: this.state.sobrenomeProfessor, telefone: this.state.telefoneProfessor }),
@@ -73,7 +73,7 @@ class ProfsAdm extends Component{
     }
 
     buscarProfessores = () => {
-        axios('http://54.90.205.161/api/Professor/list', {
+        axios('http://localhost:5000/api/Professor/list', {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                 "Content-Type": "application/json"

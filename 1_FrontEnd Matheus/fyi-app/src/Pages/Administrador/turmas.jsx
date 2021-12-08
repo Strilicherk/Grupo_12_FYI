@@ -19,6 +19,7 @@ class Turmas extends Component{
             listaTurmas: [],
             listaCursos: [],
             listaProfessores: [],
+            idTurmaAlterada: 0,
             nomeTurma: '',
             cargaHoraria: '',
             cursoTurma: '',
@@ -38,7 +39,7 @@ class Turmas extends Component{
     }
 
     buscarTurmas = () => {
-        axios('http://54.90.205.161/api/Turmas/list', {
+        axios('http://localhost:5000/api/Turmas/list', {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                 "Content-Type": "application/json"
@@ -56,30 +57,57 @@ class Turmas extends Component{
     cadastrarTurmas = async (event) => {
         event.preventDefault();
 
-        fetch('http://54.90.205.161/api/Turmas/register', {
-            method: 'POST',
+        if (this.state.idTurmaAlterada != 0) {
+            fetch('http://localhost:5000/api/Turmas/update' + this.state.idTurmaAlterada, {
 
-            body: JSON.stringify({ nomeTurma: this.state.nomeTurma, tamanhoTurma: this.state.tamanhoTurma, cursoTurma: this.state.cursoTurma, professorTurma: this.state.professorTurma, dataIncio: this.state.dataIncio, dataFim: this.state.dataFim, descricao: this.state.descricao, preRequisito: this.state.preRequisito, publicoAlvo: this.state.publicoAlvo }),
+                method: 'PATCH',
+    
+                body: JSON.stringify({ nomeTurma: this.state.nomeTurma, cargaHoraria: this.state.cargaHoraria, cursoTurma: this.state.cursoTurma, professorTurma: this.state.professorTurma, dataIncio: this.state.dataInicio, dataFim: this.state.dataFim, descricao: this.state.descricao, preRequisito: this.state.preRequisito, publicoAlvo: this.state.publicoAlvo }),
 
-            headers: {
-                'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
-                "Content-Type": "application/json"
-            }
-        }) 
+                headers: {
+                    'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
+                    "Content-Type": "application/json"
+                }
+            })
 
-        .then(resposta => {if (resposta.status == 200) {
-            console.log("cadastro")
-            console.log(this.state.listaTurmas)
-        }})
+            .then(resposta => {
+                if (resposta.status === 204) {
+                    console.log('Turma ' + this.state.idTurmaAlterada + 'atualizada')
+                }
+            })
+            
+            .then(this.buscarTurmas())
+        }
 
-        .then(this.buscarTurmas())
-
-        .catch(erro => console.log(erro))
-
+        else 
+        
+        {
+            // cadastro
+            fetch('http://localhost:5000/api/Turmas/register', {
+                method: 'POST',
+        
+                body: JSON.stringify({ nomeTurma: this.state.nomeTurma, cargaHoraria: this.state.cargaHoraria, cursoTurma: this.state.cursoTurma, professorTurma: this.state.professorTurma, dataIncio: this.state.dataInicio, dataFim: this.state.dataFim, descricao: this.state.descricao, preRequisito: this.state.preRequisito, publicoAlvo: this.state.publicoAlvo }),
+        
+                headers: {
+                    'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
+                    "Content-Type": "application/json"
+                }
+            }) 
+        
+            .then(resposta => {if (resposta.status == 200) {
+                console.log("cadastro")
+                console.log(this.state.listaTurmas)
+            }})
+        
+            .then(this.buscarTurmas())
+        
+            .catch(erro => console.log(erro))
+        
+        }
     }
 
     buscarCursos = () => {
-        axios('http://54.90.205.161/api/Cursos/list', {
+        axios('http://localhost:5000/api/Cursos/list', {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                 "Content-Type": "application/json"
@@ -95,7 +123,8 @@ class Turmas extends Component{
     }
     
     buscarProfessores = () => {
-        axios('http://54.90.205.161/api/Professor/list', {
+        // http://54.90.205.161
+        axios('http://localhost:5000/api/Professor/list', {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                 "Content-Type": "application/json"
@@ -110,8 +139,78 @@ class Turmas extends Component{
             .catch(erro => console.log(erro))
     }
 
+    editarTurma = (event) => {
+        event.preventDefault();
+
+        if (this.state.idTurmaAlterada !== 0) {
+            //Edição
+
+            fetch('http://localhost:5000/api/Turmas/searchId/' + this.state.idTurmaAlterada, {
+                method : 'PUT',
+
+                body : JSON.stringify({ nomeTurma: this.state.nomeTurma, cargaHoraria: this.state.cargaHoraria, cursoTurma: this.state.cursoTurma, professorTurma: this.state.professorTurma, dataIncio: this.state.dataInicio, dataFim: this.state.dataFim, descricao: this.state.descricao, preRequisito: this.state.preRequisito, publicoAlvo: this.state.publicoAlvo }),
+
+                headers : {
+                    'Authorization' : 'Bearer ' + localStorage.getItem('user-token'),
+                    "Content-Type" : "application/json"
+                }
+            })
+
+            .then(resposta => {
+                if (resposta.status === 204) {
+                    console.log('Turma ' + this.state.idTurmaAlterada + ' atualizada!',
+                    'Sua nova descrição agora é: ' + this.state.nomeTurma, this.state.cargaHoraria, this.state.cursoTurma, this.state.professorTurma, this.state.dataInicio, this.state.dataFim, this.state.descricao, this.state.preRequisito, this.state.publicoAlvo)
+                }
+            })
+
+            .then(this.buscarConsultas)
+        }
+    }
+
+    buscarTurmaPorId = (turma) => {
+        this.setState({
+            idTurmaAlterada : turma.id,
+            nomeTurma : turma.nomeTurma,
+            // cargaHoraria : turma.cargaHoraria,
+            cursoTurma : turma.cursoTurma,
+            professorTurma: turma.professorTurma,
+            dataInicio : turma.dataInicio,
+            dataFim : turma.dataFim,
+            descricao : turma.descricao,
+            preRequisito : turma.preRequisito,
+            publicoAlvo : turma.publicoAlvo,
+
+        }, () => {
+            console.log(
+                'Turma ' + turma.id + ' selecionada',
+                'valor de idTurmaAlterada: ' + this.state.idTurmaAlterada
+            )
+        })
+    }
+
     funcaoMudaState = async (campo) => {
         await this.setState({ [campo.target.name]: campo.target.value })
+    }
+
+    excluirTurma = (turma) => {
+        fetch('http://localhost:5000/api/Turmas/delete/' + turma.id)
+    }
+
+    limparCampos = () => {
+        this.setState({
+            idTurmaAlterada: 0,
+            nomeTurma: '',
+            cargaHoraria: '',
+            cursoTurma: '',
+            professorTurma: '',
+            dataInicio: '',
+            dataFim: '',
+            descricao: '',
+            preRequisito: '',
+            publicoAlvo: '',
+        })
+
+        console.log('states resetados')
     }
 
     render(){
@@ -156,7 +255,7 @@ class Turmas extends Component{
                                                 <select name="cars" id="cars" value={this.state.professorTurma} name="professorTurma" onChange={this.funcaoMudaState}>
                                                     {this.state.listaProfessores.map(professores => {
                                                         return(
-                                                            <option value={professores.id}>{professores.nomeProfessor}</option>
+                                                            <option value={professores.id}>{professores.nomeProfessor} {professores.sobrenome}</option>
                                                         )
                                                     })}
                                                 </select>
@@ -187,7 +286,14 @@ class Turmas extends Component{
                                             <label>Público alvo</label>
                                             <textarea placeholder="Escreva o público alvo aqui" value={this.state.publicoAlvo} name="publicoAlvo" onChange={this.funcaoMudaState}></textarea>
                                         </div>
-                                        <button className="btn-cadastrar-turmas" type="submit">Cadastrar Turma</button>
+                                        {
+                                            this.state.idTurmaAlterada === 0 ?
+                                            <button className="btn-cadastrar-turmas" type="submit">Cadastrar Turma</button> :
+                                            <button className="btn-cadastrar-turmas" type="submit">Editar Turma</button>
+                                        }
+                                        <button type="button" onClick={this.limparCampos}>
+                                            Cancelar Edição
+                                        </button>
                                     </div>
                                 </form>
                             </div>
@@ -209,6 +315,7 @@ class Turmas extends Component{
                                         <th>Data de Término</th>
                                         <th>Editar</th>
                                         <th>Excluir</th> 
+                                        <th>Mais</th>
                                     </tr>
                                 </thead>
                                 <tbody className="table-body">
@@ -217,11 +324,13 @@ class Turmas extends Component{
                                             return(
                                                 <tr key={turmas.Id}>    
                                                     <td>{turmas.nomeTurma}</td>
-                                                    <td>{turmas.idCurso}</td>
-                                                    <td>{turmas.idProfessor}</td>
+                                                    <td>{turmas.curso.nomeCurso}</td>
+                                                    <td>{turmas.professor.nomeProfessor} {turmas.professor.sobrenome}</td>
                                                     <td>{turmas.quantidadeAluno} / {turmas.qtdMax}</td>
                                                     <td>{turmas.dataInicio}</td>
                                                     <td>{turmas.dataFim}</td>
+                                                    <td><button onClick={() => this.buscarTurmaPorId(turmas)}>Editar</button></td>
+                                                    <td><button onClick={() => this.excluirTurma(turmas)}>Excluir</button></td>
                                                 </tr>
                                             )
                                         })
