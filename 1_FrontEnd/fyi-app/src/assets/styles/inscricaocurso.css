@@ -1,4 +1,4 @@
-.alinhamento{
+.alinhamento {
     width: 100%;
     height: 42em;
     display: flex;
@@ -7,7 +7,7 @@
     /* background-color: aqua; */
 }
 
-.sobreCurso{
+.sobreCurso {
     width: 26em;
     height: 35em;
     display: flex;
@@ -18,7 +18,7 @@
     /* background-color: blue; */
 }
 
-.informCurso{
+.informCurso {
     width: 100%;
     height: 15em;
     display: flex;
@@ -27,24 +27,24 @@
     /* background-color: brown; */
 }
 
-.tituloCurso{
+.tituloCurso {
     font-size: 2.5em;
     font-weight: 500;
 }
 
-.descCurso{
+.descCurso {
     font-size: 18px;
     font-weight: 300;
 }
 
-.imgCurso img{
+.imgCurso img {
     width: 100%;
     height: auto;
     display: flex;
     /* background-color: chartreuse; */
 }
 
-.inscricao{
+.inscricao {
     width: 26em;
     height: 35em;
     display: flex;
@@ -52,12 +52,25 @@
     /* background-color: blueviolet; */
 }
 
-.tituloInsc{
+.tituloInsc {
     font-size: 24px;
     color: #00A4EF;
+    text-align: center;
+    margin-bottom: 2em;
 }
 
-.formContent{
+.tituloInsc p {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    font-weight: 300;
+    width: 100%;
+    
+   
+}
+
+.formContent {
     width: 100%;
     height: 25em;
     display: flex;
@@ -68,67 +81,67 @@
     /* background-color: crimson; */
 }
 
-.form2{
+.form2 {
     width: 70%;
     height: 420px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     /* background-color: darkcyan; */
 }
 
-.input{
+.input {
     width: 100%;
     height: 2em;
     border: none;
     border-bottom: 2px solid;
 }
 
-::placeholder{
-    color:rgb(172, 172, 172);
+::placeholder {
+    color: rgb(172, 172, 172);
 }
 
-.alinhamento2{
+.alinhamento2 {
     width: 100%;
     display: flex;
     justify-content: space-between;
     /* background-color: bisque; */
 }
 
-.publicoAlvo{
+.publicoAlvo {
     width: 26em;
     height: 7em;
     text-align: justify;
     /* background-color: cadetblue; */
 }
 
-.publicoAlvo h3{
+.publicoAlvo h3 {
     font-size: 40px;
     margin-bottom: 0.2em;
 }
 
-.publicoAlvo p{
+.publicoAlvo p {
     font-size: 18px;
 }
 
-.preRequisto{
+.preRequisto {
     width: 26em;
     height: 7em;
     text-align: justify;
     /* background-color: cadetblue; */
 }
 
-.preRequisto h3{
+.preRequisto h3 {
     font-size: 40px;
     margin-bottom: 0.2em;
 }
 
-.preRequisto p{
+.preRequisto p {
     font-size: 18px;
 }
 
-.alinhamento3{
+.alinhamento3 {
     width: 100%;
     height: 7em;
     display: flex;
@@ -137,7 +150,7 @@
     /* background-color: cadetblue; */
 }
 
-.infogeral{
+.infogeral {
     width: 12em;
     height: auto;
     display: flex;
@@ -146,22 +159,22 @@
     /* background-color: cornflowerblue; */
 }
 
-.infogeral img{
+.infogeral img {
     width: auto;
     height: auto;
 }
 
-.infogeral p{
+.infogeral p {
     font-size: 16px;
 }
 
-.infogeral h3{
+.infogeral h3 {
     font-size: 18px;
 }
 
-@media only screen and (max-width: 1480px){
+@media only screen and (max-width: 1480px) {
 
-    .sobreCurso{
+    .sobreCurso {
         width: 29em;
         height: 34em;
         display: flex;
@@ -172,17 +185,17 @@
         /* background-color: blue; */
     }
 
-    .tituloCurso{
+    .tituloCurso {
         font-size: 2.3em;
         font-weight: 400;
     }
 
-    .descCurso{
+    .descCurso {
         font-size: 0.93em;
         font-weight: 300;
     }
 
-    .inscricao{
+    .inscricao {
         width: 29em;
         height: 34em;
         display: flex;
@@ -190,12 +203,12 @@
         /* background-color: blueviolet; */
     }
 
-    .tituloInsc{
+    .tituloInsc {
         font-size: 1.3em;
         color: #00A4EF;
     }
 
-    .formContent{
+    .formContent {
         width: 100%;
         height: 29em;
         display: flex;
@@ -206,7 +219,7 @@
         /* background-color: crimson; */
     }
 
-    .form2{
+    .form2 {
         width: 70%;
         height: 80%;
         display: flex;
@@ -216,54 +229,55 @@
         /* background-color: darkcyan; */
     }
 
-    .input{
+    .input {
         width: 90%;
         height: 1.3em;
         border: none;
         border-bottom: 2px solid;
     }
 
-    ::placeholder{
+    ::placeholder {
         font-size: 18px;
-        color:rgb(172, 172, 172);
+        color: rgb(172, 172, 172);
     }
 
-    .publicoAlvo{
+    .publicoAlvo {
         width: 29em;
         height: 7em;
         text-align: justify;
         /* background-color: cadetblue; */
     }
 
-    .publicoAlvo h3{
+    .publicoAlvo h3 {
         font-size: 1.7em;
         margin-bottom: 0.2em;
     }
-    
-    .publicoAlvo p{
+
+    .publicoAlvo p {
         font-size: 0.9em;
     }
-    
-    .preRequisto{
+
+    .preRequisto {
         width: 29em;
         height: 7em;
         text-align: justify;
         /* background-color: cadetblue; */
     }
-    
-    .preRequisto h3{
+
+    .preRequisto h3 {
         font-size: 1.7em;
         margin-bottom: 0.2em;
     }
-    
-    .preRequisto p{
+
+    .preRequisto p {
         font-size: 0.9em;
     }
 
 }
-@media only screen and (max-width: 1420px){
 
-    .sobreCurso{
+@media only screen and (max-width: 1420px) {
+
+    .sobreCurso {
         width: 26em;
         height: 34em;
         display: flex;
@@ -274,7 +288,7 @@
         /* background-color: blue; */
     }
 
-    .inscricao{
+    .inscricao {
         width: 26em;
         height: 34em;
         display: flex;
@@ -282,14 +296,14 @@
         /* background-color: blueviolet; */
     }
 
-    .publicoAlvo{
+    .publicoAlvo {
         width: 26em;
         height: 7em;
         text-align: justify;
         /* background-color: cadetblue; */
     }
-    
-    .preRequisto{
+
+    .preRequisto {
         width: 26em;
         height: 7em;
         text-align: justify;
@@ -299,9 +313,9 @@
 }
 
 /* Responsive 1200px */
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 1280px) {
 
-    .sobreCurso{
+    .sobreCurso {
         width: 23em;
         height: 30em;
         display: flex;
@@ -312,17 +326,17 @@
         /* background-color: blue; */
     }
 
-    .tituloCurso{
+    .tituloCurso {
         font-size: 2.1em;
         font-weight: 400;
     }
 
-    .descCurso{
+    .descCurso {
         font-size: 0.85em;
         font-weight: 300;
     }
 
-    .inscricao{
+    .inscricao {
         width: 23em;
         height: 30em;
         display: flex;
@@ -330,12 +344,12 @@
         /* background-color: blueviolet; */
     }
 
-    .tituloInsc{
+    .tituloInsc {
         font-size: 1.3em;
         color: #00A4EF;
     }
 
-    .formContent{
+    .formContent {
         width: 100%;
         height: 28em;
         display: flex;
@@ -346,7 +360,7 @@
         /* background-color: crimson; */
     }
 
-    .form2{
+    .form2 {
         width: 70%;
         height: 75%;
         display: flex;
@@ -356,54 +370,55 @@
         /* background-color: darkcyan; */
     }
 
-    .input{
+    .input {
         width: 90%;
         height: 1em;
         border: none;
         border-bottom: 2px solid;
     }
 
-    ::placeholder{
+    ::placeholder {
         font-size: 16px;
-        color:rgb(172, 172, 172);
+        color: rgb(172, 172, 172);
     }
 
-    .publicoAlvo{
+    .publicoAlvo {
         width: 23em;
         height: 7em;
         text-align: justify;
         /* background-color: cadetblue; */
     }
 
-    .publicoAlvo h3{
+    .publicoAlvo h3 {
         font-size: 1.7em;
         margin-bottom: 0.2em;
     }
-    
-    .publicoAlvo p{
+
+    .publicoAlvo p {
         font-size: 0.9em;
     }
-    
-    .preRequisto{
+
+    .preRequisto {
         width: 23em;
         height: 7em;
         text-align: justify;
         /* background-color: cadetblue; */
     }
-    
-    .preRequisto h3{
+
+    .preRequisto h3 {
         font-size: 1.7em;
         margin-bottom: 0.2em;
     }
-    
-    .preRequisto p{
+
+    .preRequisto p {
         font-size: 0.9em;
     }
 
 }
-@media only screen and (max-width: 1120px){
 
-    .alinhamento{
+@media only screen and (max-width: 1120px) {
+
+    .alinhamento {
         width: 100%;
         height: 35em;
         display: flex;
@@ -412,7 +427,7 @@
         /* background-color: aqua; */
     }
 
-    .sobreCurso{
+    .sobreCurso {
         width: 22em;
         height: 29em;
         display: flex;
@@ -423,17 +438,17 @@
         /* background-color: blue; */
     }
 
-    .tituloCurso{
+    .tituloCurso {
         font-size: 2.1em;
         font-weight: 400;
     }
 
-    .descCurso{
+    .descCurso {
         font-size: 0.85em;
         font-weight: 300;
     }
 
-    .inscricao{
+    .inscricao {
         width: 22em;
         height: 29em;
         display: flex;
@@ -441,12 +456,12 @@
         /* background-color: blueviolet; */
     }
 
-    .tituloInsc{
+    .tituloInsc {
         font-size: 1.3em;
         color: #00A4EF;
     }
 
-    .formContent{
+    .formContent {
         width: 100%;
         height: 28em;
         display: flex;
@@ -457,7 +472,7 @@
         /* background-color: crimson; */
     }
 
-    .form2{
+    .form2 {
         width: 70%;
         height: 75%;
         display: flex;
@@ -467,60 +482,60 @@
         /* background-color: darkcyan; */
     }
 
-    .input{
+    .input {
         width: 90%;
         height: 1em;
         border: none;
         border-bottom: 2px solid;
     }
 
-    ::placeholder{
+    ::placeholder {
         font-size: 16px;
-        color:rgb(172, 172, 172);
+        color: rgb(172, 172, 172);
     }
 
-    .alinhamento2{
+    .alinhamento2 {
         width: 100%;
         height: auto;
         display: flex;
         justify-content: space-between;
         background-color: bisque;
     }
-    
 
-    .publicoAlvo{
+
+    .publicoAlvo {
         width: 22em;
         height: 5em;
         text-align: justify;
         /* background-color: cadetblue; */
     }
 
-    .publicoAlvo h3{
+    .publicoAlvo h3 {
         font-size: 1.5em;
         margin-bottom: 0.2em;
     }
-    
-    .publicoAlvo p{
+
+    .publicoAlvo p {
         font-size: 0.8em;
     }
-    
-    .preRequisto{
+
+    .preRequisto {
         width: 22em;
         height: 5em;
         text-align: justify;
         /* background-color: cadetblue; */
     }
-    
-    .preRequisto h3{
+
+    .preRequisto h3 {
         font-size: 1.5em;
         margin-bottom: 0.2em;
     }
-    
-    .preRequisto p{
+
+    .preRequisto p {
         font-size: 0.8em;
     }
 
-    .alinhamento3{
+    .alinhamento3 {
         width: 100%;
         height: 5em;
         display: flex;
@@ -528,8 +543,8 @@
         align-items: center;
         /* background-color: cadetblue; */
     }
-    
-    .infogeral{
+
+    .infogeral {
         width: 9em;
         height: auto;
         display: flex;
@@ -538,16 +553,16 @@
         /* background-color: cornflowerblue; */
     }
 
-    .infogeral img{
+    .infogeral img {
         width: auto;
         height: 1.5em;
     }
-    
-    .infogeral p{
+
+    .infogeral p {
         font-size: 14px;
     }
-    
-    .infogeral h3{
+
+    .infogeral h3 {
         font-size: 14px;
     }
 

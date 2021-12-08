@@ -22,7 +22,9 @@ class InscricaoCurso extends Component{
                    
 
                     <section className="inscricao">
-                        <h2 className="tituloInsc">Prencha seus dados para poder se increver no curso com o seu email</h2>
+                        
+                        <p className="tituloInsc">Prencha seus dados para poder se increver no curso com o seu email</p>
+
                         <div className="formContent">
                             <div className="form2">
                                 <input className="input" type="text" name="name" placeholder="Nome"/><br></br>
