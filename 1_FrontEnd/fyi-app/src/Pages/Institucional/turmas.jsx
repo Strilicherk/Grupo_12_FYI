@@ -16,6 +16,7 @@ class Turmas extends Component {
             nomeTurma: "",
             descricao: "",
             dataInicio: "",
+            cargaHoraria: "",
             filtro: ""
         }
     }
@@ -60,10 +61,10 @@ class Turmas extends Component {
                             <div className="filtro">
                                 <h3>Filtrar por:</h3>
                                 <select className="select" name="filtro" value={this.state.campo} onChange={this.mudaFiltro}>
-                                    <option className="option" value="listaTodasTurmas">Selecione</option>                                        
-                                    <option className="option" value="Microsoft Dinamics 360">Microsoft Dinamics 360</option>                                        
-                                    <option className="option" value="Power BI">Power BI</option>                                        
-                                    <option className="option" value="Tesete">Tesete</option>                                        
+                                    <option className="option" value="Selecione">Selecione</option>                                        
+                                    <option className="option" value="c# orientado">c# orientado</option>                                        
+                                    <option className="option" value="PHP">PHP</option>                                        
+                                    <option className="option" value="Microsoft Dinamics 365">Microsoft Dinamics 365</option>                                        
                                 </select>
                             </div>
                         </section>
@@ -72,7 +73,7 @@ class Turmas extends Component {
                             {
                                 this.state.listaTodasTurmas
                                 .filter((turmas) => {
-                                    return (turmas.nomeTurma  == this.state.filtro)})
+                                    return (this.state.filtro)})
                                     .map((turmas) => {
                                     return (
                                         <div className="infosGerais">
@@ -80,7 +81,7 @@ class Turmas extends Component {
                                                 <div className="linha2"></div>
                                                 <div key={turmas.id}>
                                                     <h3>{turmas.nomeTurma}</h3>
-                                                    <p>{turmas.descricao}</p>
+                                                    <a href="http://localhost:3000/inscricaocurso">{turmas.descricao}</a>
                                                 </div>
 
                                             </div>
@@ -88,7 +89,7 @@ class Turmas extends Component {
                                                 <img className="logoCargaHoraria" src={ca} />
                                                 <div className="cargaHoraria">
                                                     <p>Carga Horária</p>
-                                                    <p className="horasData">40 Horas</p>
+                                                    <p className="horasData">{turmas.cargaHoraria}</p>
                                                 </div>
                                                 <img className="logoCargaHoraria" src={da} />
                                                 <div className="dataInicio">
