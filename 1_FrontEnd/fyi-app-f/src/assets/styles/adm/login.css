@@ -10,7 +10,7 @@
 .bg-aling {
     width: 100%;
     height: 100vh;
-    background-image: url(../img/fundo-login.png);
+    background-image: url(../../img/fundo-login.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

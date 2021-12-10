@@ -7,7 +7,6 @@ import "../assets/styles/menu.css";
 class Menu extends Component{
     render(){
         const URL = window.location.pathname;
-        console.log(URL);
         return (
             <div id="corzinha" className={ URL === '/adm/turmas'||'/adm/cursos'||'/adm/alunos'||'/adm/professores' ? 'menu menu-border-turmas' : 'settings-content-btn'}>
                 <Link to="/" className="opcoes">

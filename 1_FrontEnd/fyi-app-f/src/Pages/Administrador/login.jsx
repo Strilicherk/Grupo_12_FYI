@@ -4,7 +4,7 @@ import { parseJwt, usuarioAutenticado } from '../../services/auth';
 
 import logo from '../../assets/img/logo1branca.svg'
 
-import '../../assets/styles/login.css';
+import '../../assets/styles/adm/login.css';
 
 class Login extends Component{
     constructor(props){
@@ -90,10 +90,6 @@ class Login extends Component{
                                         Entrar
                                     </button>
                                 }
-
-                                {/* <button type="submit">
-                                    Entrar
-                                </button> */}
                             </form>
                         </div>
                     </section>

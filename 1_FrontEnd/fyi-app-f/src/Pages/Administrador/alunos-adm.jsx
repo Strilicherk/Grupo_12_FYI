@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
-import axios from 'axios';
+//import axios from 'axios';
 
 // components
 import Header from '../../components/header';
 import Menu from '../../components/menu';
 
 // estilos
-import '../../assets/styles/alunosAdm.css'
+import '../../assets/styles/adm/alunosAdm.css'
 
 // bootstrap
-import Form from 'react-bootstrap/Form'
-import FloatingLabel from 'react-bootstrap/Form'
+//import Form from 'react-bootstrap/Form'
+//import FloatingLabel from 'react-bootstrap/Form'
 
 class AlunosAdm extends Component{
     constructor(props){

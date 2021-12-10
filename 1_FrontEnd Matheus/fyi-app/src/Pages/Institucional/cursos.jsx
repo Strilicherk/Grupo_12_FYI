@@ -35,7 +35,7 @@ class Cursos extends Component {
     }
 
     buscarTurmas = () => {
-        axios('http://3.85.229.211/api/Turmas/list', {
+        axios('http://34.193.56.51/api/Cursos/searchId/', {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                 "Content-Type": "application/json"
@@ -51,7 +51,7 @@ class Cursos extends Component {
     }
 
     buscarCursos = () => {
-        axios('http://3.85.229.211/api/Cursos/list', {
+        axios('http://34.193.56.51/api/Cursos/list', {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                 "Content-Type": "application/json"
@@ -118,6 +118,11 @@ class Cursos extends Component {
                                     <div className="pixel__title">
                                         <p>{cursos.nomeCurso}</p>
                                     </div>
+
+                                    
+                                
+                                
+                                
                                 </div>
                             )
                         })}
@@ -136,14 +141,21 @@ class Cursos extends Component {
                                                                 <img src={bi} alt="icon power bi" />
                                                             </div>
                                                         </div>
-                                                        <div className="titulo_card_curso">
-                                                            <div className="quote_p"></div>
-                                                            {this.state.listaTurmas.map(turmas => {
-                                                                return (
+
+                                                        {this.state.listaTurmas.map(turmas => {
+                                                            return (
+                                                                <div className="titulo_card_curso">
+
+                                                                    <div className="quote_p"></div>
                                                                     <p>{turmas.nomeTurma}</p>
-                                                                )
-                                                            })}
-                                                        </div>
+                                                                </div>
+
+                                                            )
+                                                        })}
+
+
+
+
                                                     </div>
                                                 </div>
                                                 <div className="card__botton">
@@ -159,6 +171,12 @@ class Cursos extends Component {
                                 }
                             </div>
                         </div>
+
+
+
+
+
+
 
                     </div>
                 </div>

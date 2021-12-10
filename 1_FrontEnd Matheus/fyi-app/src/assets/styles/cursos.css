@@ -134,6 +134,8 @@ html{
     margin-bottom: 1em;
     font-size: 24px;
     font-weight: 500;
+    margin-left: 20px;
+    width: 12em;
 }
 
 p span{
@@ -169,6 +171,10 @@ p span{
     width: 13px;
     background-color: #F25022;
     margin-right: 5px;
+}
+
+.scroll-curso{
+    margin-bottom: 2em;
 }
 
 
