@@ -68,7 +68,6 @@ class Home extends Component {
                 <ul className="nav-list">
                   <li><a href="#">Home</a></li>
                   <li><a href="http://localhost:3000/cursos">Cursos</a></li>
-                  <li><a href="#">Teste Cognitivo</a></li>
                   <li><a href="#">Contato / Duvidas</a></li>
                 </ul>
               </nav>

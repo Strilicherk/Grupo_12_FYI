@@ -27,7 +27,6 @@ const Header = () => {
                 <ul className="nav-list">
                     <li><a href="http://localhost:3000/">Home</a></li>
                     <li><a href="http://localhost:3000/cursos">Cursos</a></li>
-                    <li><a href="#">Processo Seletivo</a></li>
                     <li><a href="#">Contato / Duvidas</a></li>
                 </ul>
             </nav>

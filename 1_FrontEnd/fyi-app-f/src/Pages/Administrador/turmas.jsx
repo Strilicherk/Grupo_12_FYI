@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import reactDom from 'react-dom';
 import axios from 'axios';
-import swal from 'sweetalert';
 
 // components
 import Header from '../../components/header';
 import Menu from '../../components/menu';
 
 // estilos
-import '../../assets/styles/turmasAdm.css';
+import '../../assets/styles/adm/turmasAdm.css';
 
 // imgs
 import editar from '../../assets/img/editar-texto16.png';
@@ -53,13 +52,6 @@ class Turmas extends Component {
             publicoAlvo: turma.publicoAlvo
         })
         console.log(turma)
-
-        await swal(
-            this.state.publicoAlvo,
-            this.state.descricao,
-            this.state.publicoAlvo,
-
-        )
     }
     buscarTurmas = () => {
         axios('http://34.193.56.51/api/Turmas/list', {
@@ -79,9 +71,9 @@ class Turmas extends Component {
     cadastrarTurmas = async (event) => {
         event.preventDefault();
         if (this.state.idTurmaAlterada != 0) {
-            fetch('http://34.193.56.51/api/Turmas/update' + this.state.idTurmaAlterada, {
+            fetch('http://34.193.56.51/api/Turmas/update', {
                 method: 'PATCH',
-                body: JSON.stringify({ nomeTurma: this.state.nomeTurma, cargaHoraria: this.state.cargaHoraria, cursoTurma: this.state.cursoTurma, professorTurma: this.state.professorTurma, dataIncio: this.state.dataInicio, dataFim: this.state.dataFim, descricao: this.state.descricao, preRequisito: this.state.preRequisito, publicoAlvo: this.state.publicoAlvo }),
+                body: JSON.stringify({ id: this.state.idTurmaAlterada, nomeTurma: this.state.nomeTurma, cargaHoraria: this.state.cargaHoraria, cursoTurma: this.state.cursoTurma, professorTurma: this.state.professorTurma, dataIncio: this.state.dataInicio, dataFim: this.state.dataFim, descricao: this.state.descricao, preRequisito: this.state.preRequisito, publicoAlvo: this.state.publicoAlvo }),
                 headers: {
                     'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                     "Content-Type": "application/json"
@@ -145,33 +137,7 @@ class Turmas extends Component {
             })
             .catch(erro => console.log(erro))
     }
-    editarTurma = (event) => {
-        event.preventDefault();
 
-        if (this.state.idTurmaAlterada !== 0) {
-            //Edição
-
-            fetch('http://34.193.56.51/api/Turmas/searchId/' + this.state.idTurmaAlterada, {
-                method: 'PUT',
-
-                body: JSON.stringify({ nomeTurma: this.state.nomeTurma, cargaHoraria: this.state.cargaHoraria, cursoTurma: this.state.cursoTurma, professorTurma: this.state.professorTurma, dataIncio: this.state.dataInicio, dataFim: this.state.dataFim, descricao: this.state.descricao, preRequisito: this.state.preRequisito, publicoAlvo: this.state.publicoAlvo }),
-
-                headers: {
-                    'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
-                    "Content-Type": "application/json"
-                }
-            })
-
-                .then(resposta => {
-                    if (resposta.status === 204) {
-                        console.log('Turma ' + this.state.idTurmaAlterada + ' atualizada!',
-                            'Sua nova descrição agora é: ' + this.state.nomeTurma, this.state.cargaHoraria, this.state.cursoTurma, this.state.professorTurma, this.state.dataInicio, this.state.dataFim, this.state.descricao, this.state.preRequisito, this.state.publicoAlvo)
-                    }
-                })
-
-                .then(this.buscarConsultas)
-        }
-    }
     buscarTurmaPorId = (turma) => {
         this.setState({
             idTurmaAlterada: turma.id,
@@ -196,7 +162,7 @@ class Turmas extends Component {
         await this.setState({ [campo.target.name]: campo.target.value })
     }
     excluirTurma = (turma) => {
-        fetch('http://localhost:5000/api/Turmas/delete/' + turma.id)
+        fetch('http://34.193.56.51/api/Turmas/delete/' + turma.id)
     }
     limparCampos = () => {
         this.setState({
@@ -239,7 +205,7 @@ class Turmas extends Component {
                                         </div>
                                         <div className="text-input">
                                             <label>Carga horária</label>
-                                            <input type="number" class="carga-horaria" id="carga horária" value={this.state.cargaHoraria} name="tamanhoTurma" onChange={this.funcaoMudaState}></input>
+                                            <input type="number" class="carga-horaria" id="carga horária" value={this.state.cargaHoraria} name="cargaHoraria" onChange={this.funcaoMudaState}></input>
                                         </div>
                                         <div className="professor-curso">
                                             <div className="text-input curso-professor">
@@ -247,7 +213,7 @@ class Turmas extends Component {
                                                 <select name="cars" id="cars" value={this.state.cursoTurma} name="cursoTurma" onChange={this.funcaoMudaState}>
                                                     {this.state.listaCursos.map(cursos => {
                                                         return (
-                                                            <option value={cursos.id}>{cursos.nomeCurso}</option>
+                                                            <option value={cursos.idCurso}>{cursos.nomeCurso}</option>
                                                         )
                                                     })}
                                                 </select>
@@ -257,7 +223,7 @@ class Turmas extends Component {
                                                 <select name="cars" id="cars" value={this.state.professorTurma} name="professorTurma" onChange={this.funcaoMudaState}>
                                                     {this.state.listaProfessores.map(professores => {
                                                         return (
-                                                            <option value={professores.id}>{professores.nomeProfessor} {professores.sobrenome}</option>
+                                                            <option value={professores.idProfessor}>{professores.nomeProfessor} {professores.sobrenome}</option>
                                                         )
                                                     })}
                                                 </select>
