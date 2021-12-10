@@ -249,7 +249,7 @@ class Home extends Component {
                 </div>
 
                 <div className="botao-cl">
-                  <a href="http://localhost:3000/cursos"><Button>Nossos cursos</Button></a>
+                  <a href="http://44.198.139.189/cursos"><Button>Nossos cursos</Button></a>
                 </div>
               </div>
 
