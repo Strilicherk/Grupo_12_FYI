@@ -283,7 +283,7 @@ class Turmas extends Component {
                                                             <option value={cursos.id}>{cursos.nomeCurso}</option>
                                                         )
                                                     })}
-                                                </select>
+                                                </select>  
                                             </div>
                                             <div className="text-input curso-professor">
                                                 <label>Professores</label>
@@ -294,6 +294,7 @@ class Turmas extends Component {
                                                         )
                                                     })}
                                                 </select>
+                                                
                                             </div>
                                         </div>
                                         <div className="datas">

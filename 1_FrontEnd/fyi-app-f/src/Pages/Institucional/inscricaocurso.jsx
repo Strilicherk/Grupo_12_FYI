@@ -1,4 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component, useRef } from 'react';
+import axios from 'axios';
+import emailjs from 'emailjs-com';
+
+
 
 import Header from '../../components/header';
 import Footer from '../../components/footer';
@@ -11,83 +15,208 @@ import dur from '../../assets/img/duracao.png';
 import cat from '../../assets/img/categoria.png';
 
 import '../../assets/styles/inscricaocurso.css';
+import Turmas from './turmas';
 
-class InscricaoCurso extends Component{
-    render(){
-        return(
-            <>
+
+
+
+class InscricaoCurso extends Component {
+
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            listaTurmas: [],
+            listaCursos: [],
+            listaProfessores: [],
+            idTurmaSelecionada: '',
+            idTurmaAlterada: 0,
+            nomeTurma: '',
+            cargaHoraria: '',
+            cursoTurma: '',
+            professorTurma: '',
+            dataInicio: '',
+            dataFim: '',
+            descricao: '',
+            preRequisito: '',
+            publicoAlvo: '',
+        }
+    }
+
+    componentDidMount() {
+        this.buscarCursos();
+   
+        this.buscarTurmas();
+    }
+
+    componentDidUpdate() {
+        this.buscarTurmas();
+    }
+
+    chamarAlert = async (turma) => {
+        await this.setState({
+            idTurmaSelecionada: turma.idTurmaSelecionada,
+            descricao: turma.descricao,
+            preRequisito: turma.preRequisito,
+            publicoAlvo: turma.publicoAlvo
+        })
+        console.log(turma)
+    }
+
+    buscarTurmas = () => {
+        axios('http://44.198.139.189/api/Turmas/list', {
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
+                "Content-Type": "application/json"
+            }
+        })
+            .then(resposta => {
+                if (resposta.status === 200) {
+                    this.setState({ listaTurmas: resposta.data.data })
+                    console.log(this.state.listaTurmas)
+                }
+            })
+            .catch(erro => console.log(erro))
+    }
+
+    cadastrarTurmas = async (event) => {
+        event.preventDefault();
+
+        const obj = {
+            id: this.state.idTurmaAlterada,
+            nomeTurma: this.state.nomeTurma,
+            cargaHoraria: this.state.cargaHoraria,
+            cursoTurma: this.state.cursoTurma,
+            professorTurma: this.state.professorTurma,
+            dataIncio: this.state.dataInicio,
+            dataFim: this.state.dataFim,
+            descricao: this.state.descricao,
+            preRequisito: this.state.preRequisito,
+            publicoAlvo: this.state.publicoAlvo
+        }
+
+        console.log(obj)
+
+        if (this.state.idTurmaAlterada != 0) {
+            fetch('http://44.198.139.189/api/Turmas/update', {
+                method: 'PATCH',
+                body: JSON.stringify({ id: this.state.idTurmaAlterada, nomeTurma: this.state.nomeTurma, cargaHoraria: this.state.cargaHoraria, cursoTurma: this.state.cursoTurma, professorTurma: this.state.professorTurma, dataIncio: this.state.dataInicio, dataFim: this.state.dataFim, descricao: this.state.descricao, preRequisito: this.state.preRequisito, publicoAlvo: this.state.publicoAlvo }),
+                headers: {
+                    'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
+                    "Content-Type": "application/json"
+                }
+            })
+                .then(resposta => {
+                    if (resposta.status === 204) {
+                        console.log('Turma ' + this.state.idTurmaAlterada + 'atualizada')
+                    }
+                })
+                .then(this.buscarTurmas())
+        }
+        else {
+            // cadastro
+            fetch('http://44.198.139.189/api/Turmas/register', {
+                method: 'POST',
+                body: JSON.stringify({ nomeTurma: this.state.nomeTurma, cargaHoraria: this.state.cargaHoraria, cursoTurma: this.state.cursoTurma, professorTurma: this.state.professorTurma, dataIncio: this.state.dataInicio, dataFim: this.state.dataFim, descricao: this.state.descricao, preRequisito: this.state.preRequisito, publicoAlvo: this.state.publicoAlvo }),
+                headers: {
+                    'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
+                    "Content-Type": "application/json"
+                }
+            })
+                .then(response => {
+                    if (response.status == 200) {
+                        console.log(response)
+                        console.log("cadastro")
+                        console.log(this.state.listaTurmas)
+                    }
+                })
+
+                .catch(erro => {
+                    console.log(erro)
+                })
+
+                .then(this.buscarTurmas())
+        }
+    }
+
+    buscarCursos = () => {
+        axios('http://44.198.139.189/api/Cursos/list', {
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
+                "Content-Type": "application/json"
+            }
+        })
+            .then(resposta => {
+                if (resposta.status === 200) {
+                    this.setState({ listaCursos: resposta.data.data })
+                    console.log(this.state.listaCursos)
+                }
+            })
+            .catch(erro => console.log(erro))
+    }
+
+     
+
+    funcaoMudaState = async (campo) => {
+        await this.setState({ [campo.target.name]: campo.target.value })
+    }
+
+
+
+   
+   
+
+
+render() {
+
+      
+
+    return (
+        <>
             <main className="container">
-                <Header/>
+                <Header />
                 <div className="alinhamento">
-                    <section className="sobreCurso">
-                        <div className="informCurso">
-                            <h1 className="tituloCurso">Power BI Completo:</h1>
-                            <p className="descCurso">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        </div>
-                        <article className="imgCurso">
-                            <img src={crs}/>
-                        </article>
-                    </section>
+
+
+
                     <section className="inscricao">
                         <h2 className="tituloInsc">Preencha as informações abaixo para efetuar a inscrição na turma:</h2>
                         <div className="formContent">
                             <div className="form2">
-                                <input className="input" type="text" name="name" placeholder="Nome"/><br></br>
-                                <input className="input" type="text" name="sobrenome" placeholder="Sobrenome"/><br></br>
-                                <input className="input" type="Email" name="email"  placeholder="E-mail"/><br></br>
-                                <input className="input" type="text" name="data" placeholder="Data de nascimento"/><br></br>
-                                <input className="input" type="text" name="telefone" placeholder="Telefone"/>
-                                <div className="botao-cl">
-                                <Button>Inscreva-se</Button>
-                                </div>
+
+                                
+                                
+                            <label>Nome</label>
+                            <input className="input" type="text" name="sobrenome" placeholder="Nome" />
+
+                            <label>Email</label>
+                            <input  className="input" type="email" name="email" placeholder="Email" id="email"/>
+
+
+
+
+                              
+
+ 
                             </div>
                         </div>
                     </section>
+
                 </div>
-                <div className="alinhamento2">
-                    <div className="publicoAlvo">
-                        <h3>Público alvo</h3>
-                        <p>Voltado para consultores funcionais e técnicos; usuários e gestores da área de negócios e profissionais de TI.</p>
-                    </div>
-                    <div className="preRequisto">
-                    <h3>Pré-requisitos</h3>
-                        <p>Não há pré-requisitos.</p>
-                    </div>
-                </div>
-                <div className="alinhamento3">
-                    <section className="infogeral">
-                        <img src={cur}/>
-                        <div className="textInfo">
-                            <p>Curso</p>
-                            <h3>Online</h3>
-                        </div>
-                    </section>
-                    <section className="infogeral">
-                        <img src={dat}/>
-                        <div className="textInfo">
-                            <p>Data de início</p>
-                            <h3>21/12/2021</h3>
-                        </div>
-                    </section>
-                    <section className="infogeral">
-                        <img src={dur}/>
-                        <div className="textInfo">
-                            <p>Duração</p>
-                            <h3>40 Horas</h3>
-                        </div>
-                    </section>
-                    <section className="infogeral">
-                        <img src={cat}/>
-                        <div className="textInfo">
-                            <p>Categoria</p>
-                            <h3>Power Plataform</h3>
-                        </div>
-                    </section>
-                </div>
+
             </main>
-            <Footer/>
-            </>
-        )
-    }
+            <Footer />
+        </>
+    )
+}
 };
 export default InscricaoCurso;
+
+
+                                    {/* <select name="cars" className="turma-select" id="cars" value={this.state.nomeTurma} name="cursoTurma" onChange={this.funcaoMudaState}>
+                                        {this.state.listaCursos.map(cursos => {
+                                            return (
+                                                <option value={cursos.id}>{cursos.nomeCurso}</option>
+                                            )
+                                        })}
+                                    </select> */}

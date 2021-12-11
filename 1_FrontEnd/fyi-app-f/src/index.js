@@ -28,7 +28,7 @@ const routing = (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/cursos" component={Cursos} />
-        <Route exact path = "/inscricaocurso" component = { InscricaoCurso }/> 
+        <Route exact path = "/inscricao" component = { InscricaoCurso }/> 
         <Route exact path="/contato-duvidas" component={Contato} />
         <Route exact path="/Login" component={Login} />
         <Route exact path="/turmas" component={Turmas} />
