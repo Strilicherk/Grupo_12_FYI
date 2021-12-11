@@ -116,7 +116,7 @@ class Cursos extends Component {
                             return (
                                 <div className="title__content">
                                     <div className="pixel__title">
-                                        <p>{cursos.nomeCurso}</p>
+                                        <p>{cursos.nomeCurso} nao</p>
                                     </div>
                                 </div>
                             )

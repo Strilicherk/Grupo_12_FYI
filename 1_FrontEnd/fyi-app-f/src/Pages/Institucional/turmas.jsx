@@ -81,7 +81,7 @@ class Turmas extends Component {
                                                 <div className="linha2"></div>
                                                 <div key={turmas.id}>
                                                     <h3>{turmas.nomeTurma}</h3>
-                                                    <a href="http://18.206.139.225/inscricaocurso">{turmas.descricao}</a>
+                                                    <p>{turmas.descricao}</p>
                                                 </div>
 
                                             </div>
