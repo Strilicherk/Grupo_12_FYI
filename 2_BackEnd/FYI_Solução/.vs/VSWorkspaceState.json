@@ -1,13 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\FYI.Tests\\Commands",
-    "\\FYI.Tests\\Commands\\Aluno",
-    "\\FYI.Tests\\Commands\\Curso",
-    "\\FYI.Tests\\Commands\\Faq",
-    "\\FYI.Tests\\Commands\\Professor",
-    "\\FYI.Tests\\Commands\\Turmas"
+    ""
   ],
-  "SelectedNode": "\\FYI_Solução.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Api\\FYI.Api.csproj",
         "projectName": "FYI.Api",
         "projectPath": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Api\\FYI.Api.csproj",
-        "packagesPath": "C:\\Users\\DEVOPS\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\35834520898\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DEVOPS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\35834520898\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -51,6 +51,10 @@
               "target": "Package",
               "version": "[5.0.11, )"
             },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.11, )"
@@ -74,6 +78,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.11, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Newtonsoft.Json.Bson": {
+              "target": "Package",
+              "version": "[1.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -108,11 +120,11 @@
         "projectUniqueName": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
         "projectName": "FYI.Domain",
         "projectPath": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\FYI.Domain.csproj",
-        "packagesPath": "C:\\Users\\DEVOPS\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\35834520898\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DEVOPS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\35834520898\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -196,11 +208,11 @@
         "projectUniqueName": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj",
         "projectName": "FYI.Infra.Data",
         "projectPath": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj",
-        "packagesPath": "C:\\Users\\DEVOPS\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\35834520898\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DEVOPS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\35834520898\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -280,11 +292,11 @@
         "projectUniqueName": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
         "projectName": "FYI.Shared",
         "projectPath": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\FYI.Shared.csproj",
-        "packagesPath": "C:\\Users\\DEVOPS\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\35834520898\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DEVOPS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\35834520898\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

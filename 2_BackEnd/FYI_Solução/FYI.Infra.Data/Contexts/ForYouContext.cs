@@ -82,10 +82,10 @@ namespace FYI.Infra.Data.Contexts
                         modelBuilder.Entity<Professores>().Property(x => x.Id);
 
                         //// Id FK Usuario
-                        //modelBuilder.Entity<Professores>()
-                        //            .HasOne<Usuarios>(x => x.Usuario)
-                        //            .WithMany(x => x.Professor)
-                        //            .HasForeignKey(x => x.IdUsuario);
+                        modelBuilder.Entity<Professores>()
+                                    .HasOne<Usuario>(x => x.Usuario)
+                                    .WithMany(x => x.Professor)
+                                    .HasForeignKey(x => x.IdUsuario);
 
                         // Nome
                         modelBuilder.Entity<Professores>().Property(x => x.NomeProfessor).HasMaxLength(60);
@@ -108,20 +108,20 @@ namespace FYI.Infra.Data.Contexts
                         // ID PK
                         modelBuilder.Entity<Turmas>().Property(x => x.Id);
 
-                        // Id FK Professor
-                        //modelBuilder.Entity<Turmas>()
-                        //            .HasOne<Professores>(x => x.Professor)
-                        //            .WithMany(x => x.Turmas)
-                        //            .HasForeignKey(x => x.IdProfessor);
+            // Id FK Professor
+           modelBuilder.Entity<Turmas>()
+                        .HasOne<Professores>(x => x.Professor)
+                        .WithMany(x => x.Turmas)
+                        .HasForeignKey(x => x.IdProfessor);
 
-                        //// Id FK Curso
-                        //modelBuilder.Entity<Turmas>()
-                        //            .HasOne<Cursos>(x => x.Curso)
-                        //            .WithMany(x => x.Turmas)
-                        //            .HasForeignKey(x => x.IdCurso);
+            // Id FK Curso
+            modelBuilder.Entity<Turmas>()
+                        .HasOne<Cursos>(x => x.Curso)
+                        .WithMany(x => x.Turmas)
+                        .HasForeignKey(x => x.IdCurso);
 
-                        // Nome
-                        modelBuilder.Entity<Turmas>().Property(x => x.NomeTurma).HasMaxLength(60);
+            // Nome
+            modelBuilder.Entity<Turmas>().Property(x => x.NomeTurma).HasMaxLength(60);
                         modelBuilder.Entity<Turmas>().Property(x => x.NomeTurma).HasColumnType("varchar(60)");
                         modelBuilder.Entity<Turmas>().Property(x => x.NomeTurma).IsRequired();
 
@@ -165,14 +165,14 @@ namespace FYI.Infra.Data.Contexts
             modelBuilder.Entity<Alunos>().Property(x => x.Id);
 
             // Id FK Turma
-            //modelBuilder.Entity<Alunos>()
-            //            .HasOne<Turmas>(x => x.Turma)
-            //            .WithMany(x => x.Alunos)
-            //            .HasForeignKey(x => x.IdTurma);
+            modelBuilder.Entity<Alunos>()
+                        .HasOne<Turmas>(x => x.Turma)
+                        .WithMany(x => x.Alunos)
+                        .HasForeignKey(x => x.IdTurma);
 
             // Id FK Usuario
             //modelBuilder.Entity<Alunos>()
-            //            .HasOne<Usuarios>(x => x.Usuario)
+            //            .HasOne<Usuario>(x => x.Usuario)
             //            .WithMany(x => x.Alunos)
             //            .HasForeignKey(x => x.IdUsuario);
 

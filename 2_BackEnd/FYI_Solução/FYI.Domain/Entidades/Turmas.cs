@@ -3,6 +3,7 @@ using Flunt.Validations;
 using FYI.Shared.Entidades;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -58,10 +59,11 @@ namespace FYI.Domain.Entidades
         public IReadOnlyCollection<Alunos> Alunos { get; private set; }
         private List<Alunos> _alunos { get; set; }
 
-
+        //[ForeignKey("Cursos")]
         public Guid IdCurso { get; private set; }
         public Cursos Curso { get; private set; }
 
+      //  [ForeignKey("Professores")]
         public Guid IdProfessor { get; private set; }
         public Professores Professor { get; private set; }
         public void AlterarTurma(string nomeTurma, string publicoAlvo, string descricao, string preRequisito, int quantidadeAluno, int qtdMax, DateTime dataInicio, DateTime dataFim)

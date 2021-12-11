@@ -44,7 +44,6 @@ namespace FYI.Infra.Data.Repositories.Faq
         public ICollection<Faqs> Listar()
         {
             return _ctx.Faq
-                .AsNoTracking()
                 .ToList();
         }
     }

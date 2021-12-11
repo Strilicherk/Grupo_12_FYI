@@ -1,3 +1,63 @@
+C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.deps.json
+C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.runtimeconfig.json
+C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.runtimeconfig.dev.json
+C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.dll
+C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\ref\FYI.Shared.dll
+C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.pdb
+C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.csproj.AssemblyReference.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.AssemblyInfoInputs.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.AssemblyInfo.cs
+C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.csproj.CoreCompileInputs.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.dll
+C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\ref\FYI.Shared.dll
+C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.pdb
+C:\Users\gusta\OneDrive\Área de Trabalho\Senai\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.genruntimeconfig.cache
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.deps.json
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.runtimeconfig.json
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.runtimeconfig.dev.json
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.dll
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\ref\FYI.Shared.dll
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.pdb
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.csproj.AssemblyReference.cache
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.AssemblyInfoInputs.cache
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.AssemblyInfo.cs
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.csproj.CoreCompileInputs.cache
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.dll
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\ref\FYI.Shared.dll
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.pdb
+C:\Users\54690823855\Desktop\gntrstom,\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.genruntimeconfig.cache
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.deps.json
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.runtimeconfig.json
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.runtimeconfig.dev.json
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.dll
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\ref\FYI.Shared.dll
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.pdb
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.csproj.AssemblyReference.cache
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.AssemblyInfoInputs.cache
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.AssemblyInfo.cs
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.csproj.CoreCompileInputs.cache
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.dll
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\ref\FYI.Shared.dll
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.pdb
+C:\Users\48737833804\Desktop\FYI\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.genruntimeconfig.cache
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.deps.json
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.runtimeconfig.json
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.runtimeconfig.dev.json
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.dll
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\ref\FYI.Shared.dll
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.pdb
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.csproj.AssemblyReference.cache
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.AssemblyInfoInputs.cache
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.AssemblyInfo.cs
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.csproj.CoreCompileInputs.cache
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.dll
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\ref\FYI.Shared.dll
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.pdb
+C:\Users\54690823855\Desktop\nodjldg kjfdg,mfdz\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\obj\Debug\net5.0\FYI.Shared.genruntimeconfig.cache
 C:\Users\35834520898\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.deps.json
 C:\Users\35834520898\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.runtimeconfig.json
 C:\Users\35834520898\Desktop\Grupo_12_FYI\2_BackEnd\FYI_Solução\FYI.Shared\bin\Debug\net5.0\FYI.Shared.runtimeconfig.dev.json

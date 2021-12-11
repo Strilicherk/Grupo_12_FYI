@@ -1,0 +1,219 @@
+.turmas-header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content{
+    width: 1440px;
+    height: 100%;
+}
+
+.center{
+    width: 100%;
+    margin-top: 30px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-content{
+    width: 1440px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-content{
+    width: 75%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-content h1{
+    color: #00A4EF;
+}
+
+.form-content{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    background-color: #EFF3F5;
+    border: 2px solid #00A4EF;
+    border-radius: 15px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.esquerda{
+    max-width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.direita{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.esquerda input{
+    width: 302px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.professor-curso{
+    display: flex;
+    justify-content: space-between;
+    height: 67px;
+    margin-bottom: 20px;
+}
+
+.curso-professor{
+    width: 45%;
+
+}
+.datas{
+    display: flex;
+    justify-content: space-between;
+    height: 67px;
+    margin-bottom: 20px;
+}
+
+.data-inicio, .data-fim{
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.data-inicio input{
+    width: 140px;
+    font-size: 10px;
+    border: none;
+}
+
+.data-fim input{
+    width: 140px;
+    font-size: 10px;
+    border: none;
+}
+
+.hl{
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    margin: 0 10px;
+}
+
+.data-inicio label{
+    font-size: 14px;
+}
+
+.data-fim label{
+    font-size: 14px;
+}
+
+.text-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-input label{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.text-input textarea{
+    width: 440px;
+    resize: none;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #CED4DA;
+    border-radius: 5px;
+    padding-left: 6px;
+    padding-top: 5px;
+}
+
+#descricao{
+    height: 70px;
+}
+
+.btn-cadastrar-turmas{
+    width: 440px;
+    height: 45px;
+    background-color: #00A4EF;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.table-section{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.table-content{
+    width: 1440px;
+    height: 300px;
+}
+
+.table-content h1{
+    color: #00A4EF;
+    margin-bottom: 20px;
+}
+
+.table-info{
+    background-color: #EFF3F5;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 2px solid #00A4EF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-settings{
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid #D6D3D3;
+    text-align: center;
+    padding: 8px;
+}
+
+#topo{
+    background-color: #F3F5F7;
+}
+
+tr{
+    background-color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

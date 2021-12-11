@@ -5898,7 +5898,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DEVOPS\\.nuget\\packages\\": {}
+    "C:\\Users\\35834520898\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -5906,11 +5906,11 @@
       "projectUniqueName": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj",
       "projectName": "FYI.Infra.Data",
       "projectPath": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\FYI.Infra.Data.csproj",
-      "packagesPath": "C:\\Users\\DEVOPS\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\35834520898\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\35834520898\\Desktop\\Grupo_12_FYI\\2_BackEnd\\FYI_Solução\\FYI.Infra.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DEVOPS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\35834520898\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

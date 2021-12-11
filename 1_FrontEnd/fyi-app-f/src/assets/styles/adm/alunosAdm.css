@@ -1,0 +1,186 @@
+.alunos-header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alunos-content{
+    width: 1440px;
+    height: 100%;
+}
+
+.center-alunos{
+    width: 100%;
+    margin-top: 30px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-content-alunos{
+    width: 1440px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-content-alunos{
+    width: 75%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-content-alunos h1{
+    color: #7FBA00;
+}
+
+.form-content-alunos{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    background-color: #EFF3F5;
+    border: 2px solid #7FBA00;
+    border-radius: 15px;
+}
+
+.formulario-alunos{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.esquerda-alunos{
+    max-width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.direita-alunos{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.esquerda-alunos input{
+    width: 302px;
+    background-color: #EFF3F5;
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 18px;
+    border-bottom: 2px solid black;
+}
+
+.direita-alunos input{
+    width: 302px;
+    background-color: #EFF3F5;
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 18px;
+    border-bottom: 2px solid black;
+}
+
+.data-nascimento{
+    width: 302px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.data-nascimento input{
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 302px;
+}
+
+.data-nascimento label{
+    font-size: 18px;
+}
+
+.select-alunos{
+    font-size: 18px;
+    height: 40px;
+    width: 302px;
+    background-color: #EFF3F5;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    border-bottom: 2px solid black;
+}
+
+.btn-cadastrar-alunos{
+    width: 440px;
+    height: 45px;
+    background-color: #7FBA00;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.table-section-alunos{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.table-content-alunos{
+    width: 1440px;
+    height: 300px;
+}
+
+.table-content-alunos h1{
+    color: #7FBA00;
+    margin-bottom: 20px;
+}
+
+.table-info-alunos{
+    background-color: #EFF3F5;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 2px solid #7FBA00;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-settings-alunos{
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid #D6D3D3;
+    text-align: center;
+    padding: 8px;
+}
+
+#topo{
+    background-color: #F3F5F7;
+}
+
+tr{
+    background-color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

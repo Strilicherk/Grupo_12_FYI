@@ -45,7 +45,6 @@ namespace FYI.Infra.Data.Repositories.Professor
         public ICollection<Professores> Listar()
         {
             return _ctx.Professores
-                     .AsNoTracking()
                      .Include(x => x.Usuario)
                        .ToList();
         }
