@@ -26,12 +26,14 @@ class Cursos extends Component {
         this.state = {
             listaCursos: [],
             listaTurmas: [],
+            idCurso: []
         }
     }
 
     componentDidMount() {
         this.buscarCursos();
         this.buscarTurmas();
+        this.buscarIdCursos();
     }
 
     buscarCursos = () => {
@@ -45,6 +47,32 @@ class Cursos extends Component {
                 if (resposta.status === 200) {
                     this.setState({ listaCursos: resposta.data.data })
                     console.log(this.state.listaCursos)
+                }
+            })
+            .catch(erro => console.log(erro))
+    }
+
+    buscarIdCursos = () => {
+        axios('http://44.198.139.189/api/Cursos/list', {
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
+                "Content-Type": "application/json"
+            }
+        })
+            .then(resposta => {
+
+                console.log('pegando todos abaixo')
+                resposta.data.data.map( curso => {
+                    return(
+                        this.state.idCurso.push(curso.id)
+                    )
+                } )
+
+                console.log('array de id de cursos')
+                console.log(this.state.idCurso)
+
+                if (resposta.status === 200) {
+                    console.log('sucesso')
                 }
             })
             .catch(erro => console.log(erro))
@@ -80,6 +108,15 @@ class Cursos extends Component {
                                 <p>Aproveite para saber mais sobre :</p>
                             </div>
                             <div className="card-area">
+                            {/* {
+                                this.state.listaCursos.map(cursos => {
+                                    return (
+                                        <div className="card-da-area">
+                                            <img src={my} alt="logo da Microsoft Azure" />
+                                            <p>{cursos.nomeCurso}</p>
+                                        </div>
+                                    )
+                                })} */}
                                 <div className="card-da-area">
                                     <img src={my} alt="logo da Microsoft Azure" />
                                     <p>My Sql</p>
@@ -110,24 +147,25 @@ class Cursos extends Component {
                 <div className="cursos-main container">
                     <p>Cursos para você <span>começar</span></p>
                     <hr />
-
                     <div className="local-do-curso">
-                        {this.state.listaCursos.map(cursos => {
+                        {/* {this.state.listaCursos
+                        .filter((cursos) => {
+                            return (this.state.nomeCurso)})
+                        .map(cursos => {
                             return (
                                 <div className="title__content">
                                     <div className="pixel__title">
-                                        <p>{cursos.nomeCurso} nao</p>
+                                        <p>{cursos.nomeCurso}</p>
                                     </div>
                                 </div>
                             )
-                        })}
-
+                        })} */}
                         <div className="scroll-curso">
                             <div class="scrolling-wrapper">
                                 {
-                                    this.state.listaCursos.map(cursos => {
+                                    this.state.listaTurmas
+                                    .map((turmas) => {
                                         return (
-
                                             <div class="card__curso">
                                                 <div className="imagem__card">
                                                     <div className="icone-aling">
@@ -136,43 +174,21 @@ class Cursos extends Component {
                                                                 <img src={bi} alt="icon power bi" />
                                                             </div>
                                                         </div>
-
-                                                        {this.state.listaTurmas.map(turmas => {
-                                                            return (
-                                                                <div className="titulo_card_curso">
-
-                                                                    <div className="quote_p"></div>
-                                                                    <p>{turmas.nomeTurma}</p>
-                                                                </div>
-
-                                                            )
-                                                        })}
-
-
-
-
+                                                        
+                                                        <div className="titulo_card_curso">
+                                                            <div className="quote_p"></div>
+                                                            <a href="http://localhost:3000/inscricao">{turmas.nomeTurma}</a>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div className="card__botton">
-                                                    {this.state.listaTurmas.map(turmas => {
-                                                        return (
-                                                            <p>{turmas.descricao}</p>
-                                                        )
-                                                    })}
+                                                <div className="card__botton">                                            
+                                                    <a href="http://localhost:3000/inscricao">{turmas.descricao}</a>
                                                 </div>
                                             </div>
                                         )
-                                    })
-                                }
+                                    })}   
                             </div>
                         </div>
-
-
-
-
-
-
-
                     </div>
                 </div>
             </>

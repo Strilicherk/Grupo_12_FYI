@@ -201,19 +201,24 @@ p span{
 
 .card__botton{
     width: 15em;
-    height: 3em;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: justify;
     
 }
 
-.card__botton p{
+.card__botton a{
     font-size: 0.68em;
     font-weight: 400;
+    color: #000;
 }
 
 
 .imagem__card{
-    height: 8em;
-    width: 17em;
+    height: 7em;
+    width: 100%;
     border-top-left-radius: 13px;
     border-top-right-radius: 13px;
 
@@ -275,7 +280,7 @@ p span{
    height: 2em;
 }
 
-.titulo_card_curso p{
+.titulo_card_curso a{
     color: #fff;
     margin-left: 6px;
     font-weight: 500;
