@@ -89,7 +89,7 @@ class Turmas extends Component {
                                                 <img className="logoCargaHoraria" src={ca} />
                                                 <div className="cargaHoraria">
                                                     <p>Carga Horária</p>
-                                                    <p className="horasData">{turmas.cargaHoraria}h</p>
+                                                    <p className="horasData">{turmas.cargaHoraria} Horas</p>
                                                 </div>
                                                 <img className="logoCargaHoraria" src={da} />
                                                 <div className="dataInicio">
