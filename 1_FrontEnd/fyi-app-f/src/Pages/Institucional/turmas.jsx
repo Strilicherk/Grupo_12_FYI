@@ -81,7 +81,7 @@ class Turmas extends Component {
                                                 <div className="linha2"></div>
                                                 <div key={turmas.id}>
                                                     <h3>{turmas.nomeTurma}</h3>
-                                                    <a href="http://localhost:3000/inscricaocurso">{turmas.descricao}</a>
+                                                    <a href="http://18.206.139.225/inscricaocurso">{turmas.descricao}</a>
                                                 </div>
 
                                             </div>
@@ -104,36 +104,6 @@ class Turmas extends Component {
                                     // .filter(nomeTurma == 'Microsoft Dinamics 360')
                                 })
                             }
-
-
-                            {/* <div className="infosGerais">
-                            <div className="infoCurso">
-                            <div className="linha2"></div>
-                                    {
-                                        this.state.listaTodasTurmas.map((turmas) => {
-                                            return(
-                                                <div key={turmas.id}>
-                                                    <h3>{turmas.nomeTurma}</h3>
-                                                    <p>{turmas.descricao}</p>
-                                                </div>
-                                            )
-                                        })
-                                    }
-                                
-                            </div>
-                            <div className="gradeCurricular">
-                                <img className="logoCargaHoraria" src={ca}/>
-                                <div className="cargaHoraria">
-                                    <p>Carga Horária</p>
-                                    <p className="horasData">40 Horas</p>
-                                </div>
-                                <img className="logoCargaHoraria" src={da}/>
-                                <div className="dataInicio">
-                                    <p>Data Início</p>
-                                    <p className="horasData">01/01/1991</p>
-                                </div>
-                            </div>
-                        </div> */}
                         </section>
                     </div>
                 </main>

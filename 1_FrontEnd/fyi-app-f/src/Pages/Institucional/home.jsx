@@ -67,7 +67,7 @@ class Home extends Component {
 
                 <ul className="nav-list">
                   <li><a href="#">Home</a></li>
-                  <li><a href="http://localhost:3000/cursos">Cursos</a></li>
+                  <li><a href="http://18.206.139.225/cursos">Cursos</a></li>
                   <li><a href="#">Contato / Duvidas</a></li>
                 </ul>
               </nav>
@@ -248,7 +248,7 @@ class Home extends Component {
                 </div>
 
                 <div className="botao-cl">
-                  <a href="http://44.198.139.189/cursos"><Button>Nossos cursos</Button></a>
+                  <a href="http://18.206.139.225/cursos"><Button>Nossos cursos</Button></a>
                 </div>
               </div>
 
