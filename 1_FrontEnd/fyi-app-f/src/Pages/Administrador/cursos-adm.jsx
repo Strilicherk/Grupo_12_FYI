@@ -44,7 +44,7 @@ class CursosAdm extends Component {
     cadastrarCursos = async (event) => {
         event.preventDefault();
         if (this.state.idCursoAlterado != 0) {
-            fetch('http://34.193.56.51/api/Cursos/update', {
+            fetch('http://44.198.139.189/api/Cursos/update', {
                 method: 'PATCH',
                 body: JSON.stringify({ id: this.state.idCursoAlterado, nomeCurso: this.state.nomeCurso }),
                 headers: {
@@ -54,14 +54,14 @@ class CursosAdm extends Component {
             })
                 .then(resposta => {
                     if (resposta.status === 204) {
-                        console.log('Turma ' + this.state.idTurmaAlterada + 'atualizada')
+                        console.log('Turma ' + this.state.idCursoAlterado + 'atualizada')
                     }
                 })
-                .then(this.buscarTurmas())
+                .then(this.buscarCursos())
         }
         else {
             // cadastro
-            fetch('http://34.193.56.51/api/Cursos/register', {
+            fetch('http://44.198.139.189/api/Cursos/register', {
                 method: 'POST',
                 body: JSON.stringify({ nomeCurso: this.state.nomeCurso }),
                 headers: {
@@ -85,8 +85,9 @@ class CursosAdm extends Component {
         }
     }
 
+
     excluirCurso = (curso) => {
-        fetch('http://34.193.56.51/api/Cursos/delete', {
+        fetch('http://44.198.139.189/api/Cursos/delete', {
             method: 'DELETE',
             body: JSON.stringify({ id: this.state.idCursoAlterado }),
             headers: {
@@ -109,7 +110,7 @@ class CursosAdm extends Component {
     }
 
     buscarCursos = () => {
-        axios('http://54.90.205.161/api/Cursos/list', {
+        axios('http://44.198.139.189/api/Cursos/list', {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                 "Content-Type": "application/json"

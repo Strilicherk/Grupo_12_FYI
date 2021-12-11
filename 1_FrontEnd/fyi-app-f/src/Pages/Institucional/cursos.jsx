@@ -35,7 +35,7 @@ class Cursos extends Component {
     }
 
     buscarCursos = () => {
-        axios('http://34.193.56.51/api/Cursos/list', {
+        axios('http://44.198.139.189/api/Cursos/list', {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                 "Content-Type": "application/json"
@@ -50,43 +50,20 @@ class Cursos extends Component {
             .catch(erro => console.log(erro))
     }
 
-    cadastrarTurmas = async (event) => {
-        event.preventDefault();
-        if (this.state.idTurmaAlterada != 0) {
-            fetch('http://34.193.56.51/api/Turmas/update' + this.state.idTurmaAlterada, {
-                method: 'PATCH',
-                body: JSON.stringify({ nomeTurma: this.state.nomeTurma, cargaHoraria: this.state.cargaHoraria, cursoTurma: this.state.cursoTurma, professorTurma: this.state.professorTurma, dataIncio: this.state.dataInicio, dataFim: this.state.dataFim, descricao: this.state.descricao, preRequisito: this.state.preRequisito, publicoAlvo: this.state.publicoAlvo }),
-                headers: {
-                    'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
-                    "Content-Type": "application/json"
+    buscarTurmas = () => {
+        axios('http://44.198.139.189/api/Turmas/list', {
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
+                "Content-Type": "application/json"
+            }
+        })
+            .then(resposta => {
+                if (resposta.status === 200) {
+                    this.setState({ listaTurmas: resposta.data.data })
+                    console.log(this.state.listaTurmas)
                 }
             })
-                .then(resposta => {
-                    if (resposta.status === 204) {
-                        console.log('Turma ' + this.state.idTurmaAlterada + 'atualizada')
-                    }
-                })
-                .then(this.buscarTurmas())
-        }
-        else {
-            // cadastro
-            fetch('http://34.193.56.51/api/Turmas/register', {
-                method: 'POST',
-                body: JSON.stringify({ nomeTurma: this.state.nomeTurma, cargaHoraria: this.state.cargaHoraria, cursoTurma: this.state.cursoTurma, professorTurma: this.state.professorTurma, dataIncio: this.state.dataInicio, dataFim: this.state.dataFim, descricao: this.state.descricao, preRequisito: this.state.preRequisito, publicoAlvo: this.state.publicoAlvo }),
-                headers: {
-                    'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
-                    "Content-Type": "application/json"
-                }
-            })
-                .then(resposta => {
-                    if (resposta.status == 200) {
-                        console.log("cadastro")
-                        console.log(this.state.listaTurmas)
-                    }
-                })
-                .then(this.buscarTurmas())
-                .catch(erro => console.log(erro))
-        }
+            .catch(erro => console.log(erro))
     }
 
     render() {

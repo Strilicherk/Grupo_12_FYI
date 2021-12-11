@@ -44,6 +44,10 @@ class Turmas extends Component {
         this.buscarTurmas();
     }
 
+    componentDidUpdate() {
+        this.buscarTurmas();
+    }
+
     chamarAlert = async (turma) => {
         await this.setState({
             idTurmaSelecionada: turma.idTurmaSelecionada,
@@ -72,6 +76,22 @@ class Turmas extends Component {
 
     cadastrarTurmas = async (event) => {
         event.preventDefault();
+
+        const obj = {
+            id: this.state.idTurmaAlterada, 
+            nomeTurma: this.state.nomeTurma, 
+            cargaHoraria: this.state.cargaHoraria, 
+            cursoTurma: this.state.cursoTurma, 
+            professorTurma: this.state.professorTurma, 
+            dataIncio: this.state.dataInicio, 
+            dataFim: this.state.dataFim, 
+            descricao: this.state.descricao, 
+            preRequisito: this.state.preRequisito, 
+            publicoAlvo: this.state.publicoAlvo
+        }
+        
+        console.log(obj)
+
         if (this.state.idTurmaAlterada != 0) {
             fetch('http://44.198.139.189/api/Turmas/update', {
                 method: 'PATCH',
@@ -168,31 +188,47 @@ class Turmas extends Component {
         })
     }
 
+    buscarIdExcluir = async (event) => {
+        await this.setState({ idTurmaAlterada: event.id })
+
+        if (this.state.idTurmaAlterada != 0) {
+            this.excluirTurma()
+        }
+    }
+
     funcaoMudaState = async (campo) => {
         await this.setState({ [campo.target.name]: campo.target.value })
     }
 
-    excluirTurma = (turma) => {
+    excluirTurma = async () => {
         fetch('http://44.198.139.189/api/Turmas/delete', {
             method: 'DELETE',
-            body: JSON.stringify({id : this.state.idTurmaAlterada }),
+            body: JSON.stringify({ id: this.state.idTurmaAlterada }),
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                 "Content-Type": "application/json"
             }
         })
 
-        .then(response => {
-            if (response.status == 204) {
-                console.log(response)
-                console.log("excluido com sucesso")
-                console.log(this.state.listaTurmas)
-            }
-        })
+            .then(
+                console.log(this.state.idTurmaAlterada)
+            )
 
-        .catch(erro => {
-            console.log(erro)
-        })
+            .then(response => {
+                if (response.status == 200) {
+                    console.log(response)
+                    console.log("excluido com sucesso")
+                    console.log(this.state.listaTurmas)
+
+                    this.buscarTurmas();
+                }
+            })
+
+            .catch(erro => {
+                console.log(erro)
+            })
+
+
     }
 
     limparCampos = () => {
@@ -336,7 +372,7 @@ class Turmas extends Component {
                                                     <td>{turmas.dataInicio}</td>
                                                     <td>{turmas.dataFim}</td>
                                                     <td><img src={editar} width="30" height="30" onClick={() => this.buscarTurmaPorId(turmas)} /></td>
-                                                    <td><img src={excluir} width="30" height="30" onClick={() => this.excluirTurma(turmas)} /></td>
+                                                    <td><img src={excluir} width="30" height="30" onClick={() => this.buscarIdExcluir(turmas)} /></td>
                                                     <td><img src={mais} width="30" height="30" onClick={() => this.chamarAlert(turmas)} /></td>
                                                 </tr>
                                             )

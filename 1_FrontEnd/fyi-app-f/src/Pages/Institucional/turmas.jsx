@@ -25,7 +25,7 @@ class Turmas extends Component {
         console.log('agora vamos fazer a chamada para API para atualizar a lista');
 
         // Faz a chamada para a API usando o fetch
-        fetch('http://34.193.56.51/api/turmas/list', {
+        fetch('http://44.198.139.189/api/turmas/list', {
             headers: {
                 // 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                 "Content-Type": "application/json"
@@ -44,7 +44,7 @@ class Turmas extends Component {
 
         this.setState({ filtro: campo.target.value });
 
-      };
+    };
 
     componentDidMount() {
         this.listaTodasTurmas();
@@ -58,7 +58,7 @@ class Turmas extends Component {
                     <div className="contentAlinhamento">
                         <section className="todasTurmasDisponiveis">
                             <h1 className="titulo">Todas as turmas</h1>
-                            <div className="filtro">
+                            {/* <div className="filtro">
                                 <h3>Filtrar por:</h3>
                                 <select className="select" name="filtro" value={this.state.campo} onChange={this.mudaFiltro}>
                                     <option className="option" value="Selecione">Selecione</option>                                        
@@ -66,14 +66,14 @@ class Turmas extends Component {
                                     <option className="option" value="PHP">PHP</option>                                        
                                     <option className="option" value="Microsoft Dinamics 365">Microsoft Dinamics 365</option>                                        
                                 </select>
-                            </div>
+                            </div> */}
                         </section>
                         <hr className="linha"></hr>
                         <section className="turmasDisponiveis">
                             {
                                 this.state.listaTodasTurmas
-                                .filter((turmas) => {
-                                    return (this.state.filtro)})
+                                // .filter((turmas) => {
+                                //     return (this.state.filtro)})
                                     .map((turmas) => {
                                     return (
                                         <div className="infosGerais">
@@ -89,7 +89,7 @@ class Turmas extends Component {
                                                 <img className="logoCargaHoraria" src={ca} />
                                                 <div className="cargaHoraria">
                                                     <p>Carga Horária</p>
-                                                    <p className="horasData">{turmas.cargaHoraria}</p>
+                                                    <p className="horasData">{turmas.cargaHoraria}h</p>
                                                 </div>
                                                 <img className="logoCargaHoraria" src={da} />
                                                 <div className="dataInicio">

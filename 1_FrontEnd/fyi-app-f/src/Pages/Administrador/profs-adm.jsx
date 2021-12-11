@@ -46,53 +46,57 @@ class ProfsAdm extends Component {
         await this.setState({ [campo.target.name]: campo.target.value })
     }
 
-    cadastrarProfessor = async (event) => {
-        event.preventDefault();
-        if (this.state.idProfessorAlterado != 0) {
-            fetch('http://34.193.56.51/api/Professor/update', {
-                method: 'PATCH',
-                body: JSON.stringify({ id: this.state.idProfessorAlterado, nomeProfessor: this.state.nomeProfessor, sobrenomeProfessor: this.state.sobrenomeProfessor, telefone: this.state.telefoneProfessor }),
-                headers: {
-                    'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
-                    "Content-Type": "application/json"
-                }
-            })
-                .then(resposta => {
-                    if (resposta.status === 204) {
-                        console.log('Turma ' + this.state.idProfessorAlterado + 'atualizada')
-                    }
-                })
-                .then(this.buscarTurmas())
-        }
-        else {
-            // cadastro
-            fetch('http://34.193.56.51/api/Professor/register', {
-                method: 'POST',
-                body: JSON.stringify({ nomeProfessor: this.state.nomeProfessor, sobrenomeProfessor: this.state.sobrenomeProfessor, telefone: this.state.telefoneProfessor }),
-                headers: {
-                    'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
-                    "Content-Type": "application/json"
-                }
-            })
-                .then(response => {
-                    if (response.status == 200) {
-                        console.log(response)
-                        console.log("cadastro")
-                        console.log(this.state.listaProfessores)
-                    }
-                })
+    // cadastrarProfessor = async (event) => {
+    //     event.preventDefault();
+    //     if (this.state.idProfessorAlterado != 0) {
+    //         fetch('http://44.198.139.189/api/Professor/update', {
+    //             method: 'PATCH',
+    //             body: JSON.stringify({ id: this.state.idProfessorAlterado, nomeProfessor: this.state.nomeProfessor, sobrenomeProfessor: this.state.sobrenomeProfessor, telefone: this.state.telefoneProfessor }),
+    //             headers: {
+    //                 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
+    //                 "Content-Type": "application/json"
+    //             }
+    //         })
+    //             .then(resposta => {
+    //                 if (resposta.status === 204) {
+    //                     console.log('Turma ' + this.state.idProfessorAlterado + 'atualizada')
+    //                 }
+    //             })
+    //             .then(this.buscarTurmas())
+    //     }
+    //     else {
+    //         // cadastro
+    //         fetch('http://44.198.139.189/api/Professor/register', {
+    //             method: 'POST',
+    //             body: JSON.stringify({ 
+    //                 nomeProfessor: this.state.nomeProfessor, 
+    //                 sobrenomeProfessor: 
+    //                 this.state.sobrenomeProfessor, 
+    //                 telefone: this.state.telefoneProfessor }),
+    //             headers: {
+    //                 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
+    //                 "Content-Type": "application/json"
+    //             }
+    //         })
+    //             .then(response => {
+    //                 if (response.status == 200) {
+    //                     console.log(response)
+    //                     console.log("cadastro")
+    //                     console.log(this.state.listaProfessores)
+    //                 }
+    //             })
 
-                .catch(erro => {
-                    console.log(erro)
-                })
+    //             .catch(erro => {
+    //                 console.log(erro)
+    //             })
 
-                .then(this.buscarTurmas())
-        }
-    }
+    //             .then(this.buscarTurmas())
+    //     }
+    // }
 
     buscarProfessores = () => {
         // http:/34.193.56.51
-        axios('http://34.193.56.51/api/Professor/list', {
+        axios('http://44.198.139.189/api/Professor/list', {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                 "Content-Type": "application/json"
@@ -123,7 +127,7 @@ class ProfsAdm extends Component {
     }
 
     excluirProfessor = (professor) => {
-        fetch('http://34.193.56.51/api/Professor/delete', {
+        fetch('http://44.198.139.189/api/Professor/delete', {
             method: 'DELETE',
             body: JSON.stringify({ id: this.state.idProfessorAlterado }),
             headers: {
@@ -188,7 +192,7 @@ class ProfsAdm extends Component {
                                             <label>Telefone</label>
                                             <textarea id="telefone" placeholder="Insira o telefone aqui" value={this.state.telefoneProfessor} name="telefoneProfessor" onChange={this.funcaoMudaState}></textarea>
                                         </div>
-                                        {this.state.idTurmaAlterada === 0 ? (
+                                        {this.state.idProfessorAlterado === 0 ? (
                                             <button className="btn-cadastrar-turmas" type="submit">Cadastrar Turma</button>
                                         ) : (
                                             <button className="btn-cadastrar-turmas" type="submit">Editar Turma</button>
@@ -196,9 +200,9 @@ class ProfsAdm extends Component {
                                         )
                                         }
                                         {(() => {
-                                            if (this.state.idTurmaAlterada != 0) {
+                                            if (this.state.idProfessorAlterado != 0) {
                                                 return (
-                                                    <button type="button" onClick={this.limparCampos}>Cancelar Edição</button>
+                                                    <button type="submit" onClick={this.limparCampos}>Cancelar Edição</button>
                                                 )
                                             }
                                         })()}
