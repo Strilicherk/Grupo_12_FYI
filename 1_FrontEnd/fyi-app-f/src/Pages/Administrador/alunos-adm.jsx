@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 //import axios from 'axios';
 
 // components
@@ -12,14 +12,14 @@ import '../../assets/styles/adm/alunosAdm.css'
 //import Form from 'react-bootstrap/Form'
 //import FloatingLabel from 'react-bootstrap/Form'
 
-class AlunosAdm extends Component{
-    constructor(props){
+class AlunosAdm extends Component {
+    constructor(props) {
         super(props);
         this.state = {
-            email : '',
-            senha : '',
-            erroMenssagem : '',
-            isLoading : false
+            email: '',
+            senha: '',
+            erroMenssagem: '',
+            isLoading: false
         }
     };
 
@@ -33,13 +33,13 @@ class AlunosAdm extends Component{
         x.style.color = "#7FBA00"
     }
 
-    componentDidMount(){
+    componentDidMount() {
         this.mudaCor();
         this.mudaMenu();
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <main>
                 <section className="alunos-header">
                     <div className="alunos-content">
@@ -55,25 +55,41 @@ class AlunosAdm extends Component{
                             <h1>Cadastrando Alunos</h1>
                             <div className="form-content-alunos">
                                 <form className="formulario-alunos">
-                                <div className="esquerda-alunos">
-                                        <input placeholder="Nome"/>
-                                        <input placeholder="Sobrenome"/>
-                                        <input placeholder="CPF"/>
-                                        <div className="data-nascimento">
-                                            <label>Data de nascimento</label>
-                                            <input type="date"/> 
+                                    <div className="esquerda-alunos">
+                                        <div className="text-input">
+                                            <label>Nome</label>
+                                            <textarea id="nome" placeholder="Insira o nome da turma" value={this.state.nomeTurma} name="nomeTurma" onChange={this.funcaoMudaState}></textarea>
+                                        </div>
+                                        <div className="text-input">
+                                            <label>Sobrenome</label>
+                                            <textarea id="nome" placeholder="Insira o nome da turma" value={this.state.nomeTurma} name="nomeTurma" onChange={this.funcaoMudaState}></textarea>
+                                        </div>
+                                        <div className="professor-curso">
+                                            <div className="data-inicio esquerda">
+                                                <label>Data de nascimento</label>
+                                                <input type="date"/>
+                                            </div>
+                                            <select className="aluno">
+                                                <option>Escolha a Turma</option>
+                                                <option>Turma A</option>
+                                                <option>Turma B</option>
+                                                <option>Turma C</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div className="direita-alunos">
-                                        <input placeholder="Telefone"/>
-                                        <input placeholder="E-mail"/>
-                                        <input placeholder="Senha"/>
-                                        <select className="select-alunos">
-                                            <option>Escolha a Turma</option>
-                                            <option>Turma A</option>
-                                            <option>Turma B</option>
-                                            <option>Turma C</option>
-                                        </select>
+                                        <div className="text-input">
+                                            <label>CPF</label>
+                                            <textarea id="nome" placeholder="Insira o nome da turma" value={this.state.nomeTurma} name="nomeTurma" onChange={this.funcaoMudaState}></textarea>
+                                        </div>
+                                        <div className="text-input">
+                                            <label>Telefone</label>
+                                            <textarea id="nome" placeholder="Insira o nome da turma" value={this.state.nomeTurma} name="nomeTurma" onChange={this.funcaoMudaState}></textarea>
+                                        </div>
+                                        <div className="text-input">
+                                            <label>Email</label>
+                                            <textarea id="nome" placeholder="Insira o nome da turma" value={this.state.nomeTurma} name="nomeTurma" onChange={this.funcaoMudaState}></textarea>
+                                        </div>
                                         <button className="btn-cadastrar-alunos">Cadastrar Aluno</button>
                                     </div>
                                 </form>

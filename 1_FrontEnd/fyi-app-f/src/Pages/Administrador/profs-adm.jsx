@@ -46,54 +46,6 @@ class ProfsAdm extends Component {
         await this.setState({ [campo.target.name]: campo.target.value })
     }
 
-    // cadastrarProfessor = async (event) => {
-    //     event.preventDefault();
-    //     if (this.state.idProfessorAlterado != 0) {
-    //         fetch('http://44.198.139.189/api/Professor/update', {
-    //             method: 'PATCH',
-    //             body: JSON.stringify({ id: this.state.idProfessorAlterado, nomeProfessor: this.state.nomeProfessor, sobrenomeProfessor: this.state.sobrenomeProfessor, telefone: this.state.telefoneProfessor }),
-    //             headers: {
-    //                 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
-    //                 "Content-Type": "application/json"
-    //             }
-    //         })
-    //             .then(resposta => {
-    //                 if (resposta.status === 204) {
-    //                     console.log('Turma ' + this.state.idProfessorAlterado + 'atualizada')
-    //                 }
-    //             })
-    //             .then(this.buscarTurmas())
-    //     }
-    //     else {
-    //         // cadastro
-    //         fetch('http://44.198.139.189/api/Professor/register', {
-    //             method: 'POST',
-    //             body: JSON.stringify({ 
-    //                 nomeProfessor: this.state.nomeProfessor, 
-    //                 sobrenomeProfessor: 
-    //                 this.state.sobrenomeProfessor, 
-    //                 telefone: this.state.telefoneProfessor }),
-    //             headers: {
-    //                 'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
-    //                 "Content-Type": "application/json"
-    //             }
-    //         })
-    //             .then(response => {
-    //                 if (response.status == 200) {
-    //                     console.log(response)
-    //                     console.log("cadastro")
-    //                     console.log(this.state.listaProfessores)
-    //                 }
-    //             })
-
-    //             .catch(erro => {
-    //                 console.log(erro)
-    //             })
-
-    //             .then(this.buscarTurmas())
-    //     }
-    // }
-
     buscarProfessores = () => {
         // http:/34.193.56.51
         axios('http://44.198.139.189/api/Professor/list', {

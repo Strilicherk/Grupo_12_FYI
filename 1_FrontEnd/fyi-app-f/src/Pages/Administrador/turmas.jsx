@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import reactDom from 'react-dom';
 import axios from 'axios';
 
 // components
@@ -28,8 +27,8 @@ class Turmas extends Component {
             idTurmaAlterada: 0,
             nomeTurma: '',
             cargaHoraria: '',
-            cursoTurma: '',
-            professorTurma: '',
+            idCurso: '',
+            idProfessor: '',
             dataInicio: '',
             dataFim: '',
             descricao: '',
@@ -44,7 +43,7 @@ class Turmas extends Component {
         this.buscarTurmas();
     }
 
-    componentDidUpdate() {
+    componentDidUpdate(){
         this.buscarTurmas();
     }
 
@@ -81,8 +80,8 @@ class Turmas extends Component {
             id: this.state.idTurmaAlterada, 
             nomeTurma: this.state.nomeTurma, 
             cargaHoraria: this.state.cargaHoraria, 
-            cursoTurma: this.state.cursoTurma, 
-            professorTurma: this.state.professorTurma, 
+            idCurso: this.state.idCurso, 
+            idProfessor: this.state.idProfessor, 
             dataIncio: this.state.dataInicio, 
             dataFim: this.state.dataFim, 
             descricao: this.state.descricao, 
@@ -90,12 +89,23 @@ class Turmas extends Component {
             publicoAlvo: this.state.publicoAlvo
         }
         
-        console.log(obj)
+        await console.log(obj)
 
         if (this.state.idTurmaAlterada != 0) {
             fetch('http://44.198.139.189/api/Turmas/update', {
                 method: 'PATCH',
-                body: JSON.stringify({ id: this.state.idTurmaAlterada, nomeTurma: this.state.nomeTurma, cargaHoraria: this.state.cargaHoraria, cursoTurma: this.state.cursoTurma, professorTurma: this.state.professorTurma, dataIncio: this.state.dataInicio, dataFim: this.state.dataFim, descricao: this.state.descricao, preRequisito: this.state.preRequisito, publicoAlvo: this.state.publicoAlvo }),
+                body: JSON.stringify({ 
+                    id: this.state.idTurmaAlterada, 
+                    nomeTurma: this.state.nomeTurma, 
+                    cargaHoraria: this.state.cargaHoraria, 
+                    idCurso: this.state.idCurso, 
+                    idProfessor: this.state.idProfessor, 
+                    dataInicio: this.state.dataInicio, 
+                    dataFim: this.state.dataFim, 
+                    descricao: this.state.descricao, 
+                    preRequisito: this.state.preRequisito, 
+                    publicoAlvo: this.state.publicoAlvo
+                }),
                 headers: {
                     'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                     "Content-Type": "application/json"
@@ -112,7 +122,18 @@ class Turmas extends Component {
             // cadastro
             fetch('http://44.198.139.189/api/Turmas/register', {
                 method: 'POST',
-                body: JSON.stringify({ nomeTurma: this.state.nomeTurma, cargaHoraria: this.state.cargaHoraria, cursoTurma: this.state.cursoTurma, professorTurma: this.state.professorTurma, dataIncio: this.state.dataInicio, dataFim: this.state.dataFim, descricao: this.state.descricao, preRequisito: this.state.preRequisito, publicoAlvo: this.state.publicoAlvo }),
+                body: JSON.stringify({ 
+                    id: this.state.idTurmaAlterada, 
+                    nomeTurma: this.state.nomeTurma, 
+                    cargaHoraria: this.state.cargaHoraria, 
+                    idCurso: this.state.idCurso, 
+                    idProfessor: this.state.idProfessor, 
+                    dataInicio: this.state.dataInicio, 
+                    dataFim: this.state.dataFim, 
+                    descricao: this.state.descricao, 
+                    preRequisito: this.state.preRequisito, 
+                    publicoAlvo: this.state.publicoAlvo
+                }),
                 headers: {
                     'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
                     "Content-Type": "application/json"
@@ -172,8 +193,8 @@ class Turmas extends Component {
             idTurmaAlterada: turma.id,
             nomeTurma: turma.nomeTurma,
             cargaHoraria: turma.cargaHoraria,
-            cursoTurma: turma.cursoTurma,
-            professorTurma: turma.professorTurma,
+            idCurso: turma.idCurso,
+            idProfessor: turma.idProfessor,
             dataInicio: turma.dataInicio,
             dataFim: turma.dataFim,
             descricao: turma.descricao,
@@ -236,8 +257,8 @@ class Turmas extends Component {
             idTurmaAlterada: 0,
             nomeTurma: '',
             cargaHoraria: '',
-            cursoTurma: '',
-            professorTurma: '',
+            idCurso: '',
+            idProfessor: '',
             dataInicio: '',
             dataFim: '',
             descricao: '',
@@ -277,7 +298,7 @@ class Turmas extends Component {
                                         <div className="professor-curso">
                                             <div className="text-input curso-professor">
                                                 <label>Curso</label>
-                                                <select name="cars" id="cars" value={this.state.cursoTurma} name="cursoTurma" onChange={this.funcaoMudaState}>
+                                                <select name="cars" id="cars" value={this.state.idCurso} name="idCurso" onChange={this.funcaoMudaState}>
                                                     {this.state.listaCursos.map(cursos => {
                                                         return (
                                                             <option value={cursos.id}>{cursos.nomeCurso}</option>
@@ -287,7 +308,7 @@ class Turmas extends Component {
                                             </div>
                                             <div className="text-input curso-professor">
                                                 <label>Professores</label>
-                                                <select name="cars" id="cars" value={this.state.professorTurma} name="professorTurma" onChange={this.funcaoMudaState}>
+                                                <select name="cars" id="cars" value={this.state.idProfessor} name="idProfessor" onChange={this.funcaoMudaState}>
                                                     {this.state.listaProfessores.map(professores => {
                                                         return (
                                                             <option value={professores.id}>{professores.nomeProfessor} {professores.sobrenome}</option>

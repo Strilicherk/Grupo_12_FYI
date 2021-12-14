@@ -11,6 +11,11 @@
     height: 100%;
 }
 
+.aluno{ 
+
+    width: 40%;
+}
+
 .center-alunos{
     width: 100%;
     margin-top: 30px;
@@ -70,7 +75,6 @@
 }
 
 .esquerda-alunos input{
-    width: 302px;
     background-color: #EFF3F5;
     border: none;
     outline: none;
