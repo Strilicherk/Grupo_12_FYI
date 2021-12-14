@@ -50,6 +50,10 @@ class Turmas extends Component {
         this.listaTodasTurmas();
     }
 
+    componentDidUpdate() {
+        this.listaTodasTurmas();
+    }
+
     render() {
         return (
             <>
@@ -57,7 +61,7 @@ class Turmas extends Component {
                     <Header />
                     <div className="contentAlinhamento">
                         <section className="todasTurmasDisponiveis">
-                            <h1 className="titulo">Todas as turmas</h1>
+                            <h1 className="titulo">Todos os cursos</h1>
                             {/* <div className="filtro">
                                 <h3>Filtrar por:</h3>
                                 <select className="select" name="filtro" value={this.state.campo} onChange={this.mudaFiltro}>

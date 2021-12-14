@@ -62,7 +62,7 @@
     flex-direction: column;
     border-radius: 6px;
     color: #fff;
-    background-color: blue;
+    background-color: #007AB2;
 }
 
 .linha2{
@@ -169,7 +169,7 @@
         flex-direction: column;
         border-radius: 6px;
         color: #fff;
-        background-color: blue;
+        background-color: #007AB2;
     }
 
     .turmasDisponiveis{

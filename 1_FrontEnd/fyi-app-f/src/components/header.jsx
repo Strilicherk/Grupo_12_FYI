@@ -27,7 +27,7 @@ const Header = () => {
                 <ul className="nav-list">
                     <li><a href="http://18.206.139.225/">Home</a></li>
                     <li><a href="http://18.206.139.225/cursos">Cursos</a></li>
-                    <li><a href="#">Contato / Duvidas</a></li>
+                    <li><a href="http://18.206.139.225/contato-duvidas">Contato / Duvidas</a></li>
                 </ul>
             </nav>
             
