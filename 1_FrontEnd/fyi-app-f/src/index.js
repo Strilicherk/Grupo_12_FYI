@@ -27,11 +27,11 @@ const routing = (
     <div>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/cursos" component={Cursos} />
-        <Route exact path = "/inscricaocurso" component = { InscricaoCurso }/> 
+        {/* <Route exact path="/cursos" component={Cursos} /> */}
+        {/* <Route exact path = "/inscricaocurso" component = { InscricaoCurso }/>  */}
         <Route exact path="/contato-duvidas" component={Contato} />
         <Route exact path="/Login" component={Login} />
-        <Route exact path="/turmas" component={Turmas} />
+        <Route exact path="/cursos" component={Turmas} />
 
         <Route exact path="/adm/turmas" component={TurmasAdm} />
         <Route exact path="/adm/cursos" component={CursosAdm} />
