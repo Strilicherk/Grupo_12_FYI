@@ -21,8 +21,10 @@ class ProfsAdm extends Component {
             listaProfessores: [],
             idProfessorAlterado: 0,
             nomeProfessor: '',
-            sobrenomeProfessor: '',
-            telefoneProfessor: '',
+            sobrenome: '',
+            telefone: '',
+            email: '',
+            senha: '',
         }
     };
 
@@ -40,6 +42,10 @@ class ProfsAdm extends Component {
         this.mudaCor();
         this.mudaMenu();
         this.buscarProfessores();
+    }
+
+    componentDidUpdate() {
+        this.buscarProfessores()
     }
 
     funcaoMudaState = async (campo) => {
@@ -63,12 +69,70 @@ class ProfsAdm extends Component {
             .catch(erro => console.log(erro))
     }
 
+    cadastrarProfessor = async (event) => {
+        event.preventDefault();
+
+        if (this.state.idProfessorAlterado != 0) {
+            fetch('http://44.198.139.189/api/Professor/update', {
+                method: 'PATCH',
+                body: JSON.stringify({
+                    id: this.state.idProfessorAlterado,
+                    nomeProfessor: this.state.nomeProfessor,
+                    sobrenome: this.state.sobrenome,
+                    telefone: this.state.telefone,
+                }),
+                headers: {
+                    'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
+                    "Content-Type": "application/json"
+                }
+            })
+                .then(resposta => {
+                    if (resposta.status === 204) {
+                        console.log('Turma ' + this.state.idProfessorAlterado + 'atualizada')
+                    }
+                })
+                .then(this.limparCampos())
+
+                .then(this.buscarProfessor())
+        }
+        else {
+            // cadastro
+            fetch('http://44.198.139.189/api/Professor/register', {
+                method: 'POST',
+                body: JSON.stringify({
+                    id: this.state.idProfessorAlterado,
+                    nomeProfessor: this.state.nomeProfessor,
+                    sobrenome: this.state.sobrenome,
+                    telefone: this.state.telefone,
+                }),
+                headers: {
+                    'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
+                    "Content-Type": "application/json"
+                }
+            })
+                .then(response => {
+                    if (response.status == 200) {
+                        console.log(response)
+                        console.log("cadastro")
+                        console.log(this.state.listaProfessores)
+                    }
+                })
+
+                .catch(erro => {
+                    console.log(erro)
+                })
+                .then(this.limparCampos())
+
+                .then(this.buscarProfessores())
+        }
+    }
+
     buscarProfessorPorId = (professor) => {
         this.setState({
             idProfessorAlterado: professor.id,
-            nomeProfessor: '',
-            sobrenomeProfessor: '',
-            telefoneProfessor: '',
+            nomeProfessor: professor.nomeProfessor,
+            sobrenome: professor.sobrenome,
+            telefone: professor.telefone,
 
         }, () => {
             console.log(
@@ -78,7 +142,15 @@ class ProfsAdm extends Component {
         })
     }
 
-    excluirProfessor = (professor) => {
+    buscarIdExcluir = async (event) => {
+        await this.setState({ idProfessorAlterado: event.id })
+
+        if (this.state.idProfessorAlterado != 0) {
+            this.excluirProfessor()
+        }
+    }
+
+    excluirProfessor = async () => {
         fetch('http://44.198.139.189/api/Professor/delete', {
             method: 'DELETE',
             body: JSON.stringify({ id: this.state.idProfessorAlterado }),
@@ -99,14 +171,16 @@ class ProfsAdm extends Component {
             .catch(erro => {
                 console.log(erro)
             })
+
+            .then(this.limparCampos())
     }
 
     limparCampos = () => {
         this.setState({
             idProfessorAlterado: 0,
             nomeProfessor: '',
-            sobrenomeProfessor: '',
-            telefoneProfessor: '',
+            sobrenome: '',
+            telefone: '',
         })
 
         console.log('states resetados')
@@ -136,18 +210,18 @@ class ProfsAdm extends Component {
                                         </div>
                                         <div className="text-input">
                                             <label>Sobrenome</label>
-                                            <textarea id="sobrenome" placeholder="Insira o sobrenome do professor" value={this.state.sobrenomeProfessor} name="sobrenomeProfessor" onChange={this.funcaoMudaState}></textarea>
+                                            <textarea id="sobrenome" placeholder="Insira o sobrenome do professor" value={this.state.sobrenome} name="sobrenome" onChange={this.funcaoMudaState}></textarea>
                                         </div>
                                     </div>
                                     <div className="direita-profs">
                                         <div className="text-input">
                                             <label>Telefone</label>
-                                            <textarea id="telefone" placeholder="Insira o telefone aqui" value={this.state.telefoneProfessor} name="telefoneProfessor" onChange={this.funcaoMudaState}></textarea>
+                                            <textarea id="telefone" placeholder="Insira o telefone aqui" value={this.state.telefone} name="telefone" onChange={this.funcaoMudaState}></textarea>
                                         </div>
                                         {this.state.idProfessorAlterado === 0 ? (
-                                            <button className="btn-cadastrar-turmas" type="submit">Cadastrar Turma</button>
+                                            <button className="btn-cadastrar-profs" type="submit">Cadastrar Professor</button>
                                         ) : (
-                                            <button className="btn-cadastrar-turmas" type="submit">Editar Turma</button>
+                                            <button className="btn-cadastrar-profs" type="submit">Editar Professor</button>
 
                                         )
                                         }
@@ -174,6 +248,8 @@ class ProfsAdm extends Component {
                                         <th>Nome</th>
                                         <th>Sobrenome</th>
                                         <th>Telefone</th>
+                                        <th>Editar</th>
+                                        <th>Excluir</th>
                                     </tr>
                                 </thead>
                                 <tbody className="table-body-profs">
@@ -184,8 +260,8 @@ class ProfsAdm extends Component {
                                                     <td>{professor.nomeProfessor}</td>
                                                     <td>{professor.sobrenome}</td>
                                                     <td>{professor.telefone}</td>
-                                                    <td><img src={editar} width="30" height="30" onClick={() => this.buscarTurmaPorId(professor)} /></td>
-                                                    <td><img src={excluir} width="30" height="30" onClick={() => this.excluirTurma(professor)} /></td>
+                                                    <td><img src={editar} width="30" height="30" onClick={() => this.buscarProfessorPorId(professor)} /></td>
+                                                    <td><img src={excluir} width="30" height="30" onClick={() => this.buscarIdExcluir(professor)} /></td>
                                                 </tr>
                                             )
                                         })

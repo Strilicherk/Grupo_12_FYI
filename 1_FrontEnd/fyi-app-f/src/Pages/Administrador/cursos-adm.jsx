@@ -41,6 +41,10 @@ class CursosAdm extends Component {
         this.buscarCursos();
     }
 
+    componentDidUpdate() {
+        this.buscarCursos();
+    }
+
     cadastrarCursos = async (event) => {
         event.preventDefault();
         if (this.state.idCursoAlterado != 0) {
@@ -57,6 +61,9 @@ class CursosAdm extends Component {
                         console.log('Turma ' + this.state.idCursoAlterado + 'atualizada')
                     }
                 })
+                
+                .then(this.limparCampos())
+
                 .then(this.buscarCursos())
         }
         else {
@@ -81,12 +88,21 @@ class CursosAdm extends Component {
                     console.log(erro)
                 })
 
+                .then(this.limparCampos())
+
                 .then(this.buscarCursos())
         }
     }
 
+    buscarIdExcluir = async (event) => {
+        await this.setState({ idCursoAlterado: event.id })
 
-    excluirCurso = (curso) => {
+        if (this.state.idCursoAlterado != 0) {
+            this.excluirCurso()
+        }
+    }
+
+    excluirCurso = async () => {
         fetch('http://44.198.139.189/api/Cursos/delete', {
             method: 'DELETE',
             body: JSON.stringify({ id: this.state.idCursoAlterado }),
@@ -96,17 +112,25 @@ class CursosAdm extends Component {
             }
         })
 
+            .then(
+                console.log(this.state.idCursoAlterado)
+            )
+
             .then(response => {
-                if (response.status == 204) {
+                if (response.status == 200) {
                     console.log(response)
                     console.log("excluido com sucesso")
                     console.log(this.state.listaCursos)
+
+                    this.buscarCursos();
                 }
             })
 
             .catch(erro => {
                 console.log(erro)
             })
+
+            .then(this.limparCampos())
     }
 
     buscarCursos = () => {
@@ -211,7 +235,7 @@ class CursosAdm extends Component {
                                                 <tr key={cursos.Id}>
                                                     <td>{cursos.nomeCurso}</td>
                                                     <td><img src={editar} width="30" height="30" onClick={() => this.buscarCursoPorId(cursos)} /></td>
-                                                    <td><img src={excluir} width="30" height="30" onClick={() => this.excluirCurso(cursos)} /></td>
+                                                    <td><img src={excluir} width="30" height="30" onClick={() => this.buscarIdExcluir(cursos)} /></td>
                                                 </tr>
                                             )
                                         })

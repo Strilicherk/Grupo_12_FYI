@@ -43,7 +43,7 @@ class Turmas extends Component {
         this.buscarTurmas();
     }
 
-    componentDidUpdate(){
+    componentDidUpdate() {
         this.buscarTurmas();
     }
 
@@ -77,33 +77,33 @@ class Turmas extends Component {
         event.preventDefault();
 
         const obj = {
-            id: this.state.idTurmaAlterada, 
-            nomeTurma: this.state.nomeTurma, 
-            cargaHoraria: this.state.cargaHoraria, 
-            idCurso: this.state.idCurso, 
-            idProfessor: this.state.idProfessor, 
-            dataIncio: this.state.dataInicio, 
-            dataFim: this.state.dataFim, 
-            descricao: this.state.descricao, 
-            preRequisito: this.state.preRequisito, 
+            id: this.state.idTurmaAlterada,
+            nomeTurma: this.state.nomeTurma,
+            cargaHoraria: this.state.cargaHoraria,
+            idCurso: this.state.idCurso,
+            idProfessor: this.state.idProfessor,
+            dataIncio: this.state.dataInicio,
+            dataFim: this.state.dataFim,
+            descricao: this.state.descricao,
+            preRequisito: this.state.preRequisito,
             publicoAlvo: this.state.publicoAlvo
         }
-        
+
         await console.log(obj)
 
         if (this.state.idTurmaAlterada != 0) {
             fetch('http://44.198.139.189/api/Turmas/update', {
                 method: 'PATCH',
-                body: JSON.stringify({ 
-                    id: this.state.idTurmaAlterada, 
-                    nomeTurma: this.state.nomeTurma, 
-                    cargaHoraria: this.state.cargaHoraria, 
-                    idCurso: this.state.idCurso, 
-                    idProfessor: this.state.idProfessor, 
-                    dataInicio: this.state.dataInicio, 
-                    dataFim: this.state.dataFim, 
-                    descricao: this.state.descricao, 
-                    preRequisito: this.state.preRequisito, 
+                body: JSON.stringify({
+                    id: this.state.idTurmaAlterada,
+                    nomeTurma: this.state.nomeTurma,
+                    cargaHoraria: this.state.cargaHoraria,
+                    idCurso: this.state.idCurso,
+                    idProfessor: this.state.idProfessor,
+                    dataInicio: this.state.dataInicio,
+                    dataFim: this.state.dataFim,
+                    descricao: this.state.descricao,
+                    preRequisito: this.state.preRequisito,
                     publicoAlvo: this.state.publicoAlvo
                 }),
                 headers: {
@@ -116,22 +116,24 @@ class Turmas extends Component {
                         console.log('Turma ' + this.state.idTurmaAlterada + 'atualizada')
                     }
                 })
+                .then(this.limparCampos())
+
                 .then(this.buscarTurmas())
         }
         else {
             // cadastro
             fetch('http://44.198.139.189/api/Turmas/register', {
                 method: 'POST',
-                body: JSON.stringify({ 
-                    id: this.state.idTurmaAlterada, 
-                    nomeTurma: this.state.nomeTurma, 
-                    cargaHoraria: this.state.cargaHoraria, 
-                    idCurso: this.state.idCurso, 
-                    idProfessor: this.state.idProfessor, 
-                    dataInicio: this.state.dataInicio, 
-                    dataFim: this.state.dataFim, 
-                    descricao: this.state.descricao, 
-                    preRequisito: this.state.preRequisito, 
+                body: JSON.stringify({
+                    id: this.state.idTurmaAlterada,
+                    nomeTurma: this.state.nomeTurma,
+                    cargaHoraria: this.state.cargaHoraria,
+                    idCurso: this.state.idCurso,
+                    idProfessor: this.state.idProfessor,
+                    dataInicio: this.state.dataInicio,
+                    dataFim: this.state.dataFim,
+                    descricao: this.state.descricao,
+                    preRequisito: this.state.preRequisito,
                     publicoAlvo: this.state.publicoAlvo
                 }),
                 headers: {
@@ -150,6 +152,7 @@ class Turmas extends Component {
                 .catch(erro => {
                     console.log(erro)
                 })
+                .then(this.limparCampos())
 
                 .then(this.buscarTurmas())
         }
@@ -249,7 +252,7 @@ class Turmas extends Component {
                 console.log(erro)
             })
 
-
+            .then(this.limparCampos())
     }
 
     limparCampos = () => {
@@ -299,6 +302,7 @@ class Turmas extends Component {
                                             <div className="text-input curso-professor">
                                                 <label>Curso</label>
                                                 <select name="cars" id="cars" value={this.state.idCurso} name="idCurso" onChange={this.funcaoMudaState}>
+                                                    <option value={''}>Selecione</option>
                                                     {this.state.listaCursos.map(cursos => {
                                                         return (
                                                             <option value={cursos.id}>{cursos.nomeCurso}</option>
@@ -309,6 +313,7 @@ class Turmas extends Component {
                                             <div className="text-input curso-professor">
                                                 <label>Professores</label>
                                                 <select name="cars" id="cars" value={this.state.idProfessor} name="idProfessor" onChange={this.funcaoMudaState}>
+                                                    <option value={''}>Selecione</option>
                                                     {this.state.listaProfessores.map(professores => {
                                                         return (
                                                             <option value={professores.id}>{professores.nomeProfessor} {professores.sobrenome}</option>
@@ -389,7 +394,7 @@ class Turmas extends Component {
                                                     <td>{turmas.nomeTurma}</td>
                                                     <td>{turmas.curso.nomeCurso}</td>
                                                     <td>{turmas.professor.nomeProfessor} {turmas.professor.sobrenome}</td>
-                                                    <td>{turmas.cargaHoraria}</td>
+                                                    <td>{turmas.cargaHoraria} horas</td>
                                                     <td>{turmas.dataInicio}</td>
                                                     <td>{turmas.dataFim}</td>
                                                     <td><img src={editar} width="30" height="30" onClick={() => this.buscarTurmaPorId(turmas)} /></td>

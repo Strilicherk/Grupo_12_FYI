@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import axios from 'axios';
+import axios from 'axios';
 
 // components
 import Header from '../../components/header';
@@ -16,10 +16,15 @@ class AlunosAdm extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            listaTurmas: [],
+            listaAlunos: [],
+            nome: '',
+            sobrenome: '',
+            cpf: '',
+            dataNascimento: '',
+            telefone: '',
+            idTurma: '',
             email: '',
-            senha: '',
-            erroMenssagem: '',
-            isLoading: false
         }
     };
 
@@ -36,6 +41,99 @@ class AlunosAdm extends Component {
     componentDidMount() {
         this.mudaCor();
         this.mudaMenu();
+        this.buscarTurmas();
+        this.buscarAlunos();
+    }
+
+    componentDidUpdate() {
+        this.buscarAlunos();
+    }
+
+    funcaoMudaState = async (campo) => {
+        await this.setState({ [campo.target.name]: campo.target.value })
+    }
+
+    buscarTurmas = () => {
+        axios('http://44.198.139.189/api/Turmas/list', {
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
+                "Content-Type": "application/json"
+            }
+        })
+            .then(resposta => {
+                if (resposta.status === 200) {
+                    this.setState({ listaTurmas: resposta.data.data })
+                    console.log(this.state.listaTurmas)
+                }
+            })
+            .catch(erro => console.log(erro))
+    }
+
+    buscarAlunos = () => {
+        axios('http://44.198.139.189/api/Aluno/list', {
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
+                "Content-Type": "application/json"
+            }
+        })
+            .then(resposta => {
+                if (resposta.status === 200) {
+                    this.setState({ listaAlunos: resposta.data.data })
+                    console.log(this.state.listaAlunos)
+                }
+            })
+            .catch(erro => console.log(erro))
+    }
+
+    cadastrarAlunos = async (event) => {
+        event.preventDefault();
+        {
+            fetch('http://44.198.139.189/api/Aluno/register', {
+                method: 'POST',
+                body: JSON.stringify({
+                    nome: this.state.nome,
+                    sobrenome: this.state.sobrenome,
+                    cpf: this.state.cpf,
+                    dataNascimento: this.state.dataNascimento,
+                    telefone: this.state.telefone,
+                    idTurma: this.state.idTurma,
+                    dataFim: this.state.dataFim,
+                    email: this.state.email,
+                }),
+                headers: {
+                    'Authorization': 'Bearer ' + localStorage.getItem('user-token'),
+                    "Content-Type": "application/json"
+                }
+            })
+                .then(response => {
+                    if (response.status == 200) {
+                        console.log(response)
+                        console.log("cadastro")
+                        console.log(this.state.listaAlunos)
+                    }
+                })
+
+                .catch(erro => {
+                    console.log(erro)
+                })
+                .then(this.limparCampos())
+
+                .then(this.buscarAlunos())
+        }
+    }
+
+    limparCampos = () => {
+        this.setState({
+            nome: '',
+            sobrenome: '',
+            cpf: '',
+            dataNascimento: '',
+            telefone: '',
+            idTurma: '',
+            email: '',
+        })
+
+        console.log('states resetados')
     }
 
     render() {
@@ -65,16 +163,21 @@ class AlunosAdm extends Component {
                                             <textarea id="nome" placeholder="Insira o nome da turma" value={this.state.nomeTurma} name="nomeTurma" onChange={this.funcaoMudaState}></textarea>
                                         </div>
                                         <div className="professor-curso">
-                                            <div className="data-inicio esquerda">
-                                                <label>Data de nascimento</label>
-                                                <input type="date"/>
+                                            <div className="select-aluno-aa">
+                                                <label>Turma</label>
+                                                <select className="select-aluno" name='select-turma' value={this.state.idTurma} name="idTurma" onChange={this.funcaoMudaState}>
+                                                    <option value={''}>Selecione</option>
+                                                    {this.state.listaTurmas.map(turmas => {
+                                                        return (
+                                                            <option value={turmas.id}>{turmas.nomeTurma}</option>
+                                                        )
+                                                    })}
+                                                </select>
                                             </div>
-                                            <select className="aluno">
-                                                <option>Escolha a Turma</option>
-                                                <option>Turma A</option>
-                                                <option>Turma B</option>
-                                                <option>Turma C</option>
-                                            </select>
+                                            <div className="data-aluno-aa">
+                                                <label>Data de nascimento</label>
+                                                <input type="date" value={this.state.dataNascimento} />
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="direita-alunos">
@@ -106,26 +209,27 @@ class AlunosAdm extends Component {
                                     <tr id="topo">
                                         <th>Nome</th>
                                         <th>Sobrenome</th>
-                                        <th>Telefone</th>
-                                        <th>CPF</th>
+                                        <th>Turma</th>
                                         <th>Data de Nascimento</th>
+                                        <th>CPF</th>
+                                        <th>Telefone</th>
                                     </tr>
                                 </thead>
                                 <tbody className="table-body-alunos">
-                                    <tr>
-                                        <td>Lucas</td>
-                                        <td>Apolinario</td>
-                                        <td>11 94002 - 8922</td>
-                                        <td>123.456.748 - 43</td>
-                                        <td>03 / 03 / 2003</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lucas</td>
-                                        <td>Apolinario</td>
-                                        <td>11 94002 - 8922</td>
-                                        <td>123.456.748 - 43</td>
-                                        <td>03 / 03 / 2003</td>
-                                    </tr>
+                                    {
+                                        this.state.listaAlunos.map((alunos) => {
+                                            return(
+                                                <tr key={alunos.id}>
+                                                    <td>{alunos.nome}</td>
+                                                    <td>{alunos.sobrenome}</td>
+                                                    <td>{alunos.idTurma.nomeTurma}</td>
+                                                    <td>{alunos.dataNascimento}</td>
+                                                    <td>{alunos.cpf}</td>
+                                                    <td>{alunos.telefone}</td>
+                                                </tr>
+                                            )
+                                        })
+                                    }
                                 </tbody>
                             </table>
                         </div>
