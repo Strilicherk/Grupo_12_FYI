@@ -28,19 +28,17 @@ class ProfsAdm extends Component {
         }
     };
 
-    mudaCor = () => {
-        var x = document.getElementById("corzinha");
-        x.style.borderLeft = "3px solid #FFB900"
-    }
+    // mudaCor = () => {
+    //     var x = document.getElementById("corzinha");
+    //     x.style.borderLeft = "3px solid #FFB900"
+    // }
 
-    mudaMenu = () => {
-        var x = document.getElementById("professores-p");
-        x.style.color = "#FFB900"
-    }
+    // mudaMenu = () => {
+    //     var x = document.getElementById("professores-p");
+    //     x.style.color = "#FFB900"
+    // }
 
     componentDidMount() {
-        this.mudaCor();
-        this.mudaMenu();
         this.buscarProfessores();
     }
 
