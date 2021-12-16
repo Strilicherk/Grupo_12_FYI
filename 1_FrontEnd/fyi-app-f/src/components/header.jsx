@@ -16,7 +16,7 @@ const Header = () => {
 
         <header>           
             <nav className="header">   
-                <a href="http://18.206.139.225/"><img src={logoazul} alt="Logo minimalista for your information Learning Solution - FYI"/></a>
+                <a href="http://localhost:3000"><img src={logoazul} alt="Logo minimalista for your information Learning Solution - FYI"/></a>
 
                 <div className="mobile-menu" >
                     <div className="1"></div>
@@ -25,9 +25,9 @@ const Header = () => {
                 </div>
 
                 <ul className="nav-list">
-                    <li><a href="http://18.206.139.225/">Home</a></li>
-                    <li><a href="http://18.206.139.225/cursos">Cursos</a></li>
-                    <li><a href="http://18.206.139.225/contato-duvidas">Contato / Duvidas</a></li>
+                    <li><a href="http://localhost:3000/">Home</a></li>
+                    <li><a href="http://localhost:3000/cursos">Cursos</a></li>
+                    <li><a href="http://localhost:3000/contato-duvidas">Contato / Duvidas</a></li>
                 </ul>
             </nav>
             

@@ -12,6 +12,7 @@ import Cursos from "./Pages/Institucional/cursos.jsx";
 import InscricaoCurso from './Pages/Institucional/inscricaocurso.jsx';
 import Contato from "./Pages/Institucional/contato.jsx";
 import Turmas from "./Pages/Institucional/turmas.jsx";
+import Duvidas from "./Pages/Institucional/duvidas.jsx";
 
 
 //import adm
@@ -27,8 +28,7 @@ const routing = (
     <div>
       <Switch>
         <Route exact path="/" component={Home} />
-        {/* <Route exact path="/cursos" component={Cursos} /> */}
-        {/* <Route exact path = "/inscricaocurso" component = { InscricaoCurso }/>  */}
+        <Route exact path="/perguntas-frequentes" component={Duvidas} />
         <Route exact path="/contato-duvidas" component={Contato} />
         <Route exact path="/Login" component={Login} />
         <Route exact path="/cursos" component={Turmas} />
